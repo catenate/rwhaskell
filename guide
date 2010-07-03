@@ -1,6 +1,6 @@
 /home/jdc/Dropbox/nb
 git mv README README.md
 git status
-git commit -a -m 'first commit'
+git commit -a -m 'README plans scope'
 git push origin master
 |fmt -w 62 |sed 's,$, ,'
