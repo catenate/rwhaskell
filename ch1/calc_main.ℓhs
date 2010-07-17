@@ -1,0 +1,6 @@
+> import Constant
+> import Shows
+> import UniOp
+
+> main = do
+> 	lastShow

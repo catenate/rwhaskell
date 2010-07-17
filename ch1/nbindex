@@ -1,0 +1,12 @@
+acme.dump:197 computer
+acme.dump:242 hoogle
+calc.lhs:1 cpp language haskell @kmc
+calc.lhs:6 cpp haskell ghc option
+calc.lhs:10 cpp haskell define
+calc.ℓhs:1 cpp language haskell @kmc
+calc.ℓhs:6 cpp haskell ghc option
+calc.ℓhs:10 cpp haskell define
+constant.ℓhs:5 i imaginary complex number haskell notation constant
+constant.ℓhs:9 π pi haskell notation constant
+constant.ℓhs:13 τ tau haskell notation constant
+constant.ℓhs:17 ℯ e exp natural logarithm base haskell notation constant

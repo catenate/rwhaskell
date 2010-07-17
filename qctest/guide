@@ -1,0 +1,14 @@
+@rwhbook:256
+file:///home/jdc/git/rwhaskell/qctest/
+file:///usr/share/doc/libghc6-quickcheck2-doc/html/Test-QuickCheck.html
+http://haskell.org/haskellwiki/Introduction_to_QuickCheck
+http://stackoverflow.com/questions/2517152/verbosecheck-in-quickcheck-2
+/home/jdc/git/functional-koans
+#haskell @hoogle function
+mk add1.main
+mk add1.test
+mk hutest.run
+mk hw.run
+mk qctest.hpc
+mk qctest.run
+|sort|uniq

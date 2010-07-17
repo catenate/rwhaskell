@@ -1,0 +1,5 @@
+
+> import Add1
+
+> main ⇐ do
+>          putStrLn (show (add1 1))

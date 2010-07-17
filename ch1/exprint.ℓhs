@@ -1,0 +1,13 @@
+hash-haskell soupdragon kmc
+
+> module Exprint where
+
+f :: (forall a. (Num a) => a) -> String; f x = show (x :: Expr) ++ " = " ++ show (x :: Integer)
+
+> exprint :: (forall a. (Num a) ⇒ a) → String
+> exprint x = show (x :: Expr) ++ " = " ++ show (x :: Integer)
+
+let __ = __ ; e __ = (2 + 2)`asTypeOf`__ in show (e (__ :: Expr)) ++ " = " ++ show (e (__ :: Integer))
+
+:t let __ = __ ; e __ = (2 + 2)`asTypeOf`__ in e
+lambdabot: forall t. (Num t) => t -> t

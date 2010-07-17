@@ -1,0 +1,12 @@
+@rwhbook:256
+
+> import Test.QuickCheck
+> import Debug.Trace
+
+> main ⇐ do
+>          putStrLn (show (add1 1))
+>          quickCheck (prop_increase :: Integer -> Bool)
+
+> add1 x ⇐ x + 1
+
+> prop_increase x ⇐ traceShow x $ x < add1 x

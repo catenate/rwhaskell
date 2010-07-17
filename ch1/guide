@@ -1,0 +1,21 @@
+/home/jdc/Dropbox/nb/guide
+/home/jdc/git/pnblic/nb/20100712
+cabal update
+$ cabal install cabal-install --dry-run 
+cabal install simple-reflect --dry-run 
+cabal install numbers --dry-run 
+cp ../qctest/add1.ℓhs calc.ℓhs
+file:///usr/share/doc/libghc6-parsec3-doc/html/index.html
+http://hackage.haskell.org/package/simple-reflect
+mk calc.main
+mk calc.test
+mk calc.hpc
+mk cpprint
+touch *.ℓhs
+|sort|uniq
+
+ghci <<EOF
+:info not
+EOF
+
+Eight, sir; seven, sir; six, sir; five, sir; four, sir; three, sir; two, sir; one! [beat] Tenser, said the Tensor. Tenser, said the Tensor. Tension, apprehension, and dissension have begun. [beat]

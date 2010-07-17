@@ -1,0 +1,33 @@
+<|./ensorcel
+LHS = ${SLHS_ALL:%.ℓhs=%.lhs}
+ELF = ${SLHS_ALL:%.ℓhs=%}
+
+%.lhs: %.ℓhs
+	sed -f toascii.sed $stem.ℓhs > $stem.lhs
+
+%_main: %.lhs
+
+%_main: %_main.lhs
+	ghc -fhpc -o $stem ${stem}_main.lhs $stem.lhs --make -fforce-recomp
+
+%.main: %_main
+	rm -f $stem.tix
+	./$stem
+
+%_test: %.lhs
+
+%_test: %_test.lhs
+	ghc -fhpc -o $stem ${stem}_test.lhs $stem.lhs --make -fforce-recomp
+
+%.test: %_test
+	rm -f $stem.tix
+	./$stem
+
+%.hpc: %
+	hpc markup $stem --exclude=QC
+
+clean:QV:
+	rm -f *.lhs *.hi *.o
+
+distclean:QV: clean
+	rm -f $ELF

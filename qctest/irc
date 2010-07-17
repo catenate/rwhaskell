@@ -1,0 +1,22 @@
+(02:00:18 AM) napping: catenate: anyway, basic Haskell testing practice is quickcheck, and then organize quickcheck runs and fixed examples with HUnit as needed
+(02:01:38 AM) ddarius: catenate: Probably one of the best things you could do is go out into your community and meet people and try to help them.
+(02:04:12 AM) catenate: So what is the minimum qualification to be seriously considered?  Worked through RWH?  Contributed to open-source projects?  Wrote a library?  Wrote xmonad?  Wrote a financial app?
+(02:02:18 AM) ddarius: Cale: On the one hand, there are less applicants, on the other, the median applicant is probably massively more qualified.
+(02:02:56 AM) kmc: if you're hiring Haskellers you won't get (or will have a very easy time filtering out) the usual flood of massively unqualified candidates
+(02:03:07 AM) kmc: but i think the shortlist is still pretty crowded
+(02:03:29 AM) kmc: just less pruning is needed before the shortlist
+(02:04:12 AM) catenate: So what is the minimum qualification to be seriously considered?  Worked through RWH?  Contributed to open-source projects?  Wrote a library?  Wrote xmonad?  Wrote a financial app?
+(02:05:38 AM) kmc: catenate, there's been a haskell-cafe thread about this recently
+(02:05:49 AM) kmc: and i think dcoutts said he'd do a short writeup of their experience hiring Haskellers recently
+(02:05:50 AM) catenate: I'll look that up, thanks
+(02:06:49 AM) kmc: dons said that it's important to answer questions on haskell-cafe and stack overflow, to be visible
+(02:06:55 AM) kmc: and to write libraries and upload them to hackage
+(02:07:08 AM) ddarius: catenate: Being more active in the Haskell community, and in particular, producing or maintaining libraries is definitely something to set yourself apart.
+(02:12:40 AM) ddarius: kmc: If you are recognized as being knowledgeable it can't hurt.  Heck, if you are recognizable at all.  But if you are producing libraries the interviewer is likely to think "Well, he just needs to keep doing what he's already doing."
+(02:12:53 AM) catenate: Hm, hackage is for released packages, is there a github like community development repository?
+(02:13:05 AM) kmc: i was more wondering IRC vs email/SO, not vs. writing libraries
+(02:13:30 AM) napping: catenate: github seems reasonably popular
+(02:14:34 AM) catenate: I use github currently, just wondering if haskellers use something else generally, since github doesn't use darcs
+(02:14:46 AM) ddarius: catenate: You can use something like github or patch-tag, you can also request an account on the community server, though that's much more heavy-weight.
+(02:15:17 AM) ddarius: catenate: Also, you can more or less put whatever you want onto Hackage.
+(02:15:35 AM) ddarius: catenate: That's how edwardk has been doing development (albeit the repositories are elsewhere)

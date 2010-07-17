@@ -1,0 +1,76 @@
+/usr/bin/ghc
+sed -f toascii.sed hw.ℓhs > hw.lhs
+ghc -o hw hw.lhs
+./hw
+Goodbye, world
+sed -f toascii.sed hw.ℓhs > hw.lhs
+ghc -o hw hw.lhs
+./hw
+Goodbye, world
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+
+qctest.lhs:5:22:
+    Couldn't match expected type `t -> String'
+           against inferred type `String'
+    In the first argument of `putStrLn', namely `(show add1 1)'
+    In the expression: putStrLn (show add1 1)
+    In the expression: do { putStrLn (show add1 1) }
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+./qctest
+2
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+
+qctest.lhs:3:2:
+    Failed to load interface for `Test.QuickCheck':
+      Use -v to see a list of the files searched for.
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+ghc -o qctest qctest.lhs
+qctest.o: In function `su3_info':
+(.text+0x4ff): undefined reference to `__stginit_QuickCheckzm2zi1zi0zi2_TestziQuickCheck_'
+collect2: ld returned 1 exit status
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+qctest.o: In function `svL_info':
+(.text+0x4ff): undefined reference to `__stginit_QuickCheckzm2zi1zi0zi2_TestziQuickCheck_'
+collect2: ld returned 1 exit status
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+
+qctest.lhs:10:19: Not in scope: `testEmpty'
+
+qctest.lhs:17:37: Not in scope: `add1'
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+
+qctest.lhs:17:37: Not in scope: `add1'
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed qctest.ℓhs > qctest.lhs
+ghc -o qctest qctest.lhs
+qctest.o: In function `rmS_info':
+(.text+0x2e6): undefined reference to `HUnitzm1zi2zi2zi1_TestziHUnitziBase_assertEqual_closure'
+qctest.o: In function `re7_info':
+(.text+0x5f4): undefined reference to `HUnitzm1zi2zi2zi1_TestziHUnitziBase_TestCase_closure'
+qctest.o: In function `re7_info':
+(.text+0x67e): undefined reference to `HUnitzm1zi2zi2zi1_TestziHUnitziText_runTestTT_closure'
+qctest.o: In function `re7_info':
+(.text+0x747): undefined reference to `__stginit_HUnitzm1zi2zi2zi1_TestziHUnit_'
+qctest.o: In function `rmS_srt':
+(.data+0x68): undefined reference to `HUnitzm1zi2zi2zi1_TestziHUnitziBase_assertEqual_closure'
+qctest.o: In function `re7_closure':
+(.data+0x140): undefined reference to `HUnitzm1zi2zi2zi1_TestziHUnitziText_runTestTT_closure'
+collect2: ld returned 1 exit status
+mk: ghc -o qctest qctest.lhs  : exit status=exit(1)
+mk: exit 1

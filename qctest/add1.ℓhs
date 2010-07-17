@@ -1,0 +1,3 @@
+> module Add1 where
+
+> add1 x ⇐ x + 1

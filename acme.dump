@@ -1,14 +1,75 @@
 /home/jdc/git/rwhaskell
 /usr/local/plan9/font/times/latin1.7a.font
 /home/jdc/opt/src/icons/icons.14.font
-  0.0000000  59.9218750
+  0.0000000  59.8437500
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           2           0           0   2.0697168 
-          2          46          22           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
-F          1           0           0           0   2.0697168          66 
-          1          56          66           0           1 /home/jdc/git/rwhaskell/guide Del Snarf Undo Put | Look 
-git status
-git commit -a -m 'first commit'
-git push origin master
+f          0           1           0           0   2.0697168 
+          1          46          53           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
+f          0           6           0           0   4.1394336 
+          6          73          63           1           0 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/ Del Snarf Get | Look 
+F          1           0         492         565   2.0697168         565 
+         12          25         565           0           1 +Errors Del Snarf | Look 
+can't open /home/jdc/git/rwhaskell/qctest/ensorcel: No such file or directory
+can't open /home/jdc/git/rwhaskell/ch1/calc.ℓhs: No such file or directory
+can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
+/home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect.hi: NUL bytes elided
+/home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
+can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
+/home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
+F          1           1        1561        1572   6.1002179        1572 
+         13          49        1572           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf | Look 
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    README -> README.md
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#
+# Untracked files:
+#   (use "git add acme.dump guide
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    README -> README.md
+#	new file:   acme.dump
+#	new file:   guide
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#
+[master e7727f5] starting files
+ 3 files changed, 22 insertions(+), 0 deletions(-)
+ delete mode 100644 README
+ create mode 100644 README.md
+ create mode 100644 acme.dump
+ create mode 100644 guide
+To git@github.com:catenate/rwhaskell.git
+   abdd7b9..e7727f5  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   README.md
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master af74c41] README plans scope
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+To git@github.com:catenate/rwhaskell.git
+   e7727f5..af74c41  master -> master
+mk: don't know how to make 'qctest.run' in /home/jdc/git/rwhaskell
+mk: exit 1
+f          1          16         204         204   8.1699346 
+         16          47         204           0           0 /home/jdc/git/rwhaskell/guide Del Snarf | Look 

@@ -1,0 +1,10 @@
+@rwhbook:256
+
+> import Test.HUnit
+
+> main = runTestTT testIncrease
+
+> add1 x ⇐ x + 1
+
+> testIncrease = TestCase $ assertEqual 
+>   "Should increment the value" 2 ( add1 1 ) 

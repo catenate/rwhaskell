@@ -1,0 +1,10 @@
+
+> import Add1
+> import Debug.Trace
+> import Test.QuickCheck
+
+> main ⇐ do
+>          putStrLn (show (add1 1))
+>          quickCheck (prop_increase :: Integer -> Bool)
+
+> prop_increase x ⇐ traceShow [x, add1 x] $ x < add1 x

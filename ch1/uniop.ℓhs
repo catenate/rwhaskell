@@ -1,0 +1,65 @@
+nb define use new operator
+RWH pp. 225–226
+
+> module UniOp where
+
+=? includes both equality (=) and test (?).
+
+This usage of "=" in these "C-syntax" languages can lead to coding errors.
+A programmer may mistype "if (x = y)" instead of "if (x == y)".
+In C, the former code fragment roughly means "assign y to x, and if the
+new value of x is not zero, execute the statement following".
+The latter code fragment roughly means "if and only if x is equal to y,
+execute the statement following".¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+> (=?) :: (Eq a) ⇒ a → a → Bool
+> (=?) = (==)
+> infix 4 =?
+
+In print ≠, meaning not equal to, tests the negated equivalence of two values.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+> (≠) :: (Eq a) ⇒ a → a → Bool
+> (≠) = (/=)
+> infix 4 ≠
+
+And is usually expressed with an infix operator.  In mathematics and
+logic, it is usually ∧; in electronics ·; and in programming languages,
+& or and.  Some programming languages have a related control structure,
+the short-circuit and, written &&, and then, etc.¹
+ ¹ http://en.wikipedia.org/wiki/Logical_conjunction
+
+Reserve ∧ for bitwise operations, after the weight of ⊻.
+
+> (⋀) :: Bool → Bool → Bool
+> (⋀) = (&&)
+> infixr 3 ⋀
+
+Or is usually expressed with an infix operator.  In mathematics and
+logic, it is usually ∨; in electronics, +; and in programming languages,
+| or or.  Some programming languages have a related control structure,
+the short-circuit or, written ||, or else, etc.¹
+ ¹ http://en.wikipedia.org/wiki/Logical_disjunction
+
+Reserve ∨ for bitwise operations, after the weight of ⊻.
+
+> (⋁) :: Bool → Bool → Bool
+> (⋁) = (||)
+> infixr 2 ⋁
+
+In print ≥, meaning greater than or equal to, tests if the value of the
+left expression is greater than or equal to that of the right.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+> (≥) :: (Ord a) ⇒ a → a → Bool
+> (≥) = (>=)
+> infix 4 ≥
+
+In print ≤, meaning less than or equal to, tests if the value of the
+left expression is less than or equal to that of the right.¹
+ ¹ http://en.wikipedia.org/wiki/Relational_operator
+
+> (≤) :: (Ord a) ⇒ a → a → Bool
+> (≤) = (<=)
+> infix 4 ≤
