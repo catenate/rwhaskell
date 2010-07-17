@@ -1,5 +1,5 @@
 /home/jdc/Dropbox/nb/guide
-/home/jdc/git/pnblic/nb/20100712
+/home/jdc/git/pnblic/nb/20100717
 cabal update
 $ cabal install cabal-install --dry-run 
 cabal install simple-reflect --dry-run 

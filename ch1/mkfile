@@ -6,7 +6,7 @@ ELF = ${SLHS_ALL:%.ℓhs=%}
 	sed -f toascii.sed $stem.ℓhs > $stem.lhs
 
 #%: %.lhs
-#	ghc -o $stem $stem.lhs 2>&1 | sed 's,\.lhs,.ℓhs,'
+#	ghc -o $stem $stem.lhs -XUnicodeSyntax 2>&1 | sed 's,\.lhs,.ℓhs,'
 
 %_main: constant.lhs
 
@@ -15,8 +15,8 @@ ELF = ${SLHS_ALL:%.ℓhs=%}
 %_main: %.lhs
 
 %_main: %_main.lhs
-	ghc -fhpc -o $stem ${stem}_main.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes
-	#ghc -fhpc -o $stem ${stem}_main.lhs --make -fforce-recomp -XRankNTypes
+	ghc -fhpc -o $stem ${stem}_main.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
+	#ghc -fhpc -o $stem ${stem}_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
 
 %.main: %_main
 	rm -f $stem.tix
@@ -29,7 +29,7 @@ ELF = ${SLHS_ALL:%.ℓhs=%}
 %_test: %.lhs
 
 %_test: %_test.lhs
-	ghc -fhpc -o $stem ${stem}_test.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes
+	ghc -fhpc -o $stem ${stem}_test.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
 
 %.test: %_test
 	rm -f $stem.tix
