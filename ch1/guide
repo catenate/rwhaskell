@@ -1,5 +1,5 @@
 /home/jdc/Dropbox/nb/guide
-/home/jdc/git/pnblic/nb/20100717
+New /home/jdc/git/pnblic/nb/20100805
 cabal update
 $ cabal install cabal-install --dry-run 
 cabal install simple-reflect --dry-run 
@@ -7,15 +7,16 @@ cabal install numbers --dry-run
 cp ../qctest/add1.ℓhs calc.ℓhs
 file:///usr/share/doc/libghc6-parsec3-doc/html/index.html
 http://hackage.haskell.org/package/simple-reflect
-mk calc.main
-mk calc.test
+mk calc.main | sed 's,\.lhs,.ℓhs,'
+mk calc.test | sed 's,\.lhs,.ℓhs,'
 mk calc.hpc
 mk cpprint
 touch *.ℓhs
+|sed 's,`,‘,g;s,'',’,g'
 |sort|uniq
 
 ghci <<EOF
-:info not
+:info ^
 EOF
 
 Eight, sir; seven, sir; six, sir; five, sir; four, sir; three, sir; two, sir; one! [beat] Tenser, said the Tensor. Tenser, said the Tensor. Tension, apprehension, and dissension have begun. [beat]

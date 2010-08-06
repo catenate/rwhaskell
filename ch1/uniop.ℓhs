@@ -66,6 +66,64 @@ execute the statement following".¹
 > (=?) = (==)
 > infix 4 =?
 
+Multiplication is often written using the multiplication sign "×" … in
+infix notation.  ….  Multiplication is sometimes denoted by either a
+middle dot "·" or a period.  ….  The asterisk (as in 5*2) is often used
+in programming languages because it appears on every keyboard ….  This
+usage originated in the FORTRAN programming language.¹
+ ¹ http://en.wikipedia.org/wiki/Multiply#Notation_and_terminology
+
+> (·) :: (Num a) ⇒ a → a → a
+> (·) = (*)
+> infixl 7 ·
+
+> (×) :: (Num a) ⇒ a → a → a
+> (×) = (*)
+> infixl 7 ×
+
+The obelus was first used as a symbol for division in 1659 in the algebra
+book /Teutsche Algebra/ by Johann Rahn.  Some think that John Pell, who
+edited the book, may have been responsible for this use of the symbol.
+The obelus had been used by some writers to represent subtraction,
+and that usage continued in some parts of Europe (including Norway and,
+until fairly recently, Denmark).  ….  The obelus is used primarily as a
+symbol for division (as on a calculator) and as an operator in
+elementary arithmetic.  ….  In the Unicode character set, the obelus is
+known as the “division sign” and has the code point U+00F7.¹
+ ¹ http://en.wikipedia.org/wiki/Obelus
+
+> (÷) :: (Fractional a) ⇒ a → a → a
+> (÷) = (/)
+> infixl 7 ÷
+
+In expressions such as a^{b}, the notation for exponentiation is usually
+to write the exponent b as a superscript to the base number a.  But many
+environments—such as programming languages and plain-text e-mail—do not
+support such two-dimensional layout.  People have adopted the linear
+notation a↑b for such environments; the up-arrow suggests 'raising to
+the power of'.  If the character set doesn't contain an up arrow, the
+caret ^ is used instead.  The superscript notation a^{b} doesn't lend
+itself well to generalization, which explains why Knuth chose to work
+from the inline notation a↑b instead.¹
+ ¹ http://en.wikipedia.org/wiki/Knuth's_up-arrow_notation
+
+> (↑) :: (Num a, Integral b) => a -> b -> a
+> (↑) = (^)
+> infixr 8 ↑
+
+The Unicode minus sign is designed to be the same length and height as
+the plus and equals signs.  In most fonts these are the same width as
+digits in order to facilitate the alignment of numbers in tables.  The
+hyphen-minus sign (-) is the ASCII version of the minus sign, and
+doubles as a hyphen.  It is usually shorter in length than the plus sign
+and sometimes at a different height.  It can be used as a substitute for
+the true minus sign when the character set is limited to ASCII.¹
+ ¹ http://en.wikipedia.org/wiki/Minus#Character_codes
+
+> (−) :: (Num a) ⇒ a -> a -> a
+> (−) = (-)
+> infixl 6 −
+
 In print ≠, meaning not equal to, tests the negated equivalence of two values.¹
  ¹ http://en.wikipedia.org/wiki/Relational_operator
 

@@ -5,12 +5,12 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1           0           0   2.0697168 
-          1          46          53           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
-f          0           6           0           0   4.1394336 
-          6          73          63           1           0 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/ Del Snarf Get | Look 
-F          1           0         492         565   2.0697168         565 
-         12          25         565           0           1 +Errors Del Snarf | Look 
+f          0           1           0           0   2.0652174 
+          1          46          66           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
+f          0           6          35          35   7.9347826 
+          6          57          35           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
+F          1           0         492         565   2.0652174         565 
+          3          25         565           0           1 +Errors Del Snarf | Look 
 can't open /home/jdc/git/rwhaskell/qctest/ensorcel: No such file or directory
 can't open /home/jdc/git/rwhaskell/ch1/calc.ℓhs: No such file or directory
 can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1        1561        1572   6.1002179        1572 
-         13          49        1572           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf | Look 
+F          1           1       62363       62363   4.1304348       62363 
+          4          58       62363           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -71,5 +71,1668 @@ To git@github.com:catenate/rwhaskell.git
    e7727f5..af74c41  master -> master
 mk: don't know how to make 'qctest.run' in /home/jdc/git/rwhaskell
 mk: exit 1
-f          1          16         204         204   8.1699346 
-         16          47         204           0           0 /home/jdc/git/rwhaskell/guide Del Snarf | Look 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/toascii.sed
+#	modified:   "ch1/uniop.\342\204\223hs"
+#	modified:   guide
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/calc
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/toascii.sed
+#	modified:   "ch1/uniop.\342\204\223hs"
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+diff --git a/.gitignore b/.gitignore
+index 6f2a8ce..5c94ea4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -3,3 +3,4 @@
+ *.o
+ *.tix
+ .hpc
++ch1/calc
+diff --git a/ch1/acme.dump b/ch1/acme.dump
+index 9819f76..0f2c95b 100644
+--- a/ch1/acme.dump
++++ b/ch1/acme.dump
+@@ -5,25 +5,27 @@
+ w Newcol Kill Putall Dump acme.dump Exit 
+ c          0 New Cut Paste Snarf Sort Zerox Delcol 
+ c          1 New Cut Paste Snarf Sort Zerox Delcol 
+-f          0          12           0           0   2.0697168 
+-         12          50        1836           0           0 /home/jdc/git/pnblic/nb/20100717 Del Snarf | Look 
+-f          0           2           0           0   4.1394336 
+-          2          50         194           1           0 /home/jdc/git/rwhaskell/ch1/ Del Snarf Get | Look 
+-f          0           3        1043        1043   6.2091503 
+-          3          54        1990           0           0 /home/jdc/git/rwhaskell/ch1/calc.ℓhs Del Snarf | Look 
+-f          0           6          49          49  96.0784314 
+-          6          62         277           0           0 /home/jdc/git/rwhaskell/ch1/toascii.sed Del Snarf Undo | Look 
+-f          0           7        2614        2614  98.1481481 
+-          7          86        3959           0           0 /home/jdc/git/rwhaskell/ch1/uniop.ℓhs Del Snarf Undo | Look 
+-F          1           0         269         283   2.0697168         283 
+-          8          46         283           0           1 /home/jdc/Dropbox/nb/+Errors Del Snarf | Look 
++f          0          10         317         349   2.0652174 
++         10          60         362           0           0 /home/jdc/git/pnblic/nb/20100805 Del Snarf Undo Redo | Look 
++f          0           2         319         330   4.1304348 
++          2          50         382           1           1 /home/jdc/git/rwhaskell/ch1/ Del Snarf Get | Look 
++f          0           3        1017        1017   6.1956522 
++          3          94        2154           0           0 /home/jdc/git/rwhaskell/ch1/calc.ℓhs Del Snarf Undo | Look 
++f          0          15         185         185   8.2608696 
++         15          62         283           0           0 /home/jdc/git/rwhaskell/ch1/toascii.sed Del Snarf Undo | Look 
++f          0           5        2925        2925  10.3260870 
++          5          71        6536           0           0 /home/jdc/git/rwhaskell/ch1/uniop.ℓhs Del Snarf Undo | Look 
++f          0          19         914         958  98.1521739 
++         19          54        2162           0           0 /home/jdc/git/rwhaskell/ch1/calc.lhs Del Snarf | Look 
++F          1           0         323         337   2.0652174         337 
++          6          55         337           0           0 /home/jdc/Dropbox/nb/+Errors Del Snarf Undo Put | Look 
+ 2192  ->          →	right arrow
+ uchar ⋁
+ ucode disjunction
+ 2228	∨	logical or, vee, disjunction
+ ucode: exit 1
+ 22C1  L|          ⋁	n-ary logical or
+-uchar ↔
++uchar ×
+ ucode implication
+ 
+ ucode: exit 1
+@@ -31,8 +33,10 @@ ucode: exit 1
+ uchar: exit 1
+ 2194  ab          ↔	left right arrow
+ uchar: exit 1
+-F          1           1         747         747   4.1394336         747 
+-          9          49         747           0           1 /home/jdc/git/pnblic/nb/+Errors Del Snarf | Look 
++00D7  mu          ×	multiplication sign
++uchar: exit 1
++F          1           1         747         747   4.1304348         747 
++          7          49         747           0           1 /home/jdc/git/pnblic/nb/+Errors Del Snarf | Look 
+ ../bin/nb
+ grep '^nb' 2010070[3-9] /dev/null | sed 's,^[^:]+: ?nb ,,' | fmt -w 1 | sort | uniq -d | fmt -w 140
+ echo 'Recent http://j.mp/pnblic: bdd blog code disqus github haskell jekyll language liquid list pages rails rspec ruby tdd test unit variable' | wc -c
+@@ -42,8 +46,8 @@ Recent http://j.mp/pnblic notes: test gitrdun lego macosx convert clojure compre
+ flip function haskell irc lambdabot
+     141
+ Recent http://j.mp/pnblic: book clang computer directory file flip function haskell irc lambdabot layout map operator programming ruby video
+-F          1           2      100390      100390   6.2091503      100390 
+-         10          62      100390           0           1 /home/jdc/git/rwhaskell/ch1/+Errors Del Snarf Undo Put | Look 
++F          1           2      144579      144579   6.1956522      144579 
++          8          62      144579           0           1 /home/jdc/git/rwhaskell/ch1/+Errors Del Snarf Undo Put | Look 
+ ghc -fhpc -o calc calc_main.lhs calc.lhs --make -fforce-recomp -XRankNTypes
+ [1 of 2] Compiling Add1             ( calc.lhs, calc.o )
+ [2 of 2] Compiling Main             ( calc_main.lhs, calc_main.o )
+@@ -2923,5 +2927,1275 @@ False ⋁ True → True
+ 4 ≥ 3.99 → True
+ 2 ≠ 3 → True
+ not True → False
+-f          1          11         339         352  80.6100218 
+-         11          56         621           0           0 /home/jdc/git/rwhaskell/ch1/guide Del Snarf Undo | Look 
++ghc -fhpc -o calc calc_main.lhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++rm -f calc.tix
++./calc
++True ⋀ False → False
++False ⋁ True → True
++1 =? 1 → True
++2 < 3 → True
++2 ≤ 3 → True
++4 ≥ 3.99 → True
++2 ≠ 3 → True
++not True → False
++sed -f toascii.sed calc.ℓhs > calc.lhs
++ghc -fhpc -o calc calc_main.lhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++
++calc.lhs:32:19: Not in scope: `__line__'
++
++calc.lhs:33:19: Not in scope: `__line__'
++
++calc.lhs:34:19: Not in scope: `__line__'
++
++calc.lhs:35:19: Not in scope: `__line__'
++
++calc.lhs:36:19: Not in scope: `__line__'
++
++calc.lhs:37:19: Not in scope: `__line__'
++
++calc.lhs:38:19: Not in scope: `__line__'
++
++calc.lhs:39:19: Not in scope: `__line__'
++
++calc.lhs:40:19: Not in scope: `__line__'
++
++calc.lhs:43:19: Not in scope: `__line__'
++
++calc.lhs:44:19: Not in scope: `__line__'
++
++calc.lhs:45:19: Not in scope: `__line__'
++
++calc.lhs:46:19: Not in scope: `__line__'
++
++calc.lhs:47:19: Not in scope: `__line__'
++
++calc.lhs:48:19: Not in scope: `__line__'
++
++calc.lhs:49:19: Not in scope: `__line__'
++
++calc.lhs:50:19: Not in scope: `__line__'
++
++calc.lhs:51:19: Not in scope: `__line__'
++
++calc.lhs:52:19: Not in scope: `__line__'
++
++calc.lhs:55:19: Not in scope: `__line__'
++
++calc.lhs:56:19: Not in scope: `__line__'
++
++calc.lhs:58:19: Not in scope: `__line__'
++
++calc.lhs:59:19: Not in scope: `__line__'
++
++calc.lhs:60:19: Not in scope: `__line__'
++
++calc.lhs:61:19: Not in scope: `__line__'
++
++calc.lhs:62:19: Not in scope: `__line__'
++
++calc.lhs:63:19: Not in scope: `__line__'
++
++calc.lhs:66:19: Not in scope: `__line__'
++
++calc.lhs:73:19: Not in scope: `__line__'
++
++calc.lhs:74:19: Not in scope: `__line__'
++
++calc.lhs:75:19: Not in scope: `__line__'
++
++calc.lhs:76:19: Not in scope: `__line__'
++
++calc.lhs:77:19: Not in scope: `__line__'
++
++calc.lhs:80:19: Not in scope: `__line__'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++sed -f toascii.sed calc.ℓhs > calc.lhs
++ghc -fhpc -o calc calc_main.lhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++rm -f calc.tix
++./calc
++calc.lhs:55:True ⋀ False → False
++calc.lhs:56:False ⋁ True → True
++calc.lhs:58:1 =? 1 → True
++calc.lhs:59:2 < 3 → True
++calc.lhs:60:2 ≤ 3 → True
++calc.lhs:61:4 ≥ 3.99 → True
++calc.lhs:62:2 ≠ 3 → True
++calc.lhs:63:not True → False
++sed -f toascii.sed calc.ℓhs > calc.lhs
++ghc -fhpc -o calc calc_main.lhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++rm -f calc.tix
++./calc
++calc.lhs:55: True ⋀ False → False
++calc.lhs:56: False ⋁ True → True
++calc.lhs:58: 1 =? 1 → True
++calc.lhs:59: 2 < 3 → True
++calc.lhs:60: 2 ≤ 3 → True
++calc.lhs:61: 4 ≥ 3.99 → True
++calc.lhs:62: 2 ≠ 3 → True
++calc.lhs:63: not True → False
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:58: 1 =? 1 → True
++calc.ℓhs:59: 2 < 3 → True
++calc.ℓhs:60: 2 ≤ 3 → True
++calc.ℓhs:61: 4 ≥ 3.99 → True
++calc.ℓhs:62: 2 ≠ 3 → True
++calc.ℓhs:63: not True → False
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:101:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 * 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 * 37)) → -478
++calc.ℓhs:39: 2*3 → 6
++calc.ℓhs:40: 2*(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 * 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:58: 1 =? 1 → True
++calc.ℓhs:59: 2 < 3 → True
++calc.ℓhs:60: 2 ≤ 3 → True
++calc.ℓhs:61: 4 ≥ 3.99 → True
++calc.ℓhs:62: 2 ≠ 3 → True
++calc.ℓhs:63: not True → False
++calc.ℓhs:66: exp $ (0 :+ 1) * τc → 1.0 :+ 0.0
++calc.ℓhs:73: i → 0.0 :+ 1.0
++calc.ℓhs:74: π → 3.141592653589793
++calc.ℓhs:75: τ → 6.283185307179586
++calc.ℓhs:76: ℯ → 2.718281828459045
++calc.ℓhs:77: -3 → -3
++calc.ℓhs:80: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:58: 1 =? 1 → True
++calc.ℓhs:59: 2 < 3 → True
++calc.ℓhs:60: 2 ≤ 3 → True
++calc.ℓhs:61: 4 ≥ 3.99 → True
++calc.ℓhs:62: 2 ≠ 3 → True
++calc.ℓhs:63: not True → False
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:103:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 * 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 * 37)) → -478
++calc.ℓhs:39: 2*3 → 6
++calc.ℓhs:40: 2*(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 * 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) * τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++
++
++rm calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:103:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++
++
++calc.lhs:40:58:  warning: missing terminating ' character
++
++calc.lhs:57:103:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++
++calc.lhs:40:60:  warning: missing terminating ' character
++
++calc.lhs:57:103:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 * 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 * 37)) → -478
++calc.ℓhs:39: 2*3 → 6
++calc.ℓhs:40: 2*(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 * 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) * τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++
++rm calc.lhs:40:60:  warning: missing terminating ' character
++
++calc.lhs:57:103:  warning: missing terminating ' character
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 * 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 * 37)) → -478
++calc.ℓhs:39: 2*3 → 6
++calc.ℓhs:40: 2*(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 * 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) * τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 * 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 * 37)) → -478
++calc.ℓhs:39: 2*3 → 6
++calc.ℓhs:40: 2*(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 * 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) * τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
++Loading package ghc-prim ... linking ... done.
++Loading package integer-gmp ... linking ... done.
++Loading package base ... linking ... done.
++Prelude> class (Eq a, Show a) => Num a where
++  ...
++  (*) :: a -> a -> a
++  ...
++  	-- Defined in GHC.Num
++infixl 7 *
++Prelude> Leaving GHCi.
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++
++uniop.lhs:80:8:
++    Could not deduce (Num a) from the context ()
++      arising from a use of `*' at uniop.lhs:80:8-10
++    Possible fix:
++      add (Num a) to the context of the type signature for `·'
++    In the expression: (*)
++    In the definition of `·': · = (*)
++
++uniop.lhs:84:8:
++    Could not deduce (Num a) from the context ()
++      arising from a use of `*' at uniop.lhs:84:8-10
++    Possible fix:
++      add (Num a) to the context of the type signature for `×'
++    In the expression: (*)
++    In the definition of `×': × = (*)
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
++Loading package ghc-prim ... linking ... done.
++Loading package integer-gmp ... linking ... done.
++Loading package base ... linking ... done.
++Prelude> class (Num a) => Fractional a where
++  (/) :: a -> a -> a
++  ...
++  	-- Defined in GHC.Real
++infixl 7 /
++Prelude> Leaving GHCi.
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++
++uniop.lhs:95:8:
++    Could not deduce (Fractional a) from the context (Num a)
++      arising from a use of `/' at uniop.lhs:95:8-10
++    Possible fix:
++      add (Fractional a) to the context of the type signature for `÷'
++    In the expression: (/)
++    In the definition of `÷': ÷ = (/)
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 ÷ 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 ÷ 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++cal→ True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++c.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 ÷ 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc_test.ℓhs > calc_test.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 ÷ 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_main.lhs, calc_main.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_main.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++#ghc -fhpc -o calc calc_main.ℓhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:58: 1 =? 1 → True
++calc.ℓhs:59: 2 < 3 → True
++calc.ℓhs:60: 2 ≤ 3 → True
++calc.ℓhs:61: 4 ≥ 3.99 → True
++calc.ℓhs:62: 2 ≠ 3 → True
++calc.ℓhs:63: not True → False
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:32: 2 + 2 → 4
++calc.ℓhs:33: (+) 2 2 → 4
++calc.ℓhs:34: 31337 × 101 → 3165037
++calc.ℓhs:35: 7.0 / 2.0 → 3.5
++calc.ℓhs:36: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:37: 2 + (-3) → -1
++calc.ℓhs:38: 3 + (-(13 × 37)) → -478
++calc.ℓhs:39: 2×3 → 6
++calc.ℓhs:40: 2×(-3) → -6
++calc.ℓhs:43: 6 + 3 → 9
++calc.ℓhs:44: 6 - 3 → 3
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 * 3 → 18
++calc.ℓhs:47: 6 · 3 → 18
++calc.ℓhs:48: 6 × 3 → 18
++calc.ℓhs:49: 6 / 3 → 2.0
++calc.ℓhs:50: 6 ÷ 3 → 2.0
++calc.ℓhs:51: 6 ^ 3 → 216
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:55: True ⋀ False → False
++calc.ℓhs:56: False ⋁ True → True
++calc.ℓhs:58: 1 =? 1 → True
++calc.ℓhs:59: 2 < 3 → True
++calc.ℓhs:60: 2 ≤ 3 → True
++calc.ℓhs:61: 4 ≥ 3.99 → True
++calc.ℓhs:62: 2 ≠ 3 → True
++calc.ℓhs:63: not True → False
++calc.ℓhs:66: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:73: i → 0.0 :+ 1.0
++calc.ℓhs:74: π → 3.141592653589793
++calc.ℓhs:75: τ → 6.283185307179586
++calc.ℓhs:76: ℯ → 2.718281828459045
++calc.ℓhs:77: -3 → -3
++calc.ℓhs:80: 0 → 0
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++2 + 2 → 4
++(+) 2 2 → 4
++31337 × 101 → 3165037
++7.0 / 2.0 → 3.5
++313 ^ 15 → 27112218957718876716220410905036741257
++2 + (-3) → -1
++3 + (-(13 × 37)) → -478
++2×3 → 6
++2×(-3) → -6
++6 + 3 → 9
++6 - 3 → 3
++6 - 3 → 3
++6 * 3 → 18
++6 · 3 → 18
++6 × 3 → 18
++6 / 3 → 2.0
++6 ÷ 3 → 2.0
++6 ^ 3 → 216
++6 ^ 3 → 216
++True ⋀ False → False
++False ⋁ True → True
++1 =? 1 → True
++2 < 3 → True
++2 ≤ 3 → True
++4 ≥ 3.99 → True
++2 ≠ 3 → True
++not True → False
++exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++i → 0.0 :+ 1.0
++π → 3.141592653589793
++τ → 6.283185307179586
++ℯ → 2.718281828459045
++-3 → -3
++0 → 0
++GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
++Loading package ghc-prim ... linking ... done.
++Loading package integer-gmp ... linking ... done.
++Loading package base ... linking ... done.
++Prelude> class (Eq a, Show a) => Num a where
++  ...
++  (-) :: a -> a -> a
++  ...
++  	-- Defined in GHC.Num
++infixl 6 -
++Prelude> Leaving GHCi.
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++
++calc.lhs:38:88:
++    No instance for (Num (a1 -> a1))
++      arising from the literal `2' at calc.lhs:38:88
++    Possible fix: add an instance declaration for (Num (a1 -> a1))
++    In the first argument of `(+)', namely `2'
++    In the first argument of `show', namely `(2 + (− 3))'
++    In the second argument of `(++)', namely `show (2 + (− 3))'
++
++calc.lhs:39:96:
++    No instance for (Num (a2 -> a2))
++      arising from the literal `3' at calc.lhs:39:96
++    Possible fix: add an instance declaration for (Num (a2 -> a2))
++    In the first argument of `(+)', namely `3'
++    In the first argument of `show', namely `(3 + (− (13 × 37)))'
++    In the second argument of `(++)', namely `show (3 + (− (13 × 37)))'
++
++calc.lhs:41:86:
++    No instance for (Num (a3 -> a3))
++      arising from the literal `2' at calc.lhs:41:86
++    Possible fix: add an instance declaration for (Num (a3 -> a3))
++    In the first argument of `(×)', namely `2'
++    In the first argument of `show', namely `(2 × (− 3))'
++    In the second argument of `(++)', namely `show (2 × (− 3))'
++
++calc.lhs:78:76:
++    No instance for (Show (a -> a))
++      arising from a use of `show' at calc.lhs:78:76-84
++    Possible fix: add an instance declaration for (Show (a -> a))
++    In the second argument of `(++)', namely `show (− 3)'
++    In the second argument of `(++)', namely `" \8594 " ++ show (− 3)'
++    In the second argument of `(++)', namely
++        `"\8722\&3" ++ " \8594 " ++ show (− 3)'
++mk: exit 1
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++
++uniop.lhs:108:8:
++    Could not deduce (Num a) from the context ()
++      arising from a use of `-' at uniop.lhs:108:8-10
++    Possible fix:
++      add (Num a) to the context of the type signature for `−'
++    In the expression: (-)
++    In the definition of `−': − = (-)
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++mk: exit 1
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++
++calc.lhs:38:88:
++    No instance for (Num (a1 -> a1))
++      arising from the literal `2' at calc.lhs:38:88
++    Possible fix: add an instance declaration for (Num (a1 -> a1))
++    In the first argument of `(+)', namely `2'
++    In the first argument of `show', namely `(2 + (− 3))'
++    In the second argument of `(++)', namely `show (2 + (− 3))'
++
++calc.lhs:39:96:
++    No instance for (Num (a2 -> a2))
++      arising from the literal `3' at calc.lhs:39:96
++    Possible fix: add an instance declaration for (Num (a2 -> a2))
++    In the first argument of `(+)', namely `3'
++    In the first argument of `show', namely `(3 + (− (13 × 37)))'
++    In the second argument of `(++)', namely `show (3 + (− (13 × 37)))'
++
++calc.lhs:41:86:
++    No instance for (Num (a3 -> a3))
++      arising from the literal `2' at calc.lhs:41:86
++    Possible fix: add an instance declaration for (Num (a3 -> a3))
++    In the first argument of `(×)', namely `2'
++    In the first argument of `show', namely `(2 × (− 3))'
++    In the second argument of `(++)', namely `show (2 × (− 3))'
++
++calc.lhs:78:76:
++    No instance for (Show (a -> a))
++      arising from a use of `show' at calc.lhs:78:76-84
++    Possible fix: add an instance declaration for (Show (a -> a))
++    In the second argument of `(++)', namely `show (− 3)'
++    In the second argument of `(++)', namely `" \8594 " ++ show (− 3)'
++    In the second argument of `(++)', namely
++        `"\8722\&3" ++ " \8594 " ++ show (− 3)'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++mk: exit 1
++
++
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++
++calc.lhs:38:88:
++    No instance for (Num (a1 -> a1))
++      arising from the literal `2' at calc.lhs:38:88
++    Possible fix: add an instance declaration for (Num (a1 -> a1))
++    In the first argument of `(+)', namely `2'
++    In the first argument of `show', namely `(2 + (− 3))'
++    In the second argument of `(++)', namely `show (2 + (− 3))'
++
++calc.lhs:39:96:
++    No instance for (Num (a2 -> a2))
++      arising from the literal `3' at calc.lhs:39:96
++    Possible fix: add an instance declaration for (Num (a2 -> a2))
++    In the first argument of `(+)', namely `3'
++    In the first argument of `show', namely `(3 + (− (13 × 37)))'
++    In the second argument of `(++)', namely `show (3 + (− (13 × 37)))'
++
++calc.lhs:41:86:
++    No instance for (Num (a3 -> a3))
++      arising from the literal `2' at calc.lhs:41:86
++    Possible fix: add an instance declaration for (Num (a3 -> a3))
++    In the first argument of `(×)', namely `2'
++    In the first argument of `show', namely `(2 × (− 3))'
++    In the second argument of `(++)', namely `show (2 × (− 3))'
++
++calc.lhs:78:76:
++    No instance for (Show (a -> a))
++      arising from a use of `show' at calc.lhs:78:76-84
++    Possible fix: add an instance declaration for (Show (a -> a))
++    In the second argument of `(++)', namely `show (− 3)'
++    In the second argument of `(++)', namely `" \8594 " ++ show (− 3)'
++    In the second argument of `(++)', namely
++        `"\8722\&3" ++ " \8594 " ++ show (− 3)'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
++Loading package ghc-prim ... linking ... done.
++Loading package integer-gmp ... linking ... done.
++Loading package base ... linking ... done.
++Prelude> class (Eq a, Show a) => Num a where
++  ...
++  (-) :: a -> a -> a
++  ...
++  	-- Defined in GHC.Num
++infixl 6 -
++Prelude> Leaving GHCi.
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++
++uniop.lhs:107:2: parse error on input `−'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++
++uniop.lhs:108:2:
++    Occurs check: cannot construct the infinite type: a = a -> a
++    When generalising the type(s) for `−'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++mk: exit 1
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++
++calc.lhs:38:88:
++    No instance for (Num (a1 -> a1))
++      arising from the literal `2' at calc.lhs:38:88
++    Possible fix: add an instance declaration for (Num (a1 -> a1))
++    In the first argument of `(+)', namely `2'
++    In the first argument of `show', namely `(2 + (− 3))'
++    In the second argument of `(++)', namely `show (2 + (− 3))'
++
++calc.lhs:39:96:
++    No instance for (Num (a2 -> a2))
++      arising from the literal `3' at calc.lhs:39:96
++    Possible fix: add an instance declaration for (Num (a2 -> a2))
++    In the first argument of `(+)', namely `3'
++    In the first argument of `show', namely `(3 + (− (13 × 37)))'
++    In the second argument of `(++)', namely `show (3 + (− (13 × 37)))'
++
++calc.lhs:41:86:
++    No instance for (Num (a3 -> a3))
++      arising from the literal `2' at calc.lhs:41:86
++    Possible fix: add an instance declaration for (Num (a3 -> a3))
++    In the first argument of `(×)', namely `2'
++    In the first argument of `show', namely `(2 × (− 3))'
++    In the second argument of `(++)', namely `show (2 × (− 3))'
++
++calc.lhs:78:76:
++    No instance for (Show (a -> a))
++      arising from a use of `show' at calc.lhs:78:76-84
++    Possible fix: add an instance declaration for (Show (a -> a))
++    In the second argument of `(++)', namely `show (− 3)'
++    In the second argument of `(++)', namely `" \8594 " ++ show (− 3)'
++    In the second argument of `(++)', namely
++        `"\8722\&3" ++ " \8594 " ++ show (− 3)'
++mk: ghc -fhpc -o ...  : exit status=exit(1)
++mk: exit 1
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:33: 2 + 2 → 4
++calc.ℓhs:34: (+) 2 2 → 4
++calc.ℓhs:35: 31337 × 101 → 3165037
++calc.ℓhs:36: 7.0 / 2.0 → 3.5
++calc.ℓhs:37: 313 ^ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:38: 2 + (-3) → -1
++calc.ℓhs:39: 3 + (-(13 × 37)) → -478
++calc.ℓhs:40: 2×3 → 6
++calc.ℓhs:41: 2×(-3) → -6
++calc.ℓhs:44: 6 + 3 → 9
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 − 3 → 3
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 · 3 → 18
++calc.ℓhs:49: 6 × 3 → 18
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ÷ 3 → 2.0
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:53: 6 ^ 3 → 216
++calc.ℓhs:56: True ⋀ False → False
++calc.ℓhs:57: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
++Loading package ghc-prim ... linking ... done.
++Loading package integer-gmp ... linking ... done.
++Loading package base ... linking ... done.
++Prelude> (^) :: (Num a, Integral b) => a -> b -> a 	-- Defined in GHC.Real
++infixr 8 ^
++Prelude> Leaving GHCi.
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++sed -f toascii.sed calc.ℓhs > calc.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:33: 2 + 2 → 4
++calc.ℓhs:34: (+) 2 2 → 4
++calc.ℓhs:35: 31337 × 101 → 3165037
++calc.ℓhs:36: 7.0 / 2.0 → 3.5
++calc.ℓhs:37: 313 ↑ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:38: 2 + (-3) → -1
++calc.ℓhs:39: 3 + (-(13 × 37)) → -478
++calc.ℓhs:40: 2×3 → 6
++calc.ℓhs:41: 2×(-3) → -6
++calc.ℓhs:44: 6 + 3 → 9
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 − 3 → 3
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 · 3 → 18
++calc.ℓhs:49: 6 × 3 → 18
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ÷ 3 → 2.0
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:53: 6 ↑ 3 → 216
++calc.ℓhs:56: True ⋀ False → False
++calc.ℓhs:57: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++[1 of 4] Compiling UniOp            ( uniop.lhs, uniop.o )
++[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
++[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
++[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
++Linking calc ...
++sed -f toascii.sed uniop.ℓhs > uniop.ℓhs
++ghc -fhpc -o calc calc_test.ℓhs calc.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
++rm -f calc.tix
++./calc
++calc.ℓhs:33: 2 + 2 → 4
++calc.ℓhs:34: (+) 2 2 → 4
++calc.ℓhs:35: 31337 × 101 → 3165037
++calc.ℓhs:36: 7.0 / 2.0 → 3.5
++calc.ℓhs:37: 313 ↑ 15 → 27112218957718876716220410905036741257
++calc.ℓhs:38: 2 + (-3) → -1
++calc.ℓhs:39: 3 + (-(13 × 37)) → -478
++calc.ℓhs:40: 2×3 → 6
++calc.ℓhs:41: 2×(-3) → -6
++calc.ℓhs:44: 6 + 3 → 9
++calc.ℓhs:45: 6 - 3 → 3
++calc.ℓhs:46: 6 − 3 → 3
++calc.ℓhs:47: 6 * 3 → 18
++calc.ℓhs:48: 6 · 3 → 18
++calc.ℓhs:49: 6 × 3 → 18
++calc.ℓhs:50: 6 / 3 → 2.0
++calc.ℓhs:51: 6 ÷ 3 → 2.0
++calc.ℓhs:52: 6 ^ 3 → 216
++calc.ℓhs:53: 6 ↑ 3 → 216
++calc.ℓhs:56: True ⋀ False → False
++calc.ℓhs:57: False ⋁ True → True
++calc.ℓhs:59: 1 =? 1 → True
++calc.ℓhs:60: 2 < 3 → True
++calc.ℓhs:61: 2 ≤ 3 → True
++calc.ℓhs:62: 4 ≥ 3.99 → True
++calc.ℓhs:63: 2 ≠ 3 → True
++calc.ℓhs:64: not True → False
++calc.ℓhs:67: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
++calc.ℓhs:74: i → 0.0 :+ 1.0
++calc.ℓhs:75: π → 3.141592653589793
++calc.ℓhs:76: τ → 6.283185307179586
++calc.ℓhs:77: ℯ → 2.718281828459045
++calc.ℓhs:78: -3 → -3
++calc.ℓhs:81: 0 → 0
++f          1           9         365         400  69.3478261 
++          9          56         691           0           0 /home/jdc/git/rwhaskell/ch1/guide Del Snarf Undo | Look 
+diff --git "a/ch1/calc.\342\204\223hs" "b/ch1/calc.\342\204\223hs"
+index 44f7490..bd5e01a 100644
+--- "a/ch1/calc.\342\204\223hs"
++++ "b/ch1/calc.\342\204\223hs"
+@@ -10,6 +10,7 @@ nb cpp haskell ghc option
+ nb cpp haskell define
+ 
+ > #define showExpr(e) (#e ++ " → " ++ show (e))
++> #define showExprLn(e) (__FILE__ ++ ":" ++ show __LINE__ ++ ": " ++ #e ++ " → " ++ show (e))
+ 
+ > module Shows where
+ > import Constant
+@@ -29,52 +30,52 @@ nb cpp haskell define
+ > 	boolean
+ 
+ > arithmetic ⇐ do
+-> 	putStrLn (showExpr (2 + 2))
+-> 	putStrLn (showExpr ((+) 2 2))
+-> 	putStrLn (showExpr (31337 × 101))
+-> 	putStrLn (showExpr (7.0 / 2.0))
+-> 	putStrLn (showExpr (313 ↑ 15))
+-> 	putStrLn (showExpr (2 + (−3))) — Precedence parsing error: cannot mix `+' [infixl 6] and prefix `-' [infixl 6] in the same infix expression.
+-> 	putStrLn (showExpr (3 + (−(13 × 37))))
+-> 	putStrLn (showExpr (2×3))
+-> 	putStrLn (showExpr (2×(−3))) — Not in scope: `*-'
++> 	putStrLn (showExprLn (2 + 2))
++> 	putStrLn (showExprLn ((+) 2 2))
++> 	putStrLn (showExprLn (31337 × 101))
++> 	putStrLn (showExprLn (7.0 / 2.0))
++> 	putStrLn (showExprLn (313 ↑ 15))
++> 	putStrLn (showExprLn (2 + (-3))) — Precedence parsing error: cannot mix ‘+’ [infixl 6] and prefix ‘-’ [infixl 6] in the same infix expression.
++> 	putStrLn (showExprLn (3 + (-(13 × 37))))
++> 	putStrLn (showExprLn (2×3))
++> 	putStrLn (showExprLn (2×(-3))) — Not in scope: ‘*-’
+ 
+ > arithuniops ⇐ do
+-> 	putStrLn (showExpr (6 + 3))
+-> 	putStrLn (showExpr (6 - 3))
+-> 	putStrLn (showExpr (6 − 3))
+-> 	putStrLn (showExpr (6 * 3))
+-> 	putStrLn (showExpr (6 · 3))
+-> 	putStrLn (showExpr (6 × 3))
+-> 	putStrLn (showExpr (6 / 3))
+-> 	putStrLn (showExpr (6 ÷ 3))
+-> 	putStrLn (showExpr (6 ^ 3))
+-> 	putStrLn (showExpr (6 ↑ 3))
++> 	putStrLn (showExprLn (6 + 3))
++> 	putStrLn (showExprLn (6 - 3))
++> 	putStrLn (showExprLn (6 − 3))
++> 	putStrLn (showExprLn (6 * 3))
++> 	putStrLn (showExprLn (6 · 3))
++> 	putStrLn (showExprLn (6 × 3))
++> 	putStrLn (showExprLn (6 / 3))
++> 	putStrLn (showExprLn (6 ÷ 3))
++> 	putStrLn (showExprLn (6 ^ 3))
++> 	putStrLn (showExprLn (6 ↑ 3))
+ 
+ > boolean ⇐ do
+-> 	putStrLn (showExpr (True ⋀ False))
+-> 	putStrLn (showExpr (False ⋁ True))
+-> 	—putStrLn (showExpr (True ⋀ 1)) — No instance for (Num Bool) arising from the literal `1'.
+-> 	putStrLn (showExpr (1 =? 1))
+-> 	putStrLn (showExpr (2 < 3))
+-> 	putStrLn (showExpr (2 ≤ 3))
+-> 	putStrLn (showExpr (4 ≥ 3.99))
+-> 	putStrLn (showExpr (2 ≠ 3))
+-> 	putStrLn (showExpr (¬True))
++> 	putStrLn (showExprLn (True ⋀ False))
++> 	putStrLn (showExprLn (False ⋁ True))
++> 	—putStrLn (showExprLn (True ⋀ 1)) — No instance for (Num Bool) arising from the literal ‘1’.
++> 	putStrLn (showExprLn (1 =? 1))
++> 	putStrLn (showExprLn (2 < 3))
++> 	putStrLn (showExprLn (2 ≤ 3))
++> 	putStrLn (showExprLn (4 ≥ 3.99))
++> 	putStrLn (showExprLn (2 ≠ 3))
++> 	putStrLn (showExprLn (¬True))
+ 
+ > complex ⇐ do
+-> 	putStrLn (showExpr (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
++> 	putStrLn (showExprLn (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
+ 
+ τ won't be complex unless its pi is so expressed.
+ 
+ > τc ⇐ 2·(pi :: Complex CReal)
+ 
+ > constant ⇐ do
+-> 	putStrLn (showExpr (i))
+-> 	putStrLn (showExpr (π))
+-> 	putStrLn (showExpr (τ))
+-> 	putStrLn (showExpr (ℯ))
+-> 	putStrLn (showExpr (−3))
++> 	putStrLn (showExprLn (i))
++> 	putStrLn (showExprLn (π))
++> 	putStrLn (showExprLn (τ))
++> 	putStrLn (showExprLn (ℯ))
++> 	putStrLn (showExprLn (-3))
+ 
+ > zero ⇐ do
+-> 	putStrLn (showExpr (0))
++> 	putStrLn (showExprLn (0))
+diff --git "a/ch1/calc_test.\342\204\223hs" "b/ch1/calc_test.\342\204\223hs"
+index 8085b91..297063b 100644
+--- "a/ch1/calc_test.\342\204\223hs"
++++ "b/ch1/calc_test.\342\204\223hs"
+@@ -4,4 +4,3 @@
+ 
+ > main = do
+ > 	pastShows
+-> 	lastShow
+diff --git a/ch1/guide b/ch1/guide
+index d1892eb..7fa46fb 100644
+--- a/ch1/guide
++++ b/ch1/guide
+@@ -1,5 +1,5 @@
+ /home/jdc/Dropbox/nb/guide
+-/home/jdc/git/pnblic/nb/20100717
++New /home/jdc/git/pnblic/nb/20100805
+ cabal update
+ $ cabal install cabal-install --dry-run 
+ cabal install simple-reflect --dry-run 
+@@ -7,15 +7,16 @@ cabal install numbers --dry-run
+ cp ../qctest/add1.ℓhs calc.ℓhs
+ file:///usr/share/doc/libghc6-parsec3-doc/html/index.html
+ http://hackage.haskell.org/package/simple-reflect
+-mk calc.main
+-mk calc.test
++mk calc.main | sed 's,\.lhs,.ℓhs,'
++mk calc.test | sed 's,\.lhs,.ℓhs,'
+ mk calc.hpc
+ mk cpprint
+ touch *.ℓhs
++|sed 's,`,‘,g;s,'',’,g'
+ |sort|uniq
+ 
+ ghci <<EOF
+-:info not
++:info ^
+ EOF
+ 
+ Eight, sir; seven, sir; six, sir; five, sir; four, sir; three, sir; two, sir; one! [beat] Tenser, said the Tensor. Tenser, said the Tensor. Tension, apprehension, and dissension have begun. [beat]
+\ No newline at end of file
+diff --git a/ch1/toascii.sed b/ch1/toascii.sed
+index 0e8b7b8..c871ee0 100644
+--- a/ch1/toascii.sed
++++ b/ch1/toascii.sed
+@@ -1,13 +1,13 @@
+ #s,=\?,==,g
+ s,²,[2],g
+ s,³,[3],g
+-s,·,*,g
++#s,·,*,g
+ s,¹,[1],g
+-s,×,*,g
+-s,÷,/,g
++#s,×,*,g
++#s,÷,/,g
+ s,λ,\\,g
+ s,—,--,g
+-s,’,',g
++#s,’,',g
+ s,′,',g
+ s,⁰,[0],g
+ s,⁴,[4],g
+@@ -17,11 +17,11 @@ s,⁷,[7],g
+ s,⁸,[8],g
+ s,⁹,[9],g
+ #s,←,<-,g
+-s,↑,^,g
++#s,↑,^,g
+ #s,→,->,g
+ s,⇐,=,g
+ #s,⇒,=>,g
+-s,−,-,g
++#s,−,-,g
+ #s,≠,/=,g
+ s,⊥,_|_,g
+ #s,⋀,\&\&,g
+diff --git "a/ch1/uniop.\342\204\223hs" "b/ch1/uniop.\342\204\223hs"
+index 30209f3..38ac63c 100644
+--- "a/ch1/uniop.\342\204\223hs"
++++ "b/ch1/uniop.\342\204\223hs"
+@@ -66,6 +66,64 @@ execute the statement following".¹
+ > (=?) = (==)
+ > infix 4 =?
+ 
++Multiplication is often written using the multiplication sign "×" … in
++infix notation.  ….  Multiplication is sometimes denoted by either a
++middle dot "·" or a period.  ….  The asterisk (as in 5*2) is often used
++in programming languages because it appears on every keyboard ….  This
++usage originated in the FORTRAN programming language.¹
++ ¹ http://en.wikipedia.org/wiki/Multiply#Notation_and_terminology
++
++> (·) :: (Num a) ⇒ a → a → a
++> (·) = (*)
++> infixl 7 ·
++
++> (×) :: (Num a) ⇒ a → a → a
++> (×) = (*)
++> infixl 7 ×
++
++The obelus was first used as a symbol for division in 1659 in the algebra
++book /Teutsche Algebra/ by Johann Rahn.  Some think that John Pell, who
++edited the book, may have been responsible for this use of the symbol.
++The obelus had been used by some writers to represent subtraction,
++and that usage continued in some parts of Europe (including Norway and,
++until fairly recently, Denmark).  ….  The obelus is used primarily as a
++symbol for division (as on a calculator) and as an operator in
++elementary arithmetic.  ….  In the Unicode character set, the obelus is
++known as the “division sign” and has the code point U+00F7.¹
++ ¹ http://en.wikipedia.org/wiki/Obelus
++
++> (÷) :: (Fractional a) ⇒ a → a → a
++> (÷) = (/)
++> infixl 7 ÷
++
++In expressions such as a^{b}, the notation for exponentiation is usually
++to write the exponent b as a superscript to the base number a.  But many
++environments—such as programming languages and plain-text e-mail—do not
++support such two-dimensional layout.  People have adopted the linear
++notation a↑b for such environments; the up-arrow suggests 'raising to
++the power of'.  If the character set doesn't contain an up arrow, the
++caret ^ is used instead.  The superscript notation a^{b} doesn't lend
++itself well to generalization, which explains why Knuth chose to work
++from the inline notation a↑b instead.¹
++ ¹ http://en.wikipedia.org/wiki/Knuth's_up-arrow_notation
++
++> (↑) :: (Num a, Integral b) => a -> b -> a
++> (↑) = (^)
++> infixr 8 ↑
++
++The Unicode minus sign is designed to be the same length and height as
++the plus and equals signs.  In most fonts these are the same width as
++digits in order to facilitate the alignment of numbers in tables.  The
++hyphen-minus sign (-) is the ASCII version of the minus sign, and
++doubles as a hyphen.  It is usually shorter in length than the plus sign
++and sometimes at a different height.  It can be used as a substitute for
++the true minus sign when the character set is limited to ASCII.¹
++ ¹ http://en.wikipedia.org/wiki/Minus#Character_codes
++
++> (−) :: (Num a) ⇒ a -> a -> a
++> (−) = (-)
++> infixl 6 −
++
+ In print ≠, meaning not equal to, tests the negated equivalence of two values.¹
+  ¹ http://en.wikipedia.org/wiki/Relational_operator
+ 
+diff --git a/guide b/guide
+index 9649d0c..23125a7 100644
+--- a/guide
++++ b/guide
+@@ -1,7 +1,7 @@
+ /home/jdc/Dropbox/nb
+ git mv README README.md
+ git status
+-git commit -a -m 'quickcheck tests and chapter 1 setup'
++git commit -a -m 'ghc -XUnicodeSyntax provides a few operators which don''t work as defined operators.'
+ git push origin master
+ http://haskell.org/haskellwiki/How_to_write_a_Haskell_program
+ |fmt -w 62 |sed 's,$, ,'
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/toascii.sed
+#	modified:   "ch1/uniop.\342\204\223hs"
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+f          1           5          45          56  83.9130435 
+          5          52         226           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 

@@ -1,7 +1,8 @@
 /home/jdc/Dropbox/nb
 git mv README README.md
 git status
-git commit -a -m 'quickcheck tests and chapter 1 setup'
+git diff
+git commit -a -m 'Add − ↑ ÷ × and · to uniop.ℓhs.'
 git push origin master
 http://haskell.org/haskellwiki/How_to_write_a_Haskell_program
 |fmt -w 62 |sed 's,$, ,'

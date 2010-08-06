@@ -10,6 +10,7 @@ nb cpp haskell ghc option
 nb cpp haskell define
 
 > #define showExpr(e) (#e ++ " → " ++ show (e))
+> #define showExprLn(e) (__FILE__ ++ ":" ++ show __LINE__ ++ ": " ++ #e ++ " → " ++ show (e))
 
 > module Shows where
 > import Constant
@@ -29,52 +30,52 @@ nb cpp haskell define
 > 	boolean
 
 > arithmetic ⇐ do
-> 	putStrLn (showExpr (2 + 2))
-> 	putStrLn (showExpr ((+) 2 2))
-> 	putStrLn (showExpr (31337 × 101))
-> 	putStrLn (showExpr (7.0 / 2.0))
-> 	putStrLn (showExpr (313 ↑ 15))
-> 	putStrLn (showExpr (2 + (−3))) — Precedence parsing error: cannot mix `+' [infixl 6] and prefix `-' [infixl 6] in the same infix expression.
-> 	putStrLn (showExpr (3 + (−(13 × 37))))
-> 	putStrLn (showExpr (2×3))
-> 	putStrLn (showExpr (2×(−3))) — Not in scope: `*-'
+> 	putStrLn (showExprLn (2 + 2))
+> 	putStrLn (showExprLn ((+) 2 2))
+> 	putStrLn (showExprLn (31337 × 101))
+> 	putStrLn (showExprLn (7.0 / 2.0))
+> 	putStrLn (showExprLn (313 ↑ 15))
+> 	putStrLn (showExprLn (2 + (-3))) — Precedence parsing error: cannot mix ‘+’ [infixl 6] and prefix ‘-’ [infixl 6] in the same infix expression.
+> 	putStrLn (showExprLn (3 + (-(13 × 37))))
+> 	putStrLn (showExprLn (2×3))
+> 	putStrLn (showExprLn (2×(-3))) — Not in scope: ‘*-’
 
 > arithuniops ⇐ do
-> 	putStrLn (showExpr (6 + 3))
-> 	putStrLn (showExpr (6 - 3))
-> 	putStrLn (showExpr (6 − 3))
-> 	putStrLn (showExpr (6 * 3))
-> 	putStrLn (showExpr (6 · 3))
-> 	putStrLn (showExpr (6 × 3))
-> 	putStrLn (showExpr (6 / 3))
-> 	putStrLn (showExpr (6 ÷ 3))
-> 	putStrLn (showExpr (6 ^ 3))
-> 	putStrLn (showExpr (6 ↑ 3))
+> 	putStrLn (showExprLn (6 + 3))
+> 	putStrLn (showExprLn (6 - 3))
+> 	putStrLn (showExprLn (6 − 3))
+> 	putStrLn (showExprLn (6 * 3))
+> 	putStrLn (showExprLn (6 · 3))
+> 	putStrLn (showExprLn (6 × 3))
+> 	putStrLn (showExprLn (6 / 3))
+> 	putStrLn (showExprLn (6 ÷ 3))
+> 	putStrLn (showExprLn (6 ^ 3))
+> 	putStrLn (showExprLn (6 ↑ 3))
 
 > boolean ⇐ do
-> 	putStrLn (showExpr (True ⋀ False))
-> 	putStrLn (showExpr (False ⋁ True))
-> 	—putStrLn (showExpr (True ⋀ 1)) — No instance for (Num Bool) arising from the literal `1'.
-> 	putStrLn (showExpr (1 =? 1))
-> 	putStrLn (showExpr (2 < 3))
-> 	putStrLn (showExpr (2 ≤ 3))
-> 	putStrLn (showExpr (4 ≥ 3.99))
-> 	putStrLn (showExpr (2 ≠ 3))
-> 	putStrLn (showExpr (¬True))
+> 	putStrLn (showExprLn (True ⋀ False))
+> 	putStrLn (showExprLn (False ⋁ True))
+> 	—putStrLn (showExprLn (True ⋀ 1)) — No instance for (Num Bool) arising from the literal ‘1’.
+> 	putStrLn (showExprLn (1 =? 1))
+> 	putStrLn (showExprLn (2 < 3))
+> 	putStrLn (showExprLn (2 ≤ 3))
+> 	putStrLn (showExprLn (4 ≥ 3.99))
+> 	putStrLn (showExprLn (2 ≠ 3))
+> 	putStrLn (showExprLn (¬True))
 
 > complex ⇐ do
-> 	putStrLn (showExpr (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
+> 	putStrLn (showExprLn (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
 
 τ won't be complex unless its pi is so expressed.
 
 > τc ⇐ 2·(pi :: Complex CReal)
 
 > constant ⇐ do
-> 	putStrLn (showExpr (i))
-> 	putStrLn (showExpr (π))
-> 	putStrLn (showExpr (τ))
-> 	putStrLn (showExpr (ℯ))
-> 	putStrLn (showExpr (−3))
+> 	putStrLn (showExprLn (i))
+> 	putStrLn (showExprLn (π))
+> 	putStrLn (showExprLn (τ))
+> 	putStrLn (showExprLn (ℯ))
+> 	putStrLn (showExprLn (-3))
 
 > zero ⇐ do
-> 	putStrLn (showExpr (0))
+> 	putStrLn (showExprLn (0))
