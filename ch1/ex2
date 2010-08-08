@@ -1,0 +1,7 @@
+ghci <<EOF
+:? -- ghci help
+let x = 1
+:show bindings
+EOF
+
+# x :: Integer = _

@@ -7,8 +7,8 @@ c          0 New Cut Paste Snarf Sort Zerox Delcol
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0652174 
           1          46          66           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
-f          0           6          35          35   7.9347826 
-          6          57          35           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
+f          0           2         115         115   6.0869565 
+          2          57         115           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
 F          1           0         492         565   2.0652174         565 
           3          25         565           0           1 +Errors Del Snarf | Look 
 can't open /home/jdc/git/rwhaskell/qctest/ensorcel: No such file or directory
@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1       63121       63121   4.1304348       63121 
-          4          58       63121           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
+F          1           1       68799       68799   4.1304348       68799 
+          4          58       68799           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -1755,5 +1755,192 @@ no changes added to commit (use "git add" and/or "git commit -a")
  rewrite "ch1/calc.\342\204\223hs" (67%)
 To git@github.com:catenate/rwhaskell.git
    d072f27..a7428ed  master -> master
-f          1           5          65         139  83.9130435 
-          5          52         226           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    "ch1/uniop.\342\204\223hs" -> "ch1/UnicodeOperators.\342\204\223hs"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_main.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   "ch1/constant.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	rm ch1/calc_main ch1/calc_test ch1/chars ch1/lines ch1/list_main ch1/list_test ch1/words
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    "ch1/uniop.\342\204\223hs" -> "ch1/UnicodeOperators.\342\204\223hs"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_main.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   "ch1/constant.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/ex1
+#	ch1/ex2
+#	"ch1/list.\342\204\223hs"
+#	"ch1/list_main.\342\204\223hs"
+#	"ch1/list_test.\342\204\223hs"
+#	ch1/quux.txt
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    "ch1/uniop.\342\204\223hs" -> "ch1/UnicodeOperators.\342\204\223hs"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_main.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   "ch1/constant.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/chars.lhs
+#	ch1/ex1
+#	ch1/ex2
+#	ch1/lines.lhs
+#	"ch1/list.\342\204\223hs"
+#	"ch1/list_main.\342\204\223hs"
+#	"ch1/list_test.\342\204\223hs"
+#	ch1/quux.txt
+#	ch1/words.lhs
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	renamed:    "ch1/uniop.\342\204\223hs" -> "ch1/UnicodeOperators.\342\204\223hs"
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_main.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   "ch1/constant.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/chars.lhs
+#	ch1/ex1
+#	ch1/ex2
+#	ch1/lines.lhs
+#	"ch1/list.\342\204\223hs"
+#	"ch1/list_main.\342\204\223hs"
+#	"ch1/list_test.\342\204\223hs"
+#	ch1/quux.txt
+#	ch1/words.lhs
+[master 7aa5608] Finish chapter 1 for the book club.
+ 11 files changed, 3517 insertions(+), 4432 deletions(-)
+ create mode 100644 "ch1/UnicodeOperators.\342\204\223hs"
+ rewrite ch1/acme.dump (92%)
+ rewrite ch1/mkfile (75%)
+ delete mode 100644 "ch1/uniop.\342\204\223hs"
+To git@github.com:catenate/rwhaskell.git
+   a7428ed..7aa5608  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   guide
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/chars.lhs
+#	ch1/ex1
+#	ch1/ex2
+#	ch1/lines.lhs
+#	"ch1/list.\342\204\223hs"
+#	"ch1/list_main.\342\204\223hs"
+#	"ch1/list_test.\342\204\223hs"
+#	ch1/quux.txt
+#	ch1/words.lhs
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   acme.dump
+#	new file:   ch1/chars.lhs
+#	new file:   ch1/ex1
+#	new file:   ch1/ex2
+#	new file:   ch1/lines.lhs
+#	new file:   "ch1/list.\342\204\223hs"
+#	new file:   "ch1/list_main.\342\204\223hs"
+#	new file:   "ch1/list_test.\342\204\223hs"
+#	new file:   ch1/quux.txt
+#	new file:   ch1/words.lhs
+#	modified:   guide
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   acme.dump
+#	new file:   ch1/chars.lhs
+#	new file:   ch1/ex1
+#	new file:   ch1/ex2
+#	new file:   ch1/lines.lhs
+#	new file:   "ch1/list.\342\204\223hs"
+#	new file:   "ch1/list_main.\342\204\223hs"
+#	new file:   "ch1/list_test.\342\204\223hs"
+#	new file:   ch1/quux.txt
+#	new file:   ch1/words.lhs
+#	modified:   guide
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#
+f          1           5         142         153  76.5217391 
+          5          52         241           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 

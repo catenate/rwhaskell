@@ -1,0 +1,66 @@
+> {-# LANGUAGE CPP #-}
+> {-# OPTIONS_GHC -pgmP /usr/bin/cpp #-}
+
+> #define showExpr(e) (#e ++ " → " ++ show (e))
+> #define showExprLn(e) (__FILE__ ++ ":" ++ show __LINE__ ++ ": " ++ #e ++ " → " ++ show (e))
+
+> module Shows where
+
+> pastShows ⇐ do
+> 	catenation
+> 	construction
+> 	enumeration
+> 	nothing
+> 	strings
+> 	types
+
+> lastShow ⇐ do
+> 	strings
+
+> catenation ⇐ do
+> 	putStrLn (showExprLn (([3,1,3] ++ [3,7])))
+> 	putStrLn (showExprLn (([] ++ [False,True] ++ [True])))
+> 	putStrLn (showExprLn (("foo" ++ "bar")))
+
+> construction ⇐ do
+> 	putStrLn (showExprLn ((1 : [2,3])))
+> 	putStrLn (showExprLn ((1 : [])))
+> 	—putStrLn (showExprLn (([1,2] : 3))) — Possible fix: add an instance declaration for (Num [[t]])
+> 	putStrLn (showExprLn (('a' : "bc")))
+
+> enumeration ⇐ do
+> 	putStrLn (showExprLn (([1..10])))
+> 	—putStrLn (showExprLn ((["foo".."quux"]))) — Possible fix: add an instance declaration for (Enum [Char])
+> 	putStrLn (showExprLn (([1.0, 1.25 .. 2.0])))
+> 	putStrLn (showExprLn (([1, 4 .. 15])))
+> 	putStrLn (showExprLn (([10, 9 .. 1])))
+> 	putStrLn (showExprLn (([10 .. 1]))) — []
+> 	putStrLn (showExprLn (([1.0 .. 1.8]))) — [1.0,2.0]
+
+> nothing ⇐ do
+> 	putStrLn (showExprLn ([]::[String]))
+> 	putStrLn (showExprLn ([]::[[Char]]))
+> 	putStrLn (showExprLn (""))
+> 	putStrLn ""
+
+> strings ⇐ do
+> 	putStrLn (showExprLn ("This is a string.")) — show is idempotent on strings
+> 	putStrLn (showExprLn ('\n'))
+> 	putStrLn (showExprLn ('\t'))
+> 	putStrLn (showExprLn ("a\n\tb"))
+> 	putStrLn "a\n\tb"
+> 	putStrLn (showExprLn (['a']))
+> 	putStrLn ['a']
+> 	putStrLn (showExprLn ("\tb"))
+> 	putStrLn "\tb"
+> 	putStrLn (showExprLn ("\\n"))
+> 	putStrLn (showExprLn ("\\tb"))
+> 	putStrLn "\\tb"
+
+CPP macro expansion assumes any , within the outer () are meant for it,
+so hide them one level deeper.
+
+> types ⇐ do
+> 	putStrLn (showExprLn (([1, 2, 3])))
+> 	putStrLn (showExprLn ((["foo", "bar", "baz", "quux", "fnord", "xyzzy"])))
+> 	—putStrLn (showExprLn (([True, False, "testing"]))) — Couldn’t match expected type ‘Bool’ against inferred type ‘[Char]’
