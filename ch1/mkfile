@@ -1,37 +1,37 @@
 <|./ensorcel
-LHS = ${SLHS_ALL:%.ℓhs=%.lhs}
-ELF = ${SLHS_ALL:%.ℓhs=%}
+LHS = ${SLHS:%.ℓhs=%.lhs}
+ELF = ${SLHS:%.ℓhs=%}
 
 %.lhs: %.ℓhs
 	sed -f toascii.sed $stem.ℓhs > $stem.lhs
 
 #%: %.lhs
-#	ghc -o $stem $stem.lhs -XUnicodeSyntax 2>&1 | sed 's,\.lhs,.ℓhs,'
+#	ghc -o $stem $stem.lhs 2>&1 | sed 's,\.lhs,.ℓhs,'
 
-%_main: constant.lhs
+lines: lines.lhs
+	ghc -o $target $prereq 2>&1
 
-%_main: uniop.lhs
+words: words.lhs
+	ghc -o $target $prereq 2>&1
 
-%_main: %.lhs
+chars: chars.lhs
+	ghc -o $target $prereq 2>&1
 
-%_main: %_main.lhs
-	ghc -fhpc -o $stem ${stem}_main.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
-	#ghc -fhpc -o $stem ${stem}_main.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
+calc_main: calc_main.lhs calc.lhs constant.lhs UnicodeOperators.lhs
+	ghc -fhpc -o $target $prereq --make -fforce-recomp -XRankNTypes
 
-%.main: %_main
-	rm -f $stem.tix
-	./$stem
+list_main: list_main.lhs list.lhs
+	ghc -fhpc -o $target $prereq --make -fforce-recomp
 
-%_test: constant.lhs
+calc_test: calc_test.lhs calc.lhs constant.lhs UnicodeOperators.lhs
+	ghc -fhpc -o $target $prereq --make -fforce-recomp -XRankNTypes
 
-%_test: uniop.lhs
+list_test: list_test.lhs list.lhs
+	ghc -fhpc -o $target $prereq --make -fforce-recomp
 
 %_test: %.lhs
 
-%_test: %_test.lhs
-	ghc -fhpc -o $stem ${stem}_test.lhs $stem.lhs constant.lhs uniop.lhs --make -fforce-recomp -XRankNTypes -XUnicodeSyntax
-
-%.test: %_test
+%.run:V: %
 	rm -f $stem.tix
 	./$stem
 
@@ -39,7 +39,8 @@ ELF = ${SLHS_ALL:%.ℓhs=%}
 	hpc markup $stem --exclude=QC
 
 clean:QV:
-	rm -f *.lhs *.hi *.o
+	rm -f $LHS *.hi *.o *.tix
+	rm -f -r .hpc
 
 distclean:QV: clean
 	rm -f $ELF

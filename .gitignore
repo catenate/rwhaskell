@@ -1,6 +1,12 @@
 *.hi
-*.lhs
 *.o
 *.tix
 .hpc
 ch1/calc
+ch1/calc_main
+ch1/calc_test
+ch1/chars
+ch1/lines
+ch1/list_main
+ch1/list_test
+ch1/words

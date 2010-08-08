@@ -16,7 +16,8 @@ nb cpp haskell define
 > import Constant
 > import Data.Complex
 > import Data.Number.CReal
-> import UniOp
+> import Data.Ratio
+> import UnicodeOperators
 
 > pastShows ⇐ do
 > 	arithmetic
@@ -24,17 +25,20 @@ nb cpp haskell define
 > 	boolean
 > 	complex
 > 	constant
+> 	exponentiation
+> 	precedence
+> 	rational
 > 	zero
 
 > lastShow ⇐ do
-> 	boolean
+> 	rational
 
 > arithmetic ⇐ do
 > 	putStrLn (showExprLn (2 + 2))
 > 	putStrLn (showExprLn ((+) 2 2))
 > 	putStrLn (showExprLn (31337 × 101))
 > 	putStrLn (showExprLn (7.0 / 2.0))
-> 	putStrLn (showExprLn (313 ↑ 15))
+> 	putStrLn (showExprLn (313 ↥ 15))
 > 	putStrLn (showExprLn (2 + (-3))) — Precedence parsing error: cannot mix ‘+’ [infixl 6] and prefix ‘-’ [infixl 6] in the same infix expression.
 > 	putStrLn (showExprLn (3 + (-(13 × 37))))
 > 	putStrLn (showExprLn (2×3))
@@ -50,7 +54,7 @@ nb cpp haskell define
 > 	putStrLn (showExprLn (6 / 3))
 > 	putStrLn (showExprLn (6 ÷ 3))
 > 	putStrLn (showExprLn (6 ^ 3))
-> 	putStrLn (showExprLn (6 ↑ 3))
+> 	putStrLn (showExprLn (7 ↥ 80))
 
 > boolean ⇐ do
 > 	putStrLn (showExprLn (True ⋀ False))
@@ -66,6 +70,7 @@ nb cpp haskell define
 > complex ⇐ do
 > 	putStrLn (showExprLn (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
 
+nb τ tau complex haskell notation constant
 τ won't be complex unless its pi is so expressed.
 
 > τc ⇐ 2·(pi :: Complex CReal)
@@ -76,6 +81,27 @@ nb cpp haskell define
 > 	putStrLn (showExprLn (τ))
 > 	putStrLn (showExprLn (ℯ))
 > 	putStrLn (showExprLn (-3))
+
+> exponentiation ⇐ do
+> 	putStrLn (showExprLn (6 ↥ 3))
+> 	putStrLn (showExprLn (3 ↥↥ 2))
+> 	putStrLn (showExprLn (3 ↥↥ 3))
+> 	putStrLn (showExprLn (3 ↥↥↥ 2))
+> 	putStrLn (showExprLn (2 ↥ 16))
+> 	putStrLn (showExprLn (2 ↥↥ 4))
+> 	putStrLn (showExprLn (2 ↥↥↥ 3))
+> 	putStrLn (showExprLn ((ℯ ↑ π) − π))
+> 	putStrLn (showExprLn ((ℯ ↑ τ) − τ))
+> 	putStrLn (showExprLn (9 ↑ 0.5))
+
+> precedence ⇐ do
+> 	putStrLn (showExprLn (1 + (4 * 4)))
+> 	putStrLn (showExprLn (1 + 4 * 4))
+
+> rational ⇐ do
+> 	putStrLn (showExprLn (11 % 29))
+> 	—putStrLn (showExprLn (3.14 % 8)) — `Fractional t' arising from the literal `3.14'
+> 	—putStrLn (showExprLn (1.2 % 3.4)) — `Fractional t1' arising from the literal `1.2'
 
 > zero ⇐ do
 > 	putStrLn (showExprLn (0))

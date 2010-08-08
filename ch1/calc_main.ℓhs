@@ -1,6 +1,6 @@
 > import Constant
 > import Shows
-> import UniOp
+> import UnicodeOperators
 
 > main = do
 > 	lastShow

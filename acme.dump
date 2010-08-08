@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1       62363       62363   4.1304348       62363 
-          4          58       62363           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
+F          1           1       63121       63121   4.1304348       63121 
+          4          58       63121           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -1734,5 +1734,26 @@ index 9649d0c..23125a7 100644
 #	modified:   guide
 #
 no changes added to commit (use "git add" and/or "git commit -a")
-f          1           5          45          56  83.9130435 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#	modified:   "ch1/calc_test.\342\204\223hs"
+#	modified:   ch1/guide
+#	modified:   ch1/toascii.sed
+#	modified:   "ch1/uniop.\342\204\223hs"
+#	modified:   guide
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+[master a7428ed] Add − ↑ ÷ × and · to uniop.ℓhs.
+ 9 files changed, 3119 insertions(+), 121 deletions(-)
+ rewrite "ch1/calc.\342\204\223hs" (67%)
+To git@github.com:catenate/rwhaskell.git
+   d072f27..a7428ed  master -> master
+f          1           5          65         139  83.9130435 
           5          52         226           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 

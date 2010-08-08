@@ -1,6 +1,7 @@
 > module Constant where
 > import Data.Complex
 > import Data.Number.CReal
+> import UnicodeOperators
 
 nb i imaginary complex number haskell notation constant
 
@@ -10,7 +11,7 @@ nb π pi haskell notation constant
 
 > π ⇐ pi
 
-nb τ tau haskell notation constant
+nb τ tau haskell notation constant real
 
 > τ ⇐ 2·π
 
