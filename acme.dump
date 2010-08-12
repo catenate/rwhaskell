@@ -6,9 +6,9 @@ w Newcol Kill Putall Dump acme.dump Exit
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0652174 
-          1          46          66           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
-f          0           2         115         115   6.0869565 
-          2          57         115           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
+          1          46          74           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
+f          0           2         125         125   4.1304348 
+          2          57         125           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
 F          1           0         492         565   2.0652174         565 
           3          25         565           0           1 +Errors Del Snarf | Look 
 can't open /home/jdc/git/rwhaskell/qctest/ensorcel: No such file or directory
@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1       68799       68799   4.1304348       68799 
-          4          58       68799           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
+F          1           1       71034       71034   4.1304348       71034 
+          4          58       71034           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -1942,5 +1942,76 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #
 #	modified:   guide
 #
-f          1           5         142         153  76.5217391 
-          5          52         241           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 
+[master 441746e] Finish chapter 1 for the book club.
+ 11 files changed, 318 insertions(+), 10 deletions(-)
+ create mode 100644 ch1/chars.lhs
+ create mode 100755 ch1/ex1
+ create mode 100755 ch1/ex2
+ create mode 100644 ch1/lines.lhs
+ create mode 100644 "ch1/list.\342\204\223hs"
+ create mode 100644 "ch1/list_main.\342\204\223hs"
+ create mode 100644 "ch1/list_test.\342\204\223hs"
+ create mode 100644 ch1/quux.txt
+ create mode 100644 ch1/words.lhs
+To git@github.com:catenate/rwhaskell.git
+   7aa5608..441746e  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/UnicodeOperators.lhs
+#	ch1/calc.lhs
+#	ch1/calc_test.lhs
+#	ch1/constant.lhs
+#	ch2/
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	modified:   "ch1/calc.\342\204\223hs"
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch1/UnicodeOperators.lhs
+#	ch1/calc.lhs
+#	ch1/calc_test.lhs
+#	ch1/constant.lhs
+#	ch2/
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	new file:   ch1/UnicodeOperators.lhs
+#	modified:   "ch1/UnicodeOperators.\342\204\223hs"
+#	modified:   ch1/acme.dump
+#	new file:   ch1/calc.lhs
+#	modified:   "ch1/calc.\342\204\223hs"
+#	new file:   ch1/calc_test.lhs
+#	new file:   ch1/constant.lhs
+#	new file:   ch2/Unicoper.hs
+#	new file:   ch2/acme.dump
+#	new file:   ch2/guide
+#	new file:   ch2/mkfile
+#	new file:   ch2/types.lhs
+#
+f          1           5         142         153  70.9782609 
+          5          47         241           0           0 /home/jdc/git/rwhaskell/guide Del Snarf | Look 

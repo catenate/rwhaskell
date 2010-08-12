@@ -19,7 +19,7 @@ nb cpp haskell define
 > import Data.Ratio
 > import UnicodeOperators
 
-> pastShows ⇐ do
+> pastShows = do
 > 	arithmetic
 > 	arithuniops
 > 	boolean
@@ -30,21 +30,21 @@ nb cpp haskell define
 > 	rational
 > 	zero
 
-> lastShow ⇐ do
+> lastShow = do
 > 	rational
 
-> arithmetic ⇐ do
+> arithmetic = do
 > 	putStrLn (showExprLn (2 + 2))
 > 	putStrLn (showExprLn ((+) 2 2))
 > 	putStrLn (showExprLn (31337 × 101))
 > 	putStrLn (showExprLn (7.0 / 2.0))
 > 	putStrLn (showExprLn (313 ↥ 15))
-> 	putStrLn (showExprLn (2 + (-3))) — Precedence parsing error: cannot mix ‘+’ [infixl 6] and prefix ‘-’ [infixl 6] in the same infix expression.
+> 	putStrLn (showExprLn (2 + (-3))) -- Precedence parsing error: cannot mix ‘+’ [infixl 6] and prefix ‘-’ [infixl 6] in the same infix expression.
 > 	putStrLn (showExprLn (3 + (-(13 × 37))))
 > 	putStrLn (showExprLn (2×3))
-> 	putStrLn (showExprLn (2×(-3))) — Not in scope: ‘*-’
+> 	putStrLn (showExprLn (2×(-3))) -- Not in scope: ‘*-’
 
-> arithuniops ⇐ do
+> arithuniops = do
 > 	putStrLn (showExprLn (6 + 3))
 > 	putStrLn (showExprLn (6 - 3))
 > 	putStrLn (showExprLn (6 − 3))
@@ -56,34 +56,34 @@ nb cpp haskell define
 > 	putStrLn (showExprLn (6 ^ 3))
 > 	putStrLn (showExprLn (7 ↥ 80))
 
-> boolean ⇐ do
+> boolean = do
 > 	putStrLn (showExprLn (True ⋀ False))
 > 	putStrLn (showExprLn (False ⋁ True))
-> 	—putStrLn (showExprLn (True ⋀ 1)) — No instance for (Num Bool) arising from the literal ‘1’.
+> 	--putStrLn (showExprLn (True ⋀ 1)) -- No instance for (Num Bool) arising from the literal ‘1’.
 > 	putStrLn (showExprLn (1 =? 1))
 > 	putStrLn (showExprLn (1 ≟ 1))
 > 	putStrLn (showExprLn (2 < 3))
 > 	putStrLn (showExprLn (2 ≤ 3))
 > 	putStrLn (showExprLn (4 ≥ 3.99))
 > 	putStrLn (showExprLn (2 ≠ 3))
-> 	putStrLn (showExprLn (¬True))
+> 	putStrLn (showExprLn (not True))
 
-> complex ⇐ do
-> 	putStrLn (showExprLn (exp $ (0 :+ 1) · τc)) — e↑(i·τ) → 1+0
+> complex = do
+> 	putStrLn (showExprLn (exp $ (0 :+ 1) · τc)) -- e↑(i·τ) → 1+0
 
 nb τ tau complex haskell notation constant
 τ won't be complex unless its pi is so expressed.
 
-> τc ⇐ 2·(pi :: Complex CReal)
+> τc = 2·(pi :: Complex CReal)
 
-> constant ⇐ do
+> constant = do
 > 	putStrLn (showExprLn (i))
 > 	putStrLn (showExprLn (π))
 > 	putStrLn (showExprLn (τ))
 > 	putStrLn (showExprLn (ℯ))
 > 	putStrLn (showExprLn (-3))
 
-> exponentiation ⇐ do
+> exponentiation = do
 > 	putStrLn (showExprLn (6 ↥ 3))
 > 	putStrLn (showExprLn (3 ↥↥ 2))
 > 	putStrLn (showExprLn (3 ↥↥ 3))
@@ -95,14 +95,14 @@ nb τ tau complex haskell notation constant
 > 	putStrLn (showExprLn ((ℯ ↑ τ) − τ))
 > 	putStrLn (showExprLn (9 ↑ 0.5))
 
-> precedence ⇐ do
+> precedence = do
 > 	putStrLn (showExprLn (1 + (4 * 4)))
 > 	putStrLn (showExprLn (1 + 4 * 4))
 
-> rational ⇐ do
+> rational = do
 > 	putStrLn (showExprLn (11 % 29))
-> 	—putStrLn (showExprLn (3.14 % 8)) — `Fractional t' arising from the literal `3.14'
-> 	—putStrLn (showExprLn (1.2 % 3.4)) — `Fractional t1' arising from the literal `1.2'
+> 	--putStrLn (showExprLn (3.14 % 8)) -- `Fractional t' arising from the literal `3.14'
+> 	--putStrLn (showExprLn (1.2 % 3.4)) -- `Fractional t1' arising from the literal `1.2'
 
-> zero ⇐ do
+> zero = do
 > 	putStrLn (showExprLn (0))

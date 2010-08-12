@@ -1,0 +1,20 @@
+/home/jdc/Dropbox/nb
+mk clean
+mk types.run
+|fmt -w 72
+|sed 's,`,‘,g;s,'',’,g'
+|sort|uniq
+
+ghci <<EOF
+:info []
+EOF
+
+ghci <<EOF
+let fibs = 0 : 1 : zipWith (+) fibs (tail fibs) in fibs
+EOF
+Do all the digits from 1–9 appear with equal frequency in Fibonacci
+numbers?
+
+dc <<EOF
+16o64257p
+EOF

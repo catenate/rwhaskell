@@ -6,5 +6,5 @@ http://haskell.org/haskellwiki/How_to_write_a_Haskell_program
 
 git status
 git add .
-git commit -a -m 'Finish chapter 1 for the book club.'
+git commit -a -m 'Clean up chapter 1. Start chapter 2.'
 git push origin master

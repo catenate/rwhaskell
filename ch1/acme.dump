@@ -7,10 +7,14 @@ c          0 New Cut Paste Snarf Sort Zerox Delcol
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1         317         349   2.0652174 
           1          50         362           0           0 /home/jdc/git/pnblic/nb/20100805 Del Snarf | Look 
-f          0           2         395         395   4.1304348 
+f          0           2           0           0   4.1304348 
           2          50         395           1           0 /home/jdc/git/rwhaskell/ch1/ Del Snarf Get | Look 
+f          0           7        1689        1691   6.1956522 
+          7          62        3002           0           0 /home/jdc/git/rwhaskell/ch1/calc.ℓhs Del Snarf Undo | Look 
+f          0           8        2052        2052   8.2608696 
+          8          71        2950           0           0 /home/jdc/git/rwhaskell/ch1/UnicodeOperators.ℓhs Del Snarf Undo | Look 
 F          1           0         433         447   2.0652174         447 
-          7          46         447           0           1 /home/jdc/Dropbox/nb/+Errors Del Snarf | Look 
+          3          46         447           0           1 /home/jdc/Dropbox/nb/+Errors Del Snarf | Look 
 2192  ->          →	right arrow
 uchar ⋁
 ucode disjunction
@@ -33,7 +37,7 @@ ucode: exit 1
 21A5  _^          ↥	upwards arrow from bar
 ucode: exit 1
 F          1           1         747         747   4.1304348         747 
-          8          49         747           0           1 /home/jdc/git/pnblic/nb/+Errors Del Snarf | Look 
+          4          49         747           0           1 /home/jdc/git/pnblic/nb/+Errors Del Snarf | Look 
 ../bin/nb
 grep '^nb' 2010070[3-9] /dev/null | sed 's,^[^:]+: ?nb ,,' | fmt -w 1 | sort | uniq -d | fmt -w 140
 echo 'Recent http://j.mp/pnblic: bdd blog code disqus github haskell jekyll language liquid list pages rails rspec ruby tdd test unit variable' | wc -c
@@ -43,8 +47,8 @@ Recent http://j.mp/pnblic notes: test gitrdun lego macosx convert clojure compre
 flip function haskell irc lambdabot
     141
 Recent http://j.mp/pnblic: book clang computer directory file flip function haskell irc lambdabot layout map operator programming ruby video
-F          1           2      128416      128416   6.1956522      128416 
-          9          62      128416           0           1 /home/jdc/git/rwhaskell/ch1/+Errors Del Snarf Undo Put | Look 
+F          1           2      131009      131009   6.1956522      131009 
+          5          62      131009           0           1 /home/jdc/git/rwhaskell/ch1/+Errors Del Snarf Undo Put | Look 
 diff --git a/acme.dump b/acme.dump
 index d1cf196..4d19bbb 100644
 --- a/acme.dump
@@ -3270,5 +3274,74 @@ mk: 'chars' is up to date
 122
 rm -f UnicodeOperators.lhs calc.lhs calc_main.lhs calc_test.lhs constant.lhs cpprint.lhs exprint.lhs list.lhs list_main.lhs list_test.lhs *.hi *.o *.tix
 rm -f -r .hpc
-f          1          10         696         807  61.9565217 
-         10          56        1004           0           0 /home/jdc/git/rwhaskell/ch1/guide Del Snarf Undo | Look 
+[1 of 4] Compiling UnicodeOperators ( UnicodeOperators.lhs, UnicodeOperators.o )
+[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
+[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
+
+calc.lhs:64:87: Not in scope: `≟'
+mk: ghc -fhpc -o ...  : exit status=exit(1)
+mk: exit 1
+sed -f toascii.sed calc.ℓhs > calc.lhs
+sed -f toascii.sed calc_test.ℓhs > calc_test.lhs
+sed -f toascii.sed constant.ℓhs > constant.lhs
+sed -f toascii.sed UnicodeOperators.ℓhs > UnicodeOperators.lhs
+ghc -fhpc -o calc_test calc_test.lhs calc.lhs constant.lhs UnicodeOperators.lhs --make -fforce-recomp -XRankNTypes
+[1 of 4] Compiling UnicodeOperators ( UnicodeOperators.lhs, UnicodeOperators.o )
+[2 of 4] Compiling Constant         ( constant.lhs, constant.o )
+[3 of 4] Compiling Shows            ( calc.lhs, calc.o )
+[4 of 4] Compiling Main             ( calc_test.lhs, calc_test.o )
+Linking calc_test ...
+sed -f toascii.sed UnicodeOperators.ℓhs > UnicodeOperators.lhs
+ghc -fhpc -o calc_test calc_test.lhs calc.lhs constant.lhs UnicodeOperators.lhs --make -fforce-recomp -XRankNTypes
+rm -f calc_test.tix
+./calc_test
+calc.ℓhs:37: 2 + 2 → 4
+calc.ℓhs:38: (+) 2 2 → 4
+calc.ℓhs:39: 31337 × 101 → 3165037
+calc.ℓhs:40: 7.0 / 2.0 → 3.5
+calc.ℓhs:41: 313 ↥ 15 → 27112218957718876716220410905036741257
+calc.ℓhs:42: 2 + (-3) → -1
+calc.ℓhs:43: 3 + (-(13 × 37)) → -478
+calc.ℓhs:44: 2×3 → 6
+calc.ℓhs:45: 2×(-3) → -6
+calc.ℓhs:48: 6 + 3 → 9
+calc.ℓhs:49: 6 - 3 → 3
+calc.ℓhs:50: 6 − 3 → 3
+calc.ℓhs:51: 6 * 3 → 18
+calc.ℓhs:52: 6 · 3 → 18
+calc.ℓhs:53: 6 × 3 → 18
+calc.ℓhs:54: 6 / 3 → 2.0
+calc.ℓhs:55: 6 ÷ 3 → 2.0
+calc.ℓhs:56: 6 ^ 3 → 216
+calc.ℓhs:57: 7 ↥ 80 → 40536215597144386832065866109016673800875222251012083746192454448001
+calc.ℓhs:60: True ⋀ False → False
+calc.ℓhs:61: False ⋁ True → True
+calc.ℓhs:63: 1 =? 1 → True
+calc.ℓhs:64: 1 ≟ 1 → True
+calc.ℓhs:65: 2 < 3 → True
+calc.ℓhs:66: 2 ≤ 3 → True
+calc.ℓhs:67: 4 ≥ 3.99 → True
+calc.ℓhs:68: 2 ≠ 3 → True
+calc.ℓhs:69: not True → False
+calc.ℓhs:72: exp $ (0 :+ 1) · τc → 1.0 :+ 0.0
+calc.ℓhs:80: i → 0.0 :+ 1.0
+calc.ℓhs:81: π → 3.141592653589793
+calc.ℓhs:82: τ → 6.283185307179586
+calc.ℓhs:83: ℯ → 2.718281828459045
+calc.ℓhs:84: -3 → -3
+calc.ℓhs:87: 6 ↥ 3 → 216
+calc.ℓhs:88: 3 ↥↥ 2 → 27
+calc.ℓhs:89: 3 ↥↥ 3 → 7625597484987
+calc.ℓhs:90: 3 ↥↥↥ 2 → 7625597484987
+calc.ℓhs:91: 2 ↥ 16 → 65536
+calc.ℓhs:92: 2 ↥↥ 4 → 65536
+calc.ℓhs:93: 2 ↥↥↥ 3 → 65536
+calc.ℓhs:94: (ℯ ↑ π) − π → 19.99909997918947
+calc.ℓhs:95: (ℯ ↑ τ) − τ → 529.2084702175848
+calc.ℓhs:96: 9 ↑ 0.5 → 3.0
+calc.ℓhs:99: 1 + (4 * 4) → 17
+calc.ℓhs:100: 1 + 4 * 4 → 17
+calc.ℓhs:103: 11 % 29 → 11 % 29
+calc.ℓhs:108: 0 → 0
+f          1           6         391         432  63.8043478 
+          6          51        1004           0           0 /home/jdc/git/rwhaskell/ch1/guide Del Snarf | Look 

@@ -1,0 +1,8 @@
+%: %.lhs
+	ghc -o $stem $stem.lhs Unicoper.hs --make
+
+%.run:V: %
+	./$stem
+
+clean:QV:
+	rm -f *.hi *.o

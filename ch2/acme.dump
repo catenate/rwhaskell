@@ -1,0 +1,1393 @@
+/home/jdc/git/rwhaskell/ch2
+/usr/local/plan9/font/times/latin1.7a.font
+/usr/local/plan9/font/fixed/unicode.4x6.font
+  0.0000000  59.8437500
+w Newcol Kill Putall Dump acme.dump Exit 
+c          0 New Cut Paste Snarf Sort Zerox Delcol 
+c          1 New Cut Paste Snarf Sort Zerox Delcol 
+f          0           1          58          58   2.0652174 
+          1          50          98           1           0 /home/jdc/git/rwhaskell/ch2/ Del Snarf Get | Look 
+f          0           2         313         313   4.1304348 
+          2          84        6495           0           0 /home/jdc/git/rwhaskell/ch2/types.lhs Del Snarf Undo | Look 
+F          1           0       48729       48729   2.0652174       48729 
+          7          62       48729           0           1 /home/jdc/git/rwhaskell/ch2/+Errors Del Snarf Undo Put | Look 
+mk: don't know how to make 'type' in /home/jdc/git/rwhaskell/ch2
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:11:100:
+    No instance for (Num [Char])
+      arising from the literal `2' at types.lhs:11:100
+    Possible fix: add an instance declaration for (Num [Char])
+    In the second argument of `(+)', namely `2'
+    In the first argument of `show', namely `("foo" + 2)'
+    In the second argument of `(++)', namely `show ("foo" + 2)'
+mk: exit 1
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:15:15:  warning: missing terminating ' character
+
+types.lhs:10:10: Empty 'do' construct
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:10:10: Empty 'do' construct
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:16:102: Not in scope: `⋀'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:7:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:7:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:7:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:7:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: exit 1
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:1:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: exit 1
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs
+
+types.lhs:1:2:
+    Failed to load interface for `Unicoper':
+      Use -v to see a list of the files searched for.
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[1 of 2] Compiling Unicoper         ( Unicoper.lhs, Unicoper.o )
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:12:18: Not in scope: `showExprLn'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:12:18: Not in scope: `showExprLn'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:18:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:18:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:18:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:20:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:10:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:18:0: parse error (possibly incorrect indentation)
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:17:104:
+    Couldn't match expected type `Bool' against inferred type `[Char]'
+    In the second argument of `(⋀)', namely `"false"'
+    In the first argument of `show', namely `(True ⋀ "false")'
+    In the second argument of `(++)', namely `show (True ⋀ "false")'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:11:10: Empty 'do' construct
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:23:7: parse error on input `='
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:23:13: parse error on input `='
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:23:8: parse error on input `='
+mk: exit 1
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:23:6: parse error on input `='
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:9:8: Not in scope: `char'
+
+types.lhs:12:8: Not in scope: `characters'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:22:8:
+    No instance for (Num (m b))
+      arising from the literal `0' at types.lhs:22:8
+    Possible fix: add an instance declaration for (Num (m b))
+    In the expression: 0
+    In the expression: do { 0 }
+    In the definition of `strong': strong = do { 0 }
+
+types.lhs:25:96:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+    In the first argument of `show', namely `("foo" :: Char)'
+    In the second argument of `(++)', namely `show ("foo" :: Char)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show ("foo" :: Chamk: exit 1
+r)'
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:22:8:
+    No instance for (Num (IO b))
+      arising from the literal `0' at types.lhs:22:8
+    Possible fix: add an instance declaration for (Num (IO b))
+    In the expression: 0
+    In the expression: do { 0 }
+    In the definition of `strong': strong = do { 0 }
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:25: 'a' :: Char → 'a'
+Haskell is strong.
+unicode 
+
+
+પ
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:26:91:
+    No instance for (Num Char)
+      arising from the literal `97' at types.lhs:26:91-92
+    Possible fix: add an instance declaration for (Num Char)
+    In the first argument of `show', namely `(97 :: Char)'
+    In the second argument of `(++)', namely `show (97 :: Char)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (97 :: Char)'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+types.lhs:27: 'ﬁ' :: Char → '\64257'
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+types.lhs:27: '\226' :: Char → '\226'
+types.lhs:28: 'ﬁ' :: Char → '\64257'
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+types.lhs:27: '\226' :: Char → '\226'
+types.lhs:28: 'ﬁ' :: Char → '\64257'
+types.lhs:29: '\64257' :: Char → '\64257'
+types.lhs:30: '\xffb1' :: Char → '\65457'
+fb01
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+types.lhs:27: '\226' :: Char → '\226'
+types.lhs:28: 'ﬁ' :: Char → '\64257'
+types.lhs:29: '\64257' :: Char → '\64257'
+types.lhs:30: '\xfb01' :: Char → '\64257'
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+Haskell is strong.
+types.lhs:25: 'a' :: Char → 'a'
+types.lhs:26: 'â' :: Char → '\226'
+types.lhs:27: '\226' :: Char → '\226'
+types.lhs:28: 'ﬁ' :: Char → '\64257'
+types.lhs:29: '\64257' :: Char → '\64257'
+types.lhs:30: '\xfb01' :: Char → '\64257'
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:34: ['a'] :: String → "a"
+types.lhs:35: ['â'] :: String → "\226"
+types.lhs:36: ['\226'] :: String → "\226"
+types.lhs:37: ['ﬁ'] :: String → "\64257"
+types.lhs:38: ['\64257'] :: String → "\64257"
+types.lhs:39: ['\xfb01'] :: String → "\64257"
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:35:8:
+    Couldn't match expected type `String' against inferred type `IO ()'
+    In a stmt of a 'do' expression: putStrLn ['a'] :: String
+    In the expression:
+        do { putStrLn
+               (("types.lhs"
+               ++  ":"
+                 ++  show 34
+                   ++  ": "
+                     ++  "['a'] :: String" ++ " \8594 " ++ show (['a'] :: String)));
+               putStrLn ['a'] :: String;
+             putStrLn
+               (("types.lhs"
+               ++  ":"
+                 ++  show 36
+                   ++  ": "
+                     ++  "['\226'] :: String"
+                       ++  " \8594 " ++ show (['\226'] :: String)));
+               putStrLn ['\226'] :: String;
+             .... }
+    In the definition of `string':
+        string = do { putStrLn
+                        (("types.lhs"
+                        ++  ":"
+                          ++  show 34
+                            ++  ": "
+                              ++  "['a'] :: String" ++ " \8594 " ++ show (['a'] :: String)));
+                        putStrLn [...] :: String;
+                      putStrLn
+                        (("types.lhs"
+                        ++  ":"
+                          ++  show 36
+                            ++  ": "
+                              ++  "['mk: exit 1
+\226'] :: String"
+                                ++  " \8594 " ++ show (['\226'] :: String)));
+                      .... }
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.lhs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:34: ['a'] :: String → "a"
+a
+types.lhs:36: ['â'] :: String → "\226"
+â
+types.lhs:38: ['\226'] :: String → "\226"
+â
+types.lhs:40: ['ﬁ'] :: String → "\64257"
+ﬁ
+types.lhs:42: ['\64257'] :: String → "\64257"
+ﬁ
+types.lhs:44: ['\xfb01'] :: String → "\64257"
+ﬁ
+./types
+types.lhs:34: ['a'] :: String → "a"
+a
+types.lhs:36: ['â'] :: String → "\226"
+â
+types.lhs:38: ['\226'] :: String → "\226"
+â
+types.lhs:40: ['ﬁ'] :: String → "\64257"
+ﬁ
+types.lhs:42: ['\64257'] :: String → "\64257"
+ﬁ
+types.lhs:44: ['\xfb01'] :: String → "\64257"
+ﬁ
+ghc -o types types.lhs Unicoper.hs --make
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, Unicoper.o )
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:34: ['a'] :: String → "a"
+a
+types.lhs:36: ['â'] :: String → "\226"
+â
+types.lhs:38: ['\226'] :: String → "\226"
+â
+types.lhs:40: ['ﬁ'] :: String → "\64257"
+ﬁ
+types.lhs:42: ['\64257'] :: String → "\64257"
+ﬁ
+types.lhs:44: ['\xfb01'] :: String → "\64257"
+ﬁ
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:26:93:
+    Couldn't match expected type `Char' against inferred type `Bool'
+    In the first argument of `show', namely `(True :: Char)'
+    In the second argument of `(++)', namely `show (True :: Char)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (True :: Char)'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:26: True :: Bool → True
+types.lhs:27: False :: Bool → False
+types.lhs:28: False ⋀ False :: Bool → False
+types.lhs:29: False ⋀ True :: Bool → False
+types.lhs:30: True ⋀ False :: Bool → False
+types.lhs:31: True ⋀ True :: Bool → True
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:26: True :: Bool → True
+types.lhs:27: False :: Bool → False
+types.lhs:28: False ⋀ False :: Bool → False
+types.lhs:29: False ⋀ True :: Bool → False
+types.lhs:30: True ⋀ False :: Bool → False
+types.lhs:31: True ⋀ True :: Bool → True
+types.lhs:32: False ⋁ False :: Bool → False
+types.lhs:33: False ⋁ True :: Bool → True
+types.lhs:34: True ⋁ False :: Bool → True
+types.lhs:35: True ⋁ True :: Bool → True
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:65:92:
+    No instance for (Floating Int)
+      arising from a use of `↑' at types.lhs:65:92-95
+    Possible fix: add an instance declaration for (Floating Int)
+    In the first argument of `show', namely `(2 ↑ 32 :: Int)'
+    In the second argument of `(++)', namely `show (2 ↑ 32 :: Int)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (2 ↑ 32 :: Int)'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:27: True :: Bool → True
+types.lhs:28: False :: Bool → False
+types.lhs:29: False ⋀ False :: Bool → False
+types.lhs:30: False ⋀ True :: Bool → False
+types.lhs:31: True ⋀ False :: Bool → False
+types.lhs:32: True ⋀ True :: Bool → True
+types.lhs:33: False ⋁ False :: Bool → False
+types.lhs:34: False ⋁ True :: Bool → True
+types.lhs:35: True ⋁ False :: Bool → True
+types.lhs:36: True ⋁ True :: Bool → True
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥32 − 1 :: Int → 4294967295
+types.lhs:42: 2↥32 :: Int → 4294967296
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥32 − 1 :: Int → 4294967295
+types.lhs:42: 2↥32 :: Int → 4294967296
+types.lhs:43: 2↥64 − 1 :: Int → -1
+types.lhs:44: 2↥64 :: Int → 0
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥16 − 2 :: Int → 65534
+types.lhs:42: 2↥16 − 1 :: Int → 65535
+types.lhs:43: 2↥16 :: Int → 65536
+types.lhs:44: 2↥16 + 1 :: Int → 65537
+types.lhs:45: 2↥16 + 2 :: Int → 65538
+types.lhs:46: 2↥32 − 2 :: Int → 4294967294
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥32 + 1 :: Int → 4294967297
+types.lhs:50: 2↥32 + 2 :: Int → 4294967298
+types.lhs:51: 2↥64 − 2 :: Int → -2
+types.lhs:52: 2↥64 − 1 :: Int → -1
+types.lhs:53: 2↥64 :: Int → 0
+types.lhs:54: 2↥64 + 1 :: Int → 1
+types.lhs:55: 2↥64 + 2 :: Int → 2
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:50:96:
+    No instance for (Fractional Int)
+      arising from a use of `/' at types.lhs:50:96-103
+    Possible fix: add an instance declaration for (Fractional Int)
+    In the first argument of `show', namely `(2 ↥ 64 / 2 :: Int)'
+    In the second argument of `(++)', namely `show (2 ↥ 64 / 2 :: Int)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (2 ↥ 64 / 2 :: Int)'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:53:88: Not in scope: `isInt32'
+
+types.lhs:54:88: Not in scope: `isInt64'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+types.lhs:53: isInt32 → False
+types.lhs:54: isInt64 → False
+types.lhs:55: isInt128 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:57:24:
+    Illegal operator `<' in type `Int < 0'
+      Use -XTypeOperators to allow operators in types
+
+types.lhs:57:26: Only unit numeric type pattern is valid
+
+types.lhs:59:24:
+    Illegal operator `<' in type `Int < 0'
+      Use -XTypeOperators to allow operators in types
+
+types.lhs:59:26: Only unit numeric type pattern is valid
+
+types.lhs:61:26:
+    Illegal operator `<' in type `Int < 0'
+      Use -XTypeOperators to allow operators in types
+
+types.lhs:61:28: Only unit numeric type pattern is valid
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+types.lhs:53: isInt32 → False
+types.lhs:54: isInt64 → True
+types.lhs:55: isInt128 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+types.lhs:53: 2↥127 − 1 :: Int → -1
+types.lhs:54: 2↥127 :: Int → 0
+types.lhs:55: isInt32 → False
+types.lhs:56: isInt64 → True
+types.lhs:57: isInt128 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+types.lhs:53: 2↥127 − 1 :: Int → -1
+types.lhs:54: 2↥127 :: Int → 0
+types.lhs:55: 2↥255 − 1 :: Int → -1
+types.lhs:56: 2↥255 :: Int → 0
+types.lhs:57: isInt32 → False
+types.lhs:58: isInt64 → True
+types.lhs:59: isInt128 → False
+types.lhs:60: isInt256 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥15 − 1 :: Int → 32767
+types.lhs:42: 2↥15 :: Int → 32768
+types.lhs:43: 2↥16 − 1 :: Int → 65535
+types.lhs:44: 2↥16 :: Int → 65536
+types.lhs:45: 2↥31 − 1 :: Int → 2147483647
+types.lhs:46: 2↥31 :: Int → 2147483648
+types.lhs:47: 2↥32 − 1 :: Int → 4294967295
+types.lhs:48: 2↥32 :: Int → 4294967296
+types.lhs:49: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:50: 2↥63 :: Int → -9223372036854775808
+types.lhs:51: 2↥64 − 1 :: Int → -1
+types.lhs:52: 2↥64 :: Int → 0
+types.lhs:53: 2↥127 − 1 :: Int → -1
+types.lhs:54: 2↥127 :: Int → 0
+types.lhs:55: 2↥255 − 1 :: Int → -1
+types.lhs:56: 2↥255 :: Int → 0
+types.lhs:57: isInt8 → False
+types.lhs:58: isInt16 → False
+types.lhs:59: isInt32 → False
+types.lhs:60: isInt64 → True
+types.lhs:61: isInt128 → False
+types.lhs:62: isInt256 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:38: 0 :: Int → 0
+types.lhs:39: 1 :: Int → 1
+types.lhs:40: -1 :: Int → -1
+types.lhs:41: 2↥7 − 1 :: Int → 127
+types.lhs:42: 2↥7 :: Int → 128
+types.lhs:43: 2↥8 − 1 :: Int → 255
+types.lhs:44: 2↥8 :: Int → 256
+types.lhs:45: 2↥15 − 1 :: Int → 32767
+types.lhs:46: 2↥15 :: Int → 32768
+types.lhs:47: 2↥16 − 1 :: Int → 65535
+types.lhs:48: 2↥16 :: Int → 65536
+types.lhs:49: 2↥31 − 1 :: Int → 2147483647
+types.lhs:50: 2↥31 :: Int → 2147483648
+types.lhs:51: 2↥32 − 1 :: Int → 4294967295
+types.lhs:52: 2↥32 :: Int → 4294967296
+types.lhs:53: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:54: 2↥63 :: Int → -9223372036854775808
+types.lhs:55: 2↥64 − 1 :: Int → -1
+types.lhs:56: 2↥64 :: Int → 0
+types.lhs:57: 2↥127 − 1 :: Int → -1
+types.lhs:58: 2↥127 :: Int → 0
+types.lhs:59: 2↥255 − 1 :: Int → -1
+types.lhs:60: 2↥255 :: Int → 0
+types.lhs:61: isInt8 → False
+types.lhs:62: isInt16 → False
+types.lhs:63: isInt32 → False
+types.lhs:64: isInt64 → True
+types.lhs:65: isInt128 → False
+types.lhs:66: isInt256 → False
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:120: 2↥63 − 1 :: Int → 9223372036854775807
+types.lhs:121: 2↥63 :: Int → -9223372036854775808
+types.lhs:122: 2↥64 − 1 :: Int → -1
+types.lhs:123: 2↥64 :: Int → 0
+types.lhs:124: 2↥127 − 1 :: Int → -1
+types.lhs:125: 2↥127 :: Int → 0
+types.lhs:126: 2↥255 − 1 :: Int → -1
+types.lhs:127: 2↥255 :: Int → 0
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:120: 2↥63 − 1 :: Integer → 9223372036854775807
+types.lhs:121: 2↥63 :: Integer → 9223372036854775808
+types.lhs:122: 2↥64 − 1 :: Integer → 18446744073709551615
+types.lhs:123: 2↥64 :: Integer → 18446744073709551616
+types.lhs:124: 2↥127 − 1 :: Integer → 170141183460469231731687303715884105727
+types.lhs:125: 2↥127 :: Integer → 170141183460469231731687303715884105728
+types.lhs:126: 2↥255 − 1 :: Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819967
+types.lhs:127: 2↥255 :: Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819968
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:42: 0 :: Double → 0.0
+types.lhs:43: 1 :: Double → 1.0
+types.lhs:44: -1 :: Double → -1.0
+types.lhs:45: 2↑7 − 1 :: Double → 127.0
+types.lhs:46: 2↑7 :: Double → 128.0
+types.lhs:47: 2↑8 − 1 :: Double → 255.0
+types.lhs:48: 2↑8 :: Double → 256.0
+types.lhs:49: 2↑15 − 1 :: Double → 32767.0
+types.lhs:50: 2↑15 :: Double → 32768.0
+types.lhs:51: 2↑16 − 1 :: Double → 65535.0
+types.lhs:52: 2↑16 :: Double → 65536.0
+types.lhs:53: 2↑31 − 1 :: Double → 2.147483647e9
+types.lhs:54: 2↑31 :: Double → 2.147483648e9
+types.lhs:55: 2↑32 − 1 :: Double → 4.294967295e9
+types.lhs:56: 2↑32 :: Double → 4.294967296e9
+types.lhs:57: 2↑63 − 1 :: Double → 9.223372036854776e18
+types.lhs:58: 2↑63 :: Double → 9.223372036854776e18
+types.lhs:59: 2↑64 − 1 :: Double → 1.8446744073709552e19
+types.lhs:60: 2↑64 :: Double → 1.8446744073709552e19
+types.lhs:61: 2↑127 − 1 :: Double → 1.7014118346046924e38
+types.lhs:62: 2↑127 :: Double → 1.7014118346046924e38
+types.lhs:63: 2↑255 − 1 :: Double → 5.78960446186581e76
+types.lhs:64: 2↑255 :: Double → 5.78960446186581e76
+ghc -o types types.lhs Unicoper.hs --make
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, Unicoper.o )
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:22:97: Not in scope: `∷'
+
+types.lhs:22:99: Not in scope: data constructor `Bool'
+
+types.lhs:23:99: Not in scope: `∷'
+
+types.lhs:23:101: Not in scope: data constructor `Bool'
+
+types.lhs:24:115: Not in scope: `∷'
+
+types.lhs:24:117: Not in scope: data constructor `Bool'
+
+types.lhs:25:113: Not in scope: `∷'
+
+types.lhs:25:115: Not in scope: data constructor `Bool'
+
+types.lhs:26:113: Not in scope: `∷'
+
+types.lhs:26:115: Not in scope: data constructor `Bool'
+
+types.lhs:27:111: Not in scope: `∷'
+
+types.lhs:27:113: Not in scope: data constructor `Bool'
+
+types.lhs:28:115: Not in scope: `∷'
+
+types.lhs:28:117: Not in scope: data constructor `Bool'
+
+types.lhs:29:113: Not in scope: `∷'
+
+types.lhs:29:115: Not in scope: data constructor `Bool'
+
+types.lhs:30:113: Not in scope: `∷'
+
+types.lhs:30:115: Not in scope: data constructor `Bool'
+
+types.lhs:31:111: Not in scope: `∷'
+
+types.lhs:31:113: Not in scope: data constructor `Bool'
+
+types.lhs:34:95: Not in scope: `∷'
+
+types.lhs:34:97: Not in scope: data constructor `Char'
+
+types.lhs:35:95: Not in scope: `∷'
+
+types.lhs:35:97: Not in scope: data constructor `Char'
+
+types.lhs:36:102: Not in scope: `∷'
+
+types.lhs:36:104: Not in scope: data constructor `Char'
+
+types.lhs:37:95: Not in scope: `∷'
+
+types.lhs:37:97: Not in scope: data constructor `Char'
+
+types.lhs:38:106: Not in scope: `∷'
+
+types.lhs:38:108: Not in scope: data constructor `Char'
+
+types.lhs:39:106: Not in scope: `∷'
+
+types.lhs:39:108: Not in scope: data constructor `Char'
+
+types.lhs:42:93: Not in scope: `∷'
+
+types.lhs:42:95: Not in scope: data constructor `Double'
+
+types.lhs:43:93: Not in scope: `∷'
+
+types.lhs:43:95: Not in scope: data constructor `Double'
+
+types.lhs:44:95: Not in scope: `∷'
+
+types.lhs:44:97: Not in scope: data constructor `Double'
+
+types.lhs:45:105: Not in scope: `∷'
+
+types.lhs:45:107: Not in scope: data constructor `Double'
+
+types.lhs:46:97: Not in scope: `∷'
+
+types.lhs:46:99: Not in scope: data constructor `Double'
+
+types.lhs:47:105: Not in scope: `∷'
+
+types.lhs:47:107: Not in scope: data constructor `Double'
+
+types.lhs:48:97: Not in scope: `∷'
+
+types.lhs:48:99: Not in scope: data constructor `Double'
+
+types.lhs:49:107: Not in scope: `∷'
+
+types.lhs:49:109: Not in scope: data constructor `Double'
+
+types.lhs:50:99: Not in scope: `∷'
+
+types.lhs:50:101: Not in scope: data constructor `Double'
+
+types.lhs:51:107: Not in scope: `∷'
+
+types.lhs:51:109: Not in scope: data constructor `Double'
+
+types.lhs:52:99: Not in scope: `∷'
+
+types.lhs:52:101: Not in scope: data constructor `Double'
+
+types.lhs:53:107: Not in scope: `∷'
+
+types.lhs:53:109: Not in scope: data constructor `Double'
+
+types.lhs:54:99: Not in scope: `∷'
+
+types.lhs:54:101: Not in scope: data constructor `Double'
+
+types.lhs:55:107: Not in scope: `∷'
+
+types.lhs:55:109: Not in scope: data constructor `Double'
+
+types.lhs:56:99: Not in scope: `∷'
+
+types.lhs:56:101: Not in scope: data constructor `Double'
+
+types.lhs:57:107: Not in scope: `∷'
+
+types.lhs:57:109: Not in scope: data constructor `Double'
+
+types.lhs:58:99: Not in scope: `∷'
+
+types.lhs:58:101: Not in scope: data constructor `Double'
+
+types.lhs:59:107: Not in scope: `∷'
+
+types.lhs:59:109: Not in scope: data constructor `Double'
+
+types.lhs:60:99: Not in scope: `∷'
+
+types.lhs:60:101: Not in scope: data constructor `Double'
+
+types.lhs:61:109: Not in scope: `∷'
+
+types.lhs:61:111: Not in scope: data constructor `Double'
+
+types.lhs:62:101: Not in scope: `∷'
+
+types.lhs:62:103: Not in scope: data constructor `Double'
+
+types.lhs:63:109: Not in scope: `∷'
+
+types.lhs:63:111: Not in scope: data constructor `Double'
+
+types.lhs:64:101: Not in scope: `∷'
+
+types.lhs:64:103: Not in scope: data constructor `Double'
+
+types.lhs:67:90: Not in scope: `∷'
+
+types.lhs:67:92: Not in scope: data constructor `Int'
+
+types.lhs:68:90: Not in scope: `∷'
+
+types.lhs:68:92: Not in scope: data constructor `Int'
+
+types.lhs:69:92: Not in scope: `∷'
+
+types.lhs:69:94: Not in scope: data constructor `Int'
+
+types.lhs:70:102: Not in scope: `∷'
+
+types.lhs:70:104: Not in scope: data constructor `Int'
+
+types.lhs:71:94: Not in scope: `∷'
+
+types.lhs:71:96: Not in scope: data constructor `Int'
+
+types.lhs:72:102: Not in scope: `∷'
+
+types.lhs:72:104: Not in scope: data constructor `Int'
+
+types.lhs:73:94: Not in scope: `∷'
+
+types.lhs:73:96: Not in scope: data constructor `Int'
+
+types.lhs:74:104: Not in scope: `∷'
+
+types.lhs:74:106: Not in scope: data constructor `Int'
+
+types.lhs:75:96: Not in scope: `∷'
+
+types.lhs:75:98: Not in scope: data constructor `Int'
+
+types.lhs:76:104: Not in scope: `∷'
+
+types.lhs:76:106: Not in scope: data constructor `Int'
+
+types.lhs:77:96: Not in scope: `∷'
+
+types.lhs:77:98: Not in scope: data constructor `Int'
+
+types.lhs:78:104: Not in scope: `∷'
+
+types.lhs:78:106: Not in scope: data constructor `Int'
+
+types.lhs:79:96: Not in scope: `∷'
+
+types.lhs:79:98: Not in scope: data constructor `Int'
+
+types.lhs:80:104: Not in scope: `∷'
+
+types.lhs:80:106: Not in scope: data constructor `Int'
+
+types.lhs:81:96: Not in scope: `∷'
+
+types.lhs:81:98: Not in scope: data constructor `Int'
+
+types.lhs:82:104: Not in scope: `∷'
+
+types.lhs:82:106: Not in scope: data constructor `Int'
+
+types.lhs:83:96: Not in scope: `∷'
+
+types.lhs:83:98: Not in scope: data constructor `Int'
+
+types.lhs:84:104: Not in scope: `∷'
+
+types.lhs:84:106: Not in scope: data constructor `Int'
+
+types.lhs:85:96: Not in scope: `∷'
+
+types.lhs:85:98: Not in scope: data constructor `Int'
+
+types.lhs:86:106: Not in scope: `∷'
+
+types.lhs:86:108: Not in scope: data constructor `Int'
+
+types.lhs:87:98: Not in scope: `∷'
+
+types.lhs:87:100: Not in scope: data constructor `Int'
+
+types.lhs:88:106: Not in scope: `∷'
+
+types.lhs:88:108: Not in scope: data constructor `Int'
+
+types.lhs:89:98: Not in scope: `∷'
+
+types.lhs:89:100: Not in scope: data constructor `Int'
+
+types.lhs:114:16: Not in scope: `∷'
+
+types.lhs:114:18: Not in scope: data constructor `Int'
+
+types.lhs:116:18: Not in scope: `∷'
+
+types.lhs:116:20: Not in scope: data constructor `Int'
+
+types.lhs:118:18: Not in scope: `∷'
+
+types.lhs:118:20: Not in scope: data constructor `Int'
+
+types.lhs:120:18: Not in scope: `∷'
+
+types.lhs:120:20: Not in scope: data constructor `Int'
+
+types.lhs:122:20: Not in scope: `∷'
+
+types.lhs:122:22: Not in scope: data constructor `Int'
+
+types.lhs:124:20: Not in scope: `∷'
+
+types.lhs:124:22: Not in scope: data constructor `Int'
+
+types.lhs:148:109: Not in scope: `∷'
+
+types.lhs:148:111: Not in scope: data constructor `Integer'
+
+types.lhs:149:101: Not in scope: `∷'
+
+types.lhs:149:103: Not in scope: data constructor `Integer'
+
+types.lhs:150:109: Not in scope: `∷'
+
+types.lhs:150:111: Not in scope: data constructor `Integer'
+
+types.lhs:151:101: Not in scope: `∷'
+
+types.lhs:151:103: Not in scope: data constructor `Integer'
+
+types.lhs:152:111: Not in scope: `∷'
+
+types.lhs:152:113: Not in scope: data constructor `Integer'
+
+types.lhs:153:103: Not in scope: `∷'
+
+types.lhs:153:105: Not in scope: data constructor `Integer'
+
+types.lhs:154:111: Not in scope: `∷'
+
+types.lhs:154:113: Not in scope: data constructor `Integer'
+
+types.lhs:155:103: Not in scope: `∷'
+
+types.lhs:155:105: Not in scope: data constructor `Integer'
+
+types.lhs:158:102: Not in scope: `∷'
+
+types.lhs:158:104: Not in scope: data constructor `String'
+
+types.lhs:159:24: Not in scope: `∷'
+
+types.lhs:159:26: Not in scope: data constructor `String'
+
+types.lhs:160:102: Not in scope: `∷'
+
+types.lhs:160:104: Not in scope: data constructor `String'
+
+types.lhs:161:24: Not in scope: `∷'
+
+types.lhs:161:26: Not in scope: data constructor `String'
+
+types.lhs:162:109: Not in scope: `∷'
+
+types.lhs:162:111: Not in scope: data constructor `String'
+
+types.lhs:163:27: Not in scope: `∷'
+
+types.lhs:163:29: Not in scope: data constructor `String'
+
+types.lhs:164:102: Not in scope: `∷'
+
+types.lhs:164:104: Not in scope: data constructor `String'
+
+types.lhs:165:24: Not in scope: `∷'
+
+types.lhs:165:26: Not in scope: data constructor `String'
+
+types.lhs:166:113: Not in scope: `∷'
+
+types.lhs:166:115: Not in scope: data constructor `String'
+
+types.lhs:167:29: Not in scope: `∷'
+
+types.lhs:167:31: Not in scope: data constructor `String'
+
+types.lhs:168:113: Not in scope: `∷'
+
+types.lhs:168:115: Not in scope: data constructor `String'
+
+types.lhs:169:29: Not in scope: `∷'
+
+types.lhs:169:31: Not in scope: data constructor `String'
+mk: exit 1
+mk: ghc -o types ...  : exit status=exit(1)
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:43: 0 ∷ Double → 0.0
+types.lhs:44: 1 ∷ Double → 1.0
+types.lhs:45: -1 ∷ Double → -1.0
+types.lhs:46: 2↑7 − 1 ∷ Double → 127.0
+types.lhs:47: 2↑7 ∷ Double → 128.0
+types.lhs:48: 2↑8 − 1 ∷ Double → 255.0
+types.lhs:49: 2↑8 ∷ Double → 256.0
+types.lhs:50: 2↑15 − 1 ∷ Double → 32767.0
+types.lhs:51: 2↑15 ∷ Double → 32768.0
+types.lhs:52: 2↑16 − 1 ∷ Double → 65535.0
+types.lhs:53: 2↑16 ∷ Double → 65536.0
+types.lhs:54: 2↑31 − 1 ∷ Double → 2.147483647e9
+types.lhs:55: 2↑31 ∷ Double → 2.147483648e9
+types.lhs:56: 2↑32 − 1 ∷ Double → 4.294967295e9
+types.lhs:57: 2↑32 ∷ Double → 4.294967296e9
+types.lhs:58: 2↑63 − 1 ∷ Double → 9.223372036854776e18
+types.lhs:59: 2↑63 ∷ Double → 9.223372036854776e18
+types.lhs:60: 2↑64 − 1 ∷ Double → 1.8446744073709552e19
+types.lhs:61: 2↑64 ∷ Double → 1.8446744073709552e19
+types.lhs:62: 2↑127 − 1 ∷ Double → 1.7014118346046924e38
+types.lhs:63: 2↑127 ∷ Double → 1.7014118346046924e38
+types.lhs:64: 2↑255 − 1 ∷ Double → 5.78960446186581e76
+types.lhs:65: 2↑255 ∷ Double → 5.78960446186581e76
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:44: 0 ∷ Double → 0.0
+types.lhs:45: 1 ∷ Double → 1.0
+types.lhs:46: -1 ∷ Double → -1.0
+types.lhs:47: 2↑7 − 1 ∷ Double → 127.0
+types.lhs:48: 2↑7 ∷ Double → 128.0
+types.lhs:49: 2↑8 − 1 ∷ Double → 255.0
+types.lhs:50: 2↑8 ∷ Double → 256.0
+types.lhs:51: 2↑15 − 1 ∷ Double → 32767.0
+types.lhs:52: 2↑15 ∷ Double → 32768.0
+types.lhs:53: 2↑16 − 1 ∷ Double → 65535.0
+types.lhs:54: 2↑16 ∷ Double → 65536.0
+types.lhs:55: 2↑31 − 1 ∷ Double → 2.147483647e9
+types.lhs:56: 2↑31 ∷ Double → 2.147483648e9
+types.lhs:57: 2↑32 − 1 ∷ Double → 4.294967295e9
+types.lhs:58: 2↑32 ∷ Double → 4.294967296e9
+types.lhs:59: 2↑63 − 1 ∷ Double → 9.223372036854776e18
+types.lhs:60: 2↑63 ∷ Double → 9.223372036854776e18
+types.lhs:61: 2↑64 − 1 ∷ Double → 1.8446744073709552e19
+types.lhs:62: 2↑64 ∷ Double → 1.8446744073709552e19
+types.lhs:63: 2↑127 − 1 ∷ Double → 1.7014118346046924e38
+types.lhs:64: 2↑127 ∷ Double → 1.7014118346046924e38
+types.lhs:65: 2↑255 − 1 ∷ Double → 5.78960446186581e76
+types.lhs:66: 2↑255 ∷ Double → 5.78960446186581e76
+ghc -o types types.lhs Unicoper.hs --make
+
+types.lhs:180:46:
+     error: macro "showExprLn" passed 3 arguments, but takes just 1
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+
+types.lhs:180:98:
+    Couldn't match expected type `Int' against inferred type `[a]'
+    In the first argument of `show', namely `(([1, 2, 3] :: Int))'
+    In the second argument of `(++)', namely
+        `show (([1, 2, 3] :: Int))'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (([1, 2, 3] :: Int))'
+mk: ghc -o types ...  : exit status=exit(1)
+mk: exit 1
+ghc -o types types.lhs Unicoper.hs --make
+
+types.lhs:180:117:  warning: missing terminating ' character
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:24: True ∷ Bool → True
+types.lhs:25: False ∷ Bool → False
+types.lhs:26: False ⋀ False ∷ Bool → False
+types.lhs:27: False ⋀ True ∷ Bool → False
+types.lhs:28: True ⋀ False ∷ Bool → False
+types.lhs:29: True ⋀ True ∷ Bool → True
+types.lhs:30: False ⋁ False ∷ Bool → False
+types.lhs:31: False ⋁ True ∷ Bool → True
+types.lhs:32: True ⋁ False ∷ Bool → True
+types.lhs:33: True ⋁ True ∷ Bool → True
+types.lhs:36: 'a' ∷ Char → 'a'
+types.lhs:37: 'â' ∷ Char → '\226'
+types.lhs:38: '\226' ∷ Char → '\226'
+types.lhs:39: 'ﬁ' ∷ Char → '\64257'
+types.lhs:40: '\64257' ∷ Char → '\64257'
+types.lhs:41: '\xfb01' ∷ Char → '\64257'
+types.lhs:44: 0 ∷ Double → 0.0
+types.lhs:45: 1 ∷ Double → 1.0
+types.lhs:46: -1 ∷ Double → -1.0
+types.lhs:47: 2↑7 − 1 ∷ Double → 127.0
+types.lhs:48: 2↑7 ∷ Double → 128.0
+types.lhs:49: 2↑8 − 1 ∷ Double → 255.0
+types.lhs:50: 2↑8 ∷ Double → 256.0
+types.lhs:51: 2↑15 − 1 ∷ Double → 32767.0
+types.lhs:52: 2↑15 ∷ Double → 32768.0
+types.lhs:53: 2↑16 − 1 ∷ Double → 65535.0
+types.lhs:54: 2↑16 ∷ Double → 65536.0
+types.lhs:55: 2↑31 − 1 ∷ Double → 2.147483647e9
+types.lhs:56: 2↑31 ∷ Double → 2.147483648e9
+types.lhs:57: 2↑32 − 1 ∷ Double → 4.294967295e9
+types.lhs:58: 2↑32 ∷ Double → 4.294967296e9
+types.lhs:59: 2↑63 − 1 ∷ Double → 9.223372036854776e18
+types.lhs:60: 2↑63 ∷ Double → 9.223372036854776e18
+types.lhs:61: 2↑64 − 1 ∷ Double → 1.8446744073709552e19
+types.lhs:62: 2↑64 ∷ Double → 1.8446744073709552e19
+types.lhs:63: 2↑127 − 1 ∷ Double → 1.7014118346046924e38
+types.lhs:64: 2↑127 ∷ Double → 1.7014118346046924e38
+types.lhs:65: 2↑255 − 1 ∷ Double → 5.78960446186581e76
+types.lhs:66: 2↑255 ∷ Double → 5.78960446186581e76
+types.lhs:69: 0 ∷ Int → 0
+types.lhs:70: 1 ∷ Int → 1
+types.lhs:71: -1 ∷ Int → -1
+types.lhs:72: 2↥7 − 1 ∷ Int → 127
+types.lhs:73: 2↥7 ∷ Int → 128
+types.lhs:74: 2↥8 − 1 ∷ Int → 255
+types.lhs:75: 2↥8 ∷ Int → 256
+types.lhs:76: 2↥15 − 1 ∷ Int → 32767
+types.lhs:77: 2↥15 ∷ Int → 32768
+types.lhs:78: 2↥16 − 1 ∷ Int → 65535
+types.lhs:79: 2↥16 ∷ Int → 65536
+types.lhs:80: 2↥31 − 1 ∷ Int → 2147483647
+types.lhs:81: 2↥31 ∷ Int → 2147483648
+types.lhs:82: 2↥32 − 1 ∷ Int → 4294967295
+types.lhs:83: 2↥32 ∷ Int → 4294967296
+types.lhs:84: 2↥63 − 1 ∷ Int → 9223372036854775807
+types.lhs:85: 2↥63 ∷ Int → -9223372036854775808
+types.lhs:86: 2↥64 − 1 ∷ Int → -1
+types.lhs:87: 2↥64 ∷ Int → 0
+types.lhs:88: 2↥127 − 1 ∷ Int → -1
+types.lhs:89: 2↥127 ∷ Int → 0
+types.lhs:90: 2↥255 − 1 ∷ Int → -1
+types.lhs:91: 2↥255 ∷ Int → 0
+types.lhs:92: isInt8 → False
+types.lhs:93: isInt16 → False
+types.lhs:94: isInt32 → False
+types.lhs:95: isInt64 → True
+types.lhs:96: isInt128 → False
+types.lhs:97: isInt256 → False
+types.lhs:150: 2↥63 − 1 ∷ Integer → 9223372036854775807
+types.lhs:151: 2↥63 ∷ Integer → 9223372036854775808
+types.lhs:152: 2↥64 − 1 ∷ Integer → 18446744073709551615
+types.lhs:153: 2↥64 ∷ Integer → 18446744073709551616
+types.lhs:154: 2↥127 − 1 ∷ Integer → 170141183460469231731687303715884105727
+types.lhs:155: 2↥127 ∷ Integer → 170141183460469231731687303715884105728
+types.lhs:156: 2↥255 − 1 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819967
+types.lhs:157: 2↥255 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819968
+types.lhs:160: ['a'] ∷ String → "a"
+a
+types.lhs:162: ['â'] ∷ String → "\226"
+â
+types.lhs:164: ['\226'] ∷ String → "\226"
+â
+types.lhs:166: ['ﬁ'] ∷ String → "\64257"
+ﬁ
+types.lhs:168: ['\64257'] ∷ String → "\64257"
+ﬁ
+types.lhs:170: ['\xfb01'] ∷ String → "\64257"
+ﬁ
+Haskell’s types are strong.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,196418,317811,514229,832040,1346269,2178309,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,1304969544928657,2111485077978050,3416454622906707,5527939700884757,8944394323791464,14472334024676221,23416728348467685,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122585,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804746346429,12200160415121876738,19740274219868223167,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555169026,354224848179261915075,573147844013817084101,927372692193078999176,1500520536206896083277,2427893228399975082453,3928413764606871165730,6356306993006846248183,10284720757613717413913,16641027750620563662096,26925748508234281076009,43566776258854844738105,70492524767089125814114,114059301025943970552219,184551825793033096366333,298611126818977066918552,483162952612010163284885,781774079430987230203437,1264937032042997393488322,2046711111473984623691759,3311648143516982017180081,5358359254990966640871840,8670007398507948658051921,14028366653498915298923761,22698374052006863956975682,36726740705505779255899443,59425114757512643212875125,96151855463018422468774568,155576970220531065681649693,251728825683549488150424261,407305795904080553832073954,659034621587630041982498215,1066340417491710595814572169,1725375039079340637797070384,2791715456571051233611642553,4517090495650391871408712937,7308805952221443105020355490,11825896447871834976429068427,19134702400093278081449423917,30960598847965113057878492344,50095301248058391139327916261,81055900096023504197206408605,131151201344081895336534324866,212207101440105399533740733471,343358302784187294870275058337,555565404224292694404015791808,898923707008479989274290850145,1454489111232772683678306641953,2353412818241252672952597492098,3807901929474025356630904134051,6161314747715278029583501626149,9969216677189303386214405760200,16130531424904581415797907386349,26099748102093884802012313146549,42230279526998466217810220532898,68330027629092351019822533679447,110560307156090817237632754212345,178890334785183168257455287891792,289450641941273985495088042104137,468340976726457153752543329995929,757791618667731139247631372100066,1226132595394188293000174702095995,1983924214061919432247806074196061,3210056809456107725247980776292056,5193981023518027157495786850488117,8404037832974134882743767626780173,13598018856492162040239554477268290,22002056689466296922983322104048463,35600075545958458963222876581316753,57602132235424755886206198685365216,93202207781383214849429075266681969,150804340016807970735635273952047185ghci: exit 1
+31766: signal: kill
+ghc -o types types.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( types.lhs, types.o )
+Linking types ...
+./types
+types.lhs:24: True ∷ Bool → True
+types.lhs:25: False ∷ Bool → False
+types.lhs:26: False ⋀ False ∷ Bool → False
+types.lhs:27: False ⋀ True ∷ Bool → False
+types.lhs:28: True ⋀ False ∷ Bool → False
+types.lhs:29: True ⋀ True ∷ Bool → True
+types.lhs:30: False ⋁ False ∷ Bool → False
+types.lhs:31: False ⋁ True ∷ Bool → True
+types.lhs:32: True ⋁ False ∷ Bool → True
+types.lhs:33: True ⋁ True ∷ Bool → True
+types.lhs:36: 'a' ∷ Char → 'a'
+types.lhs:37: 'â' ∷ Char → '\226'
+types.lhs:38: '\226' ∷ Char → '\226'
+types.lhs:39: 'ﬁ' ∷ Char → '\64257'
+types.lhs:40: '\64257' ∷ Char → '\64257'
+types.lhs:41: '\xfb01' ∷ Char → '\64257'
+types.lhs:44: 0 ∷ Double → 0.0
+types.lhs:45: 1 ∷ Double → 1.0
+types.lhs:46: -1 ∷ Double → -1.0
+types.lhs:47: 2↑7 − 1 ∷ Double → 127.0
+types.lhs:48: 2↑7 ∷ Double → 128.0
+types.lhs:49: 2↑8 − 1 ∷ Double → 255.0
+types.lhs:50: 2↑8 ∷ Double → 256.0
+types.lhs:51: 2↑15 − 1 ∷ Double → 32767.0
+types.lhs:52: 2↑15 ∷ Double → 32768.0
+types.lhs:53: 2↑16 − 1 ∷ Double → 65535.0
+types.lhs:54: 2↑16 ∷ Double → 65536.0
+types.lhs:55: 2↑31 − 1 ∷ Double → 2.147483647e9
+types.lhs:56: 2↑31 ∷ Double → 2.147483648e9
+types.lhs:57: 2↑32 − 1 ∷ Double → 4.294967295e9
+types.lhs:58: 2↑32 ∷ Double → 4.294967296e9
+types.lhs:59: 2↑63 − 1 ∷ Double → 9.223372036854776e18
+types.lhs:60: 2↑63 ∷ Double → 9.223372036854776e18
+types.lhs:61: 2↑64 − 1 ∷ Double → 1.8446744073709552e19
+types.lhs:62: 2↑64 ∷ Double → 1.8446744073709552e19
+types.lhs:63: 2↑127 − 1 ∷ Double → 1.7014118346046924e38
+types.lhs:64: 2↑127 ∷ Double → 1.7014118346046924e38
+types.lhs:65: 2↑255 − 1 ∷ Double → 5.78960446186581e76
+types.lhs:66: 2↑255 ∷ Double → 5.78960446186581e76
+types.lhs:69: 0 ∷ Int → 0
+types.lhs:70: 1 ∷ Int → 1
+types.lhs:71: -1 ∷ Int → -1
+types.lhs:72: 2↥7 − 1 ∷ Int → 127
+types.lhs:73: 2↥7 ∷ Int → 128
+types.lhs:74: 2↥8 − 1 ∷ Int → 255
+types.lhs:75: 2↥8 ∷ Int → 256
+types.lhs:76: 2↥15 − 1 ∷ Int → 32767
+types.lhs:77: 2↥15 ∷ Int → 32768
+types.lhs:78: 2↥16 − 1 ∷ Int → 65535
+types.lhs:79: 2↥16 ∷ Int → 65536
+types.lhs:80: 2↥31 − 1 ∷ Int → 2147483647
+types.lhs:81: 2↥31 ∷ Int → 2147483648
+types.lhs:82: 2↥32 − 1 ∷ Int → 4294967295
+types.lhs:83: 2↥32 ∷ Int → 4294967296
+types.lhs:84: 2↥63 − 1 ∷ Int → 9223372036854775807
+types.lhs:85: 2↥63 ∷ Int → -9223372036854775808
+types.lhs:86: 2↥64 − 1 ∷ Int → -1
+types.lhs:87: 2↥64 ∷ Int → 0
+types.lhs:88: 2↥127 − 1 ∷ Int → -1
+types.lhs:89: 2↥127 ∷ Int → 0
+types.lhs:90: 2↥255 − 1 ∷ Int → -1
+types.lhs:91: 2↥255 ∷ Int → 0
+types.lhs:92: isInt8 → False
+types.lhs:93: isInt16 → False
+types.lhs:94: isInt32 → False
+types.lhs:95: isInt64 → True
+types.lhs:96: isInt128 → False
+types.lhs:97: isInt256 → False
+types.lhs:150: 2↥63 − 1 ∷ Integer → 9223372036854775807
+types.lhs:151: 2↥63 ∷ Integer → 9223372036854775808
+types.lhs:152: 2↥64 − 1 ∷ Integer → 18446744073709551615
+types.lhs:153: 2↥64 ∷ Integer → 18446744073709551616
+types.lhs:154: 2↥127 − 1 ∷ Integer → 170141183460469231731687303715884105727
+types.lhs:155: 2↥127 ∷ Integer → 170141183460469231731687303715884105728
+types.lhs:156: 2↥255 − 1 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819967
+types.lhs:157: 2↥255 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819968
+types.lhs:160: ['a'] ∷ String → "a"
+a
+types.lhs:162: ['â'] ∷ String → "\226"
+â
+types.lhs:164: ['\226'] ∷ String → "\226"
+â
+types.lhs:166: ['ﬁ'] ∷ String → "\64257"
+ﬁ
+types.lhs:168: ['\64257'] ∷ String → "\64257"
+ﬁ
+types.lhs:170: ['\xfb01'] ∷ String → "\64257"
+ﬁ
+Haskell’s types are strong.
+f          1           8          30          43  61.5217391 
+          8          56         287           0           0 /home/jdc/git/rwhaskell/ch2/guide Del Snarf Undo | Look 

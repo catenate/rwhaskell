@@ -1,0 +1,20 @@
+> module Constant where
+> import Data.Complex
+> import Data.Number.CReal
+> import UnicodeOperators
+
+nb i imaginary complex number haskell notation constant
+
+> i = 0 :+ 1
+
+nb π pi haskell notation constant
+
+> π = pi
+
+nb τ tau haskell notation constant real
+
+> τ = 2·π
+
+nb ℯ e exp natural logarithm base haskell notation constant
+
+> ℯ = exp 1
