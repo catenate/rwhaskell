@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1       71034       71034   4.1304348       71034 
-          4          58       71034           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
+F          1           1       71540       71540   4.1304348       71540 
+          4          58       71540           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -2013,5 +2013,18 @@ no changes added to commit (use "git add" and/or "git commit -a")
 #	new file:   ch2/mkfile
 #	new file:   ch2/types.lhs
 #
-f          1           5         142         153  70.9782609 
-          5          47         241           0           0 /home/jdc/git/rwhaskell/guide Del Snarf | Look 
+[master 91ddfc6] Clean up chapter 1. Start chapter 2.
+ 15 files changed, 2084 insertions(+), 15 deletions(-)
+ create mode 100644 ch1/UnicodeOperators.lhs
+ create mode 100644 ch1/calc.lhs
+ create mode 100644 ch1/calc_test.lhs
+ create mode 100644 ch1/constant.lhs
+ create mode 100644 ch2/Unicoper.hs
+ create mode 100644 ch2/acme.dump
+ create mode 100644 ch2/guide
+ create mode 100644 ch2/mkfile
+ create mode 100644 ch2/types.lhs
+To git@github.com:catenate/rwhaskell.git
+   441746e..91ddfc6  master -> master
+f          1           5         163         242  70.9782609 
+          5          52         242           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 

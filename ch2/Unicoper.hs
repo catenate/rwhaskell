@@ -3,6 +3,10 @@
 
 module Unicoper where
 
+(...) ∷ (a -> b) -> a -> b
+(...) = ($)
+infixr 0 ...
+
 (=?) ∷ (Eq a) ⇒ a → a → Bool
 (=?) = (==)
 infix 4 =?

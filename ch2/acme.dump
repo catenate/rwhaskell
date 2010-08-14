@@ -5,12 +5,22 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0           1          58          58   2.0652174 
-          1          50          98           1           0 /home/jdc/git/rwhaskell/ch2/ Del Snarf Get | Look 
-f          0           2         313         313   4.1304348 
-          2          84        6495           0           0 /home/jdc/git/rwhaskell/ch2/types.lhs Del Snarf Undo | Look 
-F          1           0       48729       48729   2.0652174       48729 
-          7          62       48729           0           1 /home/jdc/git/rwhaskell/ch2/+Errors Del Snarf Undo Put | Look 
+f          0          12        1662        1662   2.0652174 
+         12          99        1662           0           0 /home/jdc/Dropbox/nb/20100813 Del Snarf Undo | Look 
+f          0           8           0           0   4.1304348 
+          8          53          85           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look scratch
+f          0          15           0           0   6.1956522 
+         15          53         134           1           0 /home/jdc/git/rwhaskell/qctest/ Del Snarf Get | Look 
+f          0           3           0           0   8.2608696 
+          3          50         123           1           0 /home/jdc/git/rwhaskell/ch2/ Del Snarf Get | Look 
+f          0           4          54          54  10.3260870 
+          4          67        1041           0           0 /home/jdc/git/rwhaskell/ch2/add_test.hs Del Snarf Undo Redo | Look 
+f          0          14           0          79  96.0869565 
+         14          54          79           0           0 /home/jdc/git/rwhaskell/scratch Del Snarf Undo | Look 
+f          0          16           0           0  98.1521739 
+         16          55         524           0           0 /home/jdc/git/rwhaskell/qctest/mkfile Del Snarf | Look 
+F          1           0      151308      151308   2.0652174      151308 
+          6          62      151308           0           1 /home/jdc/git/rwhaskell/ch2/+Errors Del Snarf Undo Put | Look 
 mk: don't know how to make 'type' in /home/jdc/git/rwhaskell/ch2
 mk: exit 1
 ghc -o types types.lhs Unicoper.lhs
@@ -1389,5 +1399,4778 @@ types.lhs:168: ['\64257'] ∷ String → "\64257"
 types.lhs:170: ['\xfb01'] ∷ String → "\64257"
 ﬁ
 Haskell’s types are strong.
-f          1           8          30          43  61.5217391 
-          8          56         287           0           0 /home/jdc/git/rwhaskell/ch2/guide Del Snarf Undo | Look 
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:17: odd 3 → True
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:17: odd 3 → True
+apply.lhs:18: odd 6 → False
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:23: compare 2 3 → LT
+apply.lhs:24: compare 3 3 → EQ
+apply.lhs:25: compare 3 2 → GT
+apply.lhs:18: odd 3 → True
+apply.lhs:19: odd 6 → False
+apply.lhs:20: odd 3 → True
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:23: compare 2 3 → LT
+apply.lhs:24: compare 2 3 =? LT → True
+apply.lhs:25: (compare 2 3) =? LT → True
+apply.lhs:26: compare 3 3 → EQ
+apply.lhs:27: compare 3 2 → GT
+apply.lhs:18: odd 3 → True
+apply.lhs:19: odd 6 → False
+apply.lhs:20: odd 3 → True
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:23: compare 2 3 → LT
+apply.lhs:24: compare 2 3 =? LT → True
+apply.lhs:25: (compare 2 3) =? LT → True
+apply.lhs:26: compare 3 3 → EQ
+apply.lhs:27: compare 3 2 → GT
+apply.lhs:28: compare (sqrt 3) (sqrt 6) → LT
+apply.lhs:18: odd 3 → True
+apply.lhs:19: odd 6 → False
+apply.lhs:20: odd 3 → True
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:29:102:
+    Couldn't match expected type `(a1 -> a1) -> t -> a'
+           against inferred type `Ordering'
+    In the first argument of `show', namely `(compare sqrt 3 sqrt 6)'
+    In the second argument of `(++)', namely
+        `show (compare sqrt 3 sqrt 6)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (compare sqrt 3 sqrt 6)'
+mk: exit 1
+mk: ghc -o apply ...  : exit status=exit(1)
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:23: compare 2 3 → LT
+apply.lhs:24: compare 2 3 =? LT → True
+apply.lhs:25: (compare 2 3) =? LT → True
+apply.lhs:26: compare 3 3 → EQ
+apply.lhs:27: compare 3 2 → GT
+apply.lhs:28: compare (sqrt 3) (sqrt 6) → LT
+apply.lhs:18: odd 3 → True
+apply.lhs:19: odd 6 → False
+apply.lhs:20: odd 3 → True
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:30:100:
+    No instance for (Show (b -> Ordering))
+      arising from a use of `show' at apply.lhs:30:100-131
+    Possible fix:
+      add an instance declaration for (Show (b -> Ordering))
+    In the second argument of `(++)', namely
+        `show (compare $ sqrt 3 $ sqrt 6)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (compare $ sqrt 3 $ sqrt 6)'
+    In the second argument of `(++)', namely
+        `"compare $ sqrt 3 $ sqrt 6"
+       ++  " \8594 " ++ show (compare $ sqrt 3 $ sqrt 6)'
+
+apply.lhs:30:116:
+    No instance for (Floating (a -> b))
+      arising from a use of `sqrt' at apply.lhs:30:116-121
+    Possible fix: add an instance declaration for (Floating (a -> b))
+    In the first argument of `($)', namely `sqrt 3'
+    In the second argument of `($)', namely `sqrt 3 $ sqrt 6'
+    In the first argument of `show', namely
+        `(compare $ sqrt 3 $ sqrt 6)'
+mk: exit 1
+mk: ghc -o apply ...  : exit status=exit(1)
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:30:98:
+    No instance for (Show (a -> Ordering))
+      arising from a use of `show' at apply.lhs:30:98-127
+    Possible fix:
+      add an instance declaration for (Show (a -> Ordering))
+    In the second argument of `(++)', namely
+        `show (compare $ sqrt 3 sqrt 6)'
+    In the second argument of `(++)', namely
+        `" \8594 " ++ show (compare $ sqrt 3 sqrt 6)'
+    In the second argument of `(++)', namely
+        `"compare $ sqrt 3 sqrt 6"
+       ++  " \8594 " ++ show (compare $ sqrt 3 sqrt 6)'
+
+apply.lhs:30:114:
+    No instance for (Floating ((a1 -> a1) -> t -> a))
+      arising from a use of `sqrt' at apply.lhs:30:114-126
+    Possible fix:
+      add an instance declaration for (Floating ((a1 -> a1) -> t -> a))
+    In the second argument of `($)', namely `sqrt 3 sqrt 6'
+    In the first argument of `show', namely `(compare $ sqrt 3 sqrt 6)'
+    In the second argument of `(++)', namely
+        `show (compare $ sqrt 3 sqrt 6)'
+mk: ghc -o apply ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+
+list_tuple.lhs:17:45:
+     error: macro "showExprLn" passed 4 arguments, but takes just 1
+mk: exit 1
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:23: compare 2 3 → LT
+apply.lhs:24: compare 2 3 =? LT → True
+apply.lhs:25: (compare 2 3) =? LT → True
+apply.lhs:26: compare 3 3 → EQ
+apply.lhs:27: compare 3 2 → GT
+apply.lhs:28: compare (sqrt 3) (sqrt 6) → LT
+apply.lhs:18: odd 3 → True
+apply.lhs:19: odd 6 → False
+apply.lhs:20: odd 3 → True
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:19:89:
+    Ambiguous type variable `a' in the constraint:
+      `Show a' arising from a use of `show' at list_tuple.lhs:19:89-104
+    Probable fix: add a type signature that fixes these type variable(s)
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+list_tuple: mk: exit 1
+Prelude.head: empty list
+mk: ./list_tuple  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+mk: exit 1
+list_tuple: Prelude.head: empty list
+mk: ./list_tuple  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+list_tuple.lhs:20: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:21: (tail ['a','b','c']) → "bc"
+mk: exit 1
+list_tuple: Prelude.tail: empty list
+mk: ./list_tuple  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:24:87:
+    Ambiguous type variable `a' in the constraint:
+      `Show a' arising from a use of `show' at list_tuple.lhs:24:87-100
+    Probable fix: add a type signature that fixes these type variable(s)
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+list_tuple.lhs:20: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:21: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:22: (tail [True,False]) → [False]
+list_tuple.lhs:23: tail "list" → "ist"
+list_tuple: mk: exit 1
+Prelude.tail: empty list
+mk: ./list_tuple  : exit status=exit(1)
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> Leaving GHCi.
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+list_tuple.lhs:20: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:21: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:22: (tail [True,False]) → [False]
+list_tuple.lhs:23: tail "list" → "ist"
+list_tuple: mk: exit 1
+Prelude.tail: empty list
+mk: ./list_tuple  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+mk: exit 1
+list_tuple: Prelude.head: empty list
+mk: ./list_tuple  : exit status=exit(1)
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:17: (head [1,2,3,4]) → 1
+list_tuple.lhs:18: (head ['a','b','c']) → 'a'
+list_tuple.lhs:20: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:21: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:22: (tail [True,False]) → [False]
+list_tuple.lhs:23: tail "list" → "ist"
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> (True, "Hello") :: (Bool, [Char])
+Prelude> Leaving GHCi.
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+list_tuple.lhs:30: () → ()
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:30:114:
+    Couldn't match expected type `[Char]' against inferred type `()'
+    In the second argument of `(++)', namely `()'
+    In the first argument of `show', namely `("unit =" ++ ())'
+    In the second argument of `(++)', namely `show ("unit =" ++ ())'
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:30:8:
+    Couldn't match expected type `[b]' against inferred type `IO ()'
+    In the first argument of `(++)', namely `putStrLn "unit ="'
+    In the expression:
+          putStrLn "unit ="
+        ++
+          (("list_tuple.lhs"
+          ++  ":" ++ show 30 ++ ": " ++ "()" ++ " \8594 " ++ show (())))
+    In the expression:
+        do { putStrLn
+               (("list_tuple.lhs"
+               ++  ":"
+                 ++  show 28
+                   ++  ": "
+                     ++  "(1964, \"Labyrinths\")"
+                       ++  " \8594 " ++ show ((1964, "Labyrinths"))));
+             putStrLn
+               (("list_tuple.lhs"
+               ++  ":"
+                 ++  show 29
+                   ++  ": "
+                     ++  "(4, ['a', 'm'], (16, True))"
+                       ++  " \8594 " ++ show ((4, ['a', 'm'], (16, True)))));
+               putStrLn "unit ="
+             ++
+               (("list_tuple.lhs"
+               ++  ":" ++ show 30 ++ ": " ++ "()" ++ " \8594 " ++ show (()))) }
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+unit =list_tuple.lhs:30: () → ()
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+list_tuple.lhs:30: () → ()is called unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+list_tuple.lhs:30: () → () is called unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: (1964, "Labyrinths") → (1964,"Labyrinths")
+list_tuple.lhs:29: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True))
+list_tuple.lhs:30: () → () unit is a tuple of zero elements
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:18: (head [1,2,3,4]) → 1
+list_tuple.lhs:19: (head ['a','b','c']) → 'a'
+list_tuple.lhs:21: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:22: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:23: (tail [True,False]) → [False]
+list_tuple.lhs:24: tail "list" → "ist"
+list_tuple.lhs:28: () → () unit
+list_tuple.lhs:29: (1964, "Labyrinths") → (1964,"Labyrinths") pair
+list_tuple.lhs:30: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True)) triple
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> (True, "Hello") :: (Bool, [Char])
+Prelude> (False, 'a') :: (Bool, Char)
+Prelude> ('a', False) :: (Char, Bool)
+Prelude> Leaving GHCi.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> (True, "Hello") :: (Bool, [Char])
+Prelude> (False, 'a') :: (Bool, Char)
+Prelude> ('a', False) :: (Char, Bool)
+Prelude> (False, 'a', 'b') :: (Bool, Char, Char)
+Prelude> Leaving GHCi.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> False :: Bool
+Prelude> (["foo", "bar"], 'a') :: ([[Char]], Char)
+Prelude> False :: Bool
+Prelude> Leaving GHCi.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> False :: Bool
+Prelude> (["foo", "bar"], 'a') :: ([[Char]], Char)
+Prelude> [(True, []), (False, [['a']])] :: [(Bool, [[Char]])]
+Prelude> Leaving GHCi.
+([[Char]], Char)
+[(Bool, *), (Bool, [[Char]])] [(Bool, [[Char]])]
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:22: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:25: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:23:91:
+    Ambiguous type variable `a' in the constraint:
+      `Show a' arising from a use of `show' at list_tuple.lhs:23:91-108
+    Probable fix: add a type signature that fixes these type variable(s)
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:22: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:23: (take 1 [] :: String) → ""
+list_tuple.lhs:24: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:27: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:22: (take 0 [] :: String) → ""
+list_tuple.lhs:23: (take 1 [] :: String) → ""
+list_tuple.lhs:24: (take 2 [] :: String) → ""
+list_tuple.lhs:25: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:26: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:29: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:23: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:24: (take 0 [] :: String) → ""
+list_tuple.lhs:25: (take 1 [] :: String) → ""
+list_tuple.lhs:26: (take 2 [] :: String) → ""
+list_tuple.lhs:27: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:28: (drop 0 [] :: String) → ""
+list_tuple.lhs:29: (drop 1 [] :: String) → ""
+list_tuple.lhs:30: (drop 2 [] :: String) → ""
+list_tuple.lhs:33: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:23: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:24: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:25: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:26: (take 0 [] :: String) → ""
+list_tuple.lhs:27: (take 1 [] :: String) → ""
+list_tuple.lhs:28: (take 2 [] :: String) → ""
+list_tuple.lhs:29: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:30: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:31: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:32: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:33: (drop 0 [] :: String) → ""
+list_tuple.lhs:34: (drop 1 [] :: String) → ""
+list_tuple.lhs:35: (drop 2 [] :: String) → ""
+list_tuple.lhs:38: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:23: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:24: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:25: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:26: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:27: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:28: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:29: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:30: (take 0 [] :: String) → ""
+list_tuple.lhs:31: (take 1 [] :: String) → ""
+list_tuple.lhs:32: (take 2 [] :: String) → ""
+list_tuple.lhs:33: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:34: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:35: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:36: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:37: (drop 0 [] :: String) → ""
+list_tuple.lhs:38: (drop 1 [] :: String) → ""
+list_tuple.lhs:39: (drop 2 [] :: String) → ""
+list_tuple.lhs:42: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:23: (head [1,2,3,4,5]) → 1
+list_tuple.lhs:24: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:25: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:26: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:27: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:28: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:29: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:30: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:31: (take 0 [] :: String) → ""
+list_tuple.lhs:32: (take 1 [] :: String) → ""
+list_tuple.lhs:33: (take 2 [] :: String) → ""
+list_tuple.lhs:34: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:35: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:36: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:37: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:38: (drop 0 [] :: String) → ""
+list_tuple.lhs:39: (drop 1 [] :: String) → ""
+list_tuple.lhs:40: (drop 2 [] :: String) → ""
+list_tuple.lhs:43: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:22: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:23: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:24: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:25: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:26: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:28: (take 0 [] :: String) → ""
+list_tuple.lhs:29: (take 1 [] :: String) → ""
+list_tuple.lhs:30: (take 2 [] :: String) → ""
+list_tuple.lhs:31: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:32: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:33: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:34: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:35: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:36: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:38: (drop 0 [] :: String) → ""
+list_tuple.lhs:39: (drop 1 [] :: String) → ""
+list_tuple.lhs:40: (drop 2 [] :: String) → ""
+list_tuple.lhs:43: () → () unit
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+
+list_tuple.lhs:45:109:
+    Couldn't match expected type `(a, b)'
+           against inferred type `(t, Char, Bool)'
+    In the first argument of `snd', namely `(1, 'a', True)'
+    In the first argument of `show', namely `((snd (1, 'a', True)))'
+    In the second argument of `(++)', namely
+        `show ((snd (1, 'a', True)))'
+mk: ghc -o list_tuple ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:22: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:23: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:24: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:25: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:26: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:28: (take 0 [] :: String) → ""
+list_tuple.lhs:29: (take 1 [] :: String) → ""
+list_tuple.lhs:30: (take 2 [] :: String) → ""
+list_tuple.lhs:31: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:32: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:33: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:34: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:35: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:36: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:38: (drop 0 [] :: String) → ""
+list_tuple.lhs:39: (drop 1 [] :: String) → ""
+list_tuple.lhs:40: (drop 2 [] :: String) → ""
+list_tuple.lhs:43: (fst (1,'a')) → 1
+list_tuple.lhs:44: (snd (1,'a')) → 'a'
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:21: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:22: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:23: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:24: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:25: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:26: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:28: (take 0 [] :: String) → ""
+list_tuple.lhs:29: (take 1 [] :: String) → ""
+list_tuple.lhs:30: (take 2 [] :: String) → ""
+list_tuple.lhs:31: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:32: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:33: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:34: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:35: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:36: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:38: (drop 0 [] :: String) → ""
+list_tuple.lhs:39: (drop 1 [] :: String) → ""
+list_tuple.lhs:40: (drop 2 [] :: String) → ""
+list_tuple.lhs:43: (fst (1,'a')) → 1
+list_tuple.lhs:44: (snd (1,'a')) → 'a'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:35:108:
+    Couldn't match expected type `[a]'
+           against inferred type `Int -> [a1] -> [a1]'
+    In the first argument of `head', namely `drop'
+    In the first argument of `show', namely `(head drop 4 "azerty")'
+    In the second argument of `(++)', namely
+        `show (head drop 4 "azerty")'
+mk: ghc -o apply ...  : exit status=exit(1)
+mk: exit 1
+ghc -o list_tuple list_tuple.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( list_tuple.lhs, list_tuple.o )
+Linking list_tuple ...
+./list_tuple
+list_tuple.lhs:20: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:21: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:22: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:23: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:24: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:25: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:26: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 0 [] :: String) → ""
+list_tuple.lhs:28: (take 1 [] :: String) → ""
+list_tuple.lhs:29: (take 2 [] :: String) → ""
+list_tuple.lhs:30: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:31: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:32: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:33: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:34: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:35: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:36: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 0 [] :: String) → ""
+list_tuple.lhs:38: (drop 1 [] :: String) → ""
+list_tuple.lhs:39: (drop 2 [] :: String) → ""
+list_tuple.lhs:42: (fst (1,'a')) → 1
+list_tuple.lhs:43: (snd (1,'a')) → 'a'
+list_tuple.lhs:47: (head [1,2,3,4]) → 1
+list_tuple.lhs:48: (head ['a','b','c']) → 'a'
+list_tuple.lhs:50: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:51: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:52: (tail [True,False]) → [False]
+list_tuple.lhs:53: tail "list" → "ist"
+list_tuple.lhs:59: () → () unit
+list_tuple.lhs:60: (1964, "Labyrinths") → (1964,"Labyrinths") pair
+list_tuple.lhs:61: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True)) triple
+./list_tuple
+list_tuple.lhs:20: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:21: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:22: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:23: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:24: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:25: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:26: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 0 [] :: String) → ""
+list_tuple.lhs:28: (take 1 [] :: String) → ""
+list_tuple.lhs:29: (take 2 [] :: String) → ""
+list_tuple.lhs:30: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:31: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:32: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:33: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:34: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:35: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:36: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 0 [] :: String) → ""
+list_tuple.lhs:38: (drop 1 [] :: String) → ""
+list_tuple.lhs:39: (drop 2 [] :: String) → ""
+list_tuple.lhs:42: (fst (1,'a')) → 1
+list_tuple.lhs:43: (snd (1,'a')) → 'a'
+list_tuple.lhs:47: (head [1,2,3,4]) → 1
+list_tuple.lhs:48: (head ['a','b','c']) → 'a'
+list_tuple.lhs:50: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:51: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:52: (tail [True,False]) → [False]
+list_tuple.lhs:53: tail "list" → "ist"
+list_tuple.lhs:59: () → () unit
+list_tuple.lhs:60: (1964, "Labyrinths") → (1964,"Labyrinths") pair
+list_tuple.lhs:61: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True)) triple
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:38:112:
+    Couldn't match expected type `a -> [a1]'
+           against inferred type `[Char]'
+    In the second argument of `(.)', namely `drop 4 "azerty"'
+    In the first argument of `show', namely `(head . drop 4 "azerty")'
+    In the second argument of `(++)', namely
+        `show (head . drop 4 "azerty")'
+mk: ghc -o apply ...  : exit status=exit(1)
+mk: exit 1
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+
+apply.lhs:38:123:
+    Couldn't match expected type `a -> [a1]'
+           against inferred type `[Char]'
+    In the second argument of `(.)', namely `"azerty"'
+    In the second argument of `(.)', namely `drop 4 . "azerty"'
+    In the first argument of `show', namely
+        `(head . drop 4 . "azerty")'
+mk: ghc -o apply ...  : exit status=exit(1)
+mk: exit 1
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: head . drop 4 $ "azerty" → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: (head . drop 4) "azerty" → 't'
+apply.lhs:39: head . drop 4 $ "azerty" → 't'
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> syntax: ':i <thing-you-want-info-about>'
+Prelude> Leaving GHCi.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> 
+<interactive>:1:0: parse error on input `\'
+Prelude> Leaving GHCi.
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> ($) :: (a -> b) -> a -> b 	-- Defined in GHC.Base
+infixr 0 $
+Prelude> Leaving GHCi.
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: (head . drop 4) "azerty" → 't'
+apply.lhs:39: head . drop 4 $ "azerty" → 't'
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: (head . drop 4) "azerty" → 't'
+apply.lhs:39: head . drop 4 $ "azerty" → 't'
+mk: ambiguous recipes for apply.run:
+	apply.run <-(mkfile:2)- apply.run.lhs
+	apply.runmk: exit 1
+ <-(mkfile:5)- apply <-(mkfile:2)- apply.lhs
+mk: ambiguous recipes for apply.run:
+	apply.run <-(mkfile:4)- apply.run.lhsmk: exit 1
+
+	apply.run <-(mkfile:7)- apply <-(mkfile:4)- apply.lhs
+ghc -o apply apply.lhs Unicoper.hs --make
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, Unicoper.o )
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: (head . drop 4) "azerty" → 't'
+apply.lhs:39: head . drop 4 $ "azerty" → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: head ... drop 4 "azerty" → 't'
+apply.lhs:39: (head . drop 4) "azerty" → 't'
+apply.lhs:40: head . drop 4 $ "azerty" → 't'
+apply.lhs:41: head . drop 4 ... "azerty" → 't'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: head ... drop 4 "azerty" → 't'
+apply.lhs:39: (head . drop 4) "azerty" → 't'
+apply.lhs:40: head . drop 4 $ "azerty" → 't'
+apply.lhs:41: head . drop 4 ... "azerty" → 't'
+apply.lhs:42: head . drop 4 ... ['a'..'z'] → 'e'
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: head ... drop 4 "azerty" → 't'
+apply.lhs:39: (head . drop 4) "azerty" → 't'
+apply.lhs:40: head . drop 4 $ "azerty" → 't'
+apply.lhs:41: head . drop 4 ... "azerty" → 't'
+apply.lhs:42: head . drop 4 $ ['a'..'z'] → 'e'
+apply.lhs:43: head . drop 4 ... ['a'..'z'] → 'e'
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> "acegikmoqsuwy"
+Prelude> Leaving GHCi.
+ghc -o apply apply.lhs Unicoper.hs --make
+
+apply.lhs:44:61:
+     error: macro "showExprLn" passed 2 arguments, but takes just 1
+
+apply.lhs:45:63:
+     error: macro "showExprLn" passed 2 arguments, but takes just 1
+mk: ghc -o apply ...  : exit status=exit(1)
+mk: exit 1
+ghc -o apply apply.lhs Unicoper.hs --make
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, Unicoper.o )
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:36: head (drop 4 "azerty") → 't'
+apply.lhs:37: head $ drop 4 "azerty" → 't'
+apply.lhs:38: head ... drop 4 "azerty" → 't'
+apply.lhs:39: (head . drop 4) "azerty" → 't'
+apply.lhs:40: head . drop 4 $ "azerty" → 't'
+apply.lhs:41: head . drop 4 ... "azerty" → 't'
+apply.lhs:42: head . drop 4 $ ['a'..'z'] → 'e'
+apply.lhs:43: head . drop 4 ... ['a'..'z'] → 'e'
+apply.lhs:44: (head . drop 4 $ ['a','c'..'z']) → 'i'
+apply.lhs:45: (head . drop 4 ... ['a','c'..'z']) → 'i'
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> (True, "Hello") :: (Bool, [Char])
+Prelude> (False, 'a') :: (Bool, Char)
+Prelude> ('a', False) :: (Char, Bool)
+Prelude> (False, 'a', 'b') :: (Bool, Char, Char)
+Prelude> lines :: String -> [String]
+Prelude> Leaving GHCi.
+ghc -o apply apply.lhs Unicoper.hs --make
+[2 of 2] Compiling Main             ( apply.lhs, apply.o )
+Linking apply ...
+./apply
+apply.lhs:44: lines "the quick\nbrown fox\njumps" → ["the quick","brown fox","jumps"]
+GHCi, version 6.12.1: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude> [[True],[False,False]] :: [[Bool]]
+Prelude> (True, "Hello") :: (Bool, [Char])
+Prelude> (False, 'a') :: (Bool, Char)
+Prelude> ('a', False) :: (Char, Bool)
+Prelude> (False, 'a', 'b') :: (Bool, Char, Char)
+Prelude> lines :: String -> [String]
+Prelude> readFile :: FilePath -> IO String
+Prelude> Leaving GHCi.
+ghc -o add_test add_test.hs Unicoper.hs --make
+
+add_test.hs:1:7:
+    Could not find module `Add':
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs Unicoper.hs --make
+
+add_test.hs:1:7:
+    Could not find module `Add':
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add.hs Unicoper.hs --make
+[2 of 2] Compiling Add              ( add.hs, add.o )
+Warning: output was redirected with -o, but no output will be generated
+because there is no Main module.
+./add_test
+sh: mk: exit 1
+./add_test: not found
+mk: ./add_test  : exit status=exit(127)
+./apply
+apply.lhs:44: lines "the quick\nbrown fox\njumps" → ["the quick","brown fox","jumps"]
+./list_tuple
+list_tuple.lhs:20: (take 0 [1,2,3,4,5]) → []
+list_tuple.lhs:21: (take 1 [1,2,3,4,5]) → [1]
+list_tuple.lhs:22: (take 2 [1,2,3,4,5]) → [1,2]
+list_tuple.lhs:23: (take 3 [1,2,3,4,5]) → [1,2,3]
+list_tuple.lhs:24: (take 4 [1,2,3,4,5]) → [1,2,3,4]
+list_tuple.lhs:25: (take 5 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:26: (take 6 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:27: (take 0 [] :: String) → ""
+list_tuple.lhs:28: (take 1 [] :: String) → ""
+list_tuple.lhs:29: (take 2 [] :: String) → ""
+list_tuple.lhs:30: (drop 0 [1,2,3,4,5]) → [1,2,3,4,5]
+list_tuple.lhs:31: (drop 1 [1,2,3,4,5]) → [2,3,4,5]
+list_tuple.lhs:32: (drop 2 [1,2,3,4,5]) → [3,4,5]
+list_tuple.lhs:33: (drop 3 [1,2,3,4,5]) → [4,5]
+list_tuple.lhs:34: (drop 4 [1,2,3,4,5]) → [5]
+list_tuple.lhs:35: (drop 5 [1,2,3,4,5]) → []
+list_tuple.lhs:36: (drop 6 [1,2,3,4,5]) → []
+list_tuple.lhs:37: (drop 0 [] :: String) → ""
+list_tuple.lhs:38: (drop 1 [] :: String) → ""
+list_tuple.lhs:39: (drop 2 [] :: String) → ""
+list_tuple.lhs:42: (fst (1,'a')) → 1
+list_tuple.lhs:43: (snd (1,'a')) → 'a'
+list_tuple.lhs:47: (head [1,2,3,4]) → 1
+list_tuple.lhs:48: (head ['a','b','c']) → 'a'
+list_tuple.lhs:50: (tail [1,2,3,4]) → [2,3,4]
+list_tuple.lhs:51: (tail [2,3,4]) → [3,4]
+list_tuple.lhs:52: (tail [True,False]) → [False]
+list_tuple.lhs:53: tail "list" → "ist"
+list_tuple.lhs:59: () → () unit
+list_tuple.lhs:60: (1964, "Labyrinths") → (1964,"Labyrinths") pair
+list_tuple.lhs:61: (4, ['a', 'm'], (16, True)) → (4,"am",(16,True)) triple
+./types
+types.lhs:24: True ∷ Bool → True
+types.lhs:25: False ∷ Bool → False
+types.lhs:26: False ⋀ False ∷ Bool → False
+types.lhs:27: False ⋀ True ∷ Bool → False
+types.lhs:28: True ⋀ False ∷ Bool → False
+types.lhs:29: True ⋀ True ∷ Bool → True
+types.lhs:30: False ⋁ False ∷ Bool → False
+types.lhs:31: False ⋁ True ∷ Bool → True
+types.lhs:32: True ⋁ False ∷ Bool → True
+types.lhs:33: True ⋁ True ∷ Bool → True
+types.lhs:36: 'a' ∷ Char → 'a'
+types.lhs:37: 'â' ∷ Char → '\226'
+types.lhs:38: '\226' ∷ Char → '\226'
+types.lhs:39: 'ﬁ' ∷ Char → '\64257'
+types.lhs:40: '\64257' ∷ Char → '\64257'
+types.lhs:41: '\xfb01' ∷ Char → '\64257'
+types.lhs:44: 0 ∷ Double → 0.0
+types.lhs:45: 1 ∷ Double → 1.0
+types.lhs:46: -1 ∷ Double → -1.0
+types.lhs:47: 2↑7 − 1 ∷ Double → 127.0
+types.lhs:48: 2↑7 ∷ Double → 128.0
+types.lhs:49: 2↑8 − 1 ∷ Double → 255.0
+types.lhs:50: 2↑8 ∷ Double → 256.0
+types.lhs:51: 2↑15 − 1 ∷ Double → 32767.0
+types.lhs:52: 2↑15 ∷ Double → 32768.0
+types.lhs:53: 2↑16 − 1 ∷ Double → 65535.0
+types.lhs:54: 2↑16 ∷ Double → 65536.0
+types.lhs:55: 2↑31 − 1 ∷ Double → 2.147483647e9
+types.lhs:56: 2↑31 ∷ Double → 2.147483648e9
+types.lhs:57: 2↑32 − 1 ∷ Double → 4.294967295e9
+types.lhs:58: 2↑32 ∷ Double → 4.294967296e9
+types.lhs:59: 2↑63 − 1 ∷ Double → 9.223372036854776e18
+types.lhs:60: 2↑63 ∷ Double → 9.223372036854776e18
+types.lhs:61: 2↑64 − 1 ∷ Double → 1.8446744073709552e19
+types.lhs:62: 2↑64 ∷ Double → 1.8446744073709552e19
+types.lhs:63: 2↑127 − 1 ∷ Double → 1.7014118346046924e38
+types.lhs:64: 2↑127 ∷ Double → 1.7014118346046924e38
+types.lhs:65: 2↑255 − 1 ∷ Double → 5.78960446186581e76
+types.lhs:66: 2↑255 ∷ Double → 5.78960446186581e76
+types.lhs:69: 0 ∷ Int → 0
+types.lhs:70: 1 ∷ Int → 1
+types.lhs:71: -1 ∷ Int → -1
+types.lhs:72: 2↥7 − 1 ∷ Int → 127
+types.lhs:73: 2↥7 ∷ Int → 128
+types.lhs:74: 2↥8 − 1 ∷ Int → 255
+types.lhs:75: 2↥8 ∷ Int → 256
+types.lhs:76: 2↥15 − 1 ∷ Int → 32767
+types.lhs:77: 2↥15 ∷ Int → 32768
+types.lhs:78: 2↥16 − 1 ∷ Int → 65535
+types.lhs:79: 2↥16 ∷ Int → 65536
+types.lhs:80: 2↥31 − 1 ∷ Int → 2147483647
+types.lhs:81: 2↥31 ∷ Int → 2147483648
+types.lhs:82: 2↥32 − 1 ∷ Int → 4294967295
+types.lhs:83: 2↥32 ∷ Int → 4294967296
+types.lhs:84: 2↥63 − 1 ∷ Int → 9223372036854775807
+types.lhs:85: 2↥63 ∷ Int → -9223372036854775808
+types.lhs:86: 2↥64 − 1 ∷ Int → -1
+types.lhs:87: 2↥64 ∷ Int → 0
+types.lhs:88: 2↥127 − 1 ∷ Int → -1
+types.lhs:89: 2↥127 ∷ Int → 0
+types.lhs:90: 2↥255 − 1 ∷ Int → -1
+types.lhs:91: 2↥255 ∷ Int → 0
+types.lhs:92: isInt8 → False
+types.lhs:93: isInt16 → False
+types.lhs:94: isInt32 → False
+types.lhs:95: isInt64 → True
+types.lhs:96: isInt128 → False
+types.lhs:97: isInt256 → False
+types.lhs:150: 2↥63 − 1 ∷ Integer → 9223372036854775807
+types.lhs:151: 2↥63 ∷ Integer → 9223372036854775808
+types.lhs:152: 2↥64 − 1 ∷ Integer → 18446744073709551615
+types.lhs:153: 2↥64 ∷ Integer → 18446744073709551616
+types.lhs:154: 2↥127 − 1 ∷ Integer → 170141183460469231731687303715884105727
+types.lhs:155: 2↥127 ∷ Integer → 170141183460469231731687303715884105728
+types.lhs:156: 2↥255 − 1 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819967
+types.lhs:157: 2↥255 ∷ Integer → 57896044618658097711785492504343953926634992332820282019728792003956564819968
+types.lhs:160: ['a'] ∷ String → "a"
+a
+types.lhs:162: ['â'] ∷ String → "\226"
+â
+types.lhs:164: ['\226'] ∷ String → "\226"
+â
+types.lhs:166: ['ﬁ'] ∷ String → "\64257"
+ﬁ
+types.lhs:168: ['\64257'] ∷ String → "\64257"
+ﬁ
+types.lhs:170: ['\xfb01'] ∷ String → "\64257"
+ﬁ
+Haskell’s types are strong.
+ghc -o add_test add.hs Unicoper.hs --make
+Warning: output was redirected with -o, but no output will be generated
+because there is no Main module.
+./add_test
+sh: ./add_test: not found
+mk: ./add_test  : exit status=exit(127)
+mk: exit 1
+ghc -o add_test add.hs Unicoper.hs --make
+Warning: output was redirected with -o, but no output will be generated
+because there is no Main module.
+./add_test
+sh: ./add_test: not found
+mk: exit 1
+mk: ./add_test  : exit status=exit(127)
+ghc -o add_test add.hs Unicoper.hs --make
+Warning: output was redirected with -o, but no output will be generated
+because there is no Main module.
+./add_test
+sh: ./add_test: not foundmk: exit 1
+
+mk: ./add_test  : exit status=exit(127)
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:4:0: parse error on input `>'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:12:26: Not in scope: `=?'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
++++ OK, passed 100 tests.
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:9:27: Not in scope: `∷'
+
+add_test.hs:9:29: Not in scope: data constructor `Integer'
+
+add_test.hs:9:37: Not in scope: `→'
+
+add_test.hs:9:39: Not in scope: data constructor `Integer'
+
+add_test.hs:9:47: Not in scope: `→'
+
+add_test.hs:9:49: Not in scope: data constructor `Bool'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
++++ OK, passed 100 tests.
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
++++ OK, passed 100 tests.
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
++++ OK, passed 100 tests.
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
++++ OK, passed 100 tests.
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
++++ OK, passed 100 tests.
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 3
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+*** Failed! Falsifiable (after 1 test):  
+0
+0
++++ OK, passed 100 tests.
+*** Failed! Falsifiable (after 1 test):  
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 3
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+0
+0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:1:
+    Couldn't match expected type `Integer -> Integer -> Bool'
+           against inferred type `IO ()'
+    In a stmt of a 'do' expression:
+            quickCheck ... prop_lt :: Integer -> Integer -> Bool
+    In the expression:
+        do { quickCheck ... prop_lt :: Integer -> Integer -> Bool;
+             quickCheck ... prop_eq :: Integer -> Integer -> Bool;
+             quickCheck ... prop_gt :: Integer -> Integer -> Bool;
+         runTestTT test3;
+         .... }
+    In the definition of `main':
+        main = do { quickCheck ... prop_lt :: Integer -> Integer -> Bool;
+                    quickCheck ... prop_eq :: Integer -> Integer -> Bool;
+                    quickCheck ... prop_gt :: Integer -> Integer -> Bool;
+                .... }
+mk: exit 1
+mk: ghc -o add_test ...  : exit status=exit(1)
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:1:
+    Couldn't match expected type `Integer -> Integer -> Bool'
+           against inferred type `IO ()'
+    In a stmt of a 'do' expression:
+            quickCheck $ prop_lt :: Integer -> Integer -> Bool
+    In the expression:
+        do { quickCheck $ prop_lt :: Integer -> Integer -> Bool;
+             quickCheck $ prop_eq :: Integer -> Integer -> Bool;
+             quickCheck $ prop_gt :: Integer -> Integer -> Bool;
+         runTestTT test3;
+         .... }
+    In the definition of `main':
+        main = do { quickCheck $ prop_lt :: Integer -> Integer -> Bool;
+                    quickCheck $ prop_eq :: Integer -> Integer -> Bool;
+                    quickCheck $ prop_gt :: Integer -> Integer -> Bool;
+                .... }
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:1: Not in scope: `putStrln'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:1: Not in scope: `printStrln'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:1: Not in scope: `printStrLn'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:10:14:
+    Couldn't match expected type `Bool' against inferred type `IO ()'
+    In the expression:
+        quickCheck (prop_lt :: Integer -> Integer -> Bool)
+    In the first argument of `putStrLn', namely
+        `(if quickCheck (prop_lt :: Integer -> Integer -> Bool) then
+              "not lt"
+          else
+              "lt")'
+    In a stmt of a 'do' expression:
+        putStrLn
+          (if quickCheck (prop_lt :: Integer -> Integer -> Bool) then
+               "not lt"
+           else
+               "lt")
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+*** Failed! Falsifiable (after 1 test):  
+0
+0
++++ OK, passed 100 tests.
++++ OK, passed 100 tests.
++++ OK, passed 100 tests.
+*** Failed! Falsifiable (after 1 test):  
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 3
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+0
+0
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+prop_lt
+*** Failed! Falsifiable (after 1 test):  
+0
+0
+prop_le
++++ OK, passed 100 tests.
+prop_eq
++++ OK, passed 100 tests.
+prop_ge
++++ OK, passed 100 tests.
+prop_gt
+*** Failed! Falsifiable (after 1 test):  
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+0
+0
+3
+4
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:11:1: Not in scope: `verboseCheck'
+
+add_test.hs:13:1: Not in scope: `verboseCheck'
+
+add_test.hs:15:1: Not in scope: `verboseCheck'
+
+add_test.hs:17:1: Not in scope: `verboseCheck'
+
+add_test.hs:19:1: Not in scope: `verboseCheck'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:16:117:
+    No instance for (Show (IO ()))
+      arising from a use of `show' at add_test.hs:16:117-170
+    Possible fix: add an instance declaration for (Show (IO ()))
+    In the second argument of `(++)', namely
+        `show (quickCheck (prop_lt :: Integer -> Integer -> Bool))'
+    In the second argument of `(++)', namely
+        `" \8594 "
+       ++
+         show (quickCheck (prop_lt :: Integer -> Integer -> Bool))'
+    In the second argument of `(++)', namely
+        `"quickCheck (prop_lt \8759 Integer \8594 Integer \8594 Bool)"
+       ++  " \8594 "
+         ++
+           show (quickCheck (prop_lt :: Integer -> Integer -> Bool))'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+Linking add_test ...
+./add_test
+prop_lt
+*** Failed! Falsifiable (after 1 test):  
+0
+0
+prop_le
++++ OK, passed 100 tests.
+prop_eq
++++ OK, passed 100 tests.
+prop_ge
++++ OK, passed 100 tests.
+prop_gt
+*** Failed! Falsifiable (after 1 test):  
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+0
+0
+3
+4
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:14:10: Not in scope: data constructor `TestOptions'
+
+add_test.hs:17:1: Not in scope: `runTests'
+
+add_test.hs:17:33: Not in scope: `run'
+
+add_test.hs:17:46: Not in scope: `run'
+
+add_test.hs:17:59: Not in scope: `run'
+
+add_test.hs:17:72: Not in scope: `run'
+
+add_test.hs:17:85: Not in scope: `run'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:11:7:
+    Could not find module `Test.QuickCheck.Batch':
+      It is a member of the hidden package `QuickCheck-1.2.0.0'.
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:12:7:
+    Could not find module `Test.QuickCheck.Batch':
+      It is a member of the hidden package `QuickCheck-1.2.0.0'.
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:12:7:
+    Could not find module `QuickCheck.Batch':
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:12:7:
+    Could not find module `QuickCheck':
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+[3 of 3] Compiling Main             ( add_test.hs, add_test.o )
+
+add_test.hs:14:10: Not in scope: data constructor `TestOptions'
+
+add_test.hs:17:1: Not in scope: `runTests'
+
+add_test.hs:17:33: Not in scope: `run'
+
+add_test.hs:17:46: Not in scope: `run'
+
+add_test.hs:17:59: Not in scope: `run'
+
+add_test.hs:17:72: Not in scope: `run'
+
+add_test.hs:17:85: Not in scope: `run'
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:6:7:
+    Could not find module `Test.QuickCheck.Batch':
+      It is a member of the hidden package `QuickCheck-1.2.0.0'.
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+cabal --help
+no command given (try --help)
+cabal: exit 1
+This program is the command line interface to the Haskell Cabal infrastructure.
+See http://www.haskell.org/cabal/ for more information.
+
+Usage: cabal COMMAND [FLAGS]
+   or: cabal [GLOBAL FLAGS]
+
+Global flags:
+ -h --help            Show this help text
+ -V --version         Print version information
+    --numeric-version Print just the version number
+
+Commands:
+  configure    Prepare to build the package.
+  install      Installs a list of packages.
+  list         List packages matching a search string.
+  info         Display detailed information about a particular package.
+  update       Updates list of known packages
+  upgrade      Upgrades installed packages to the latest available version
+  fetch        Downloads packages for later installation or study.
+  upload       Uploads source packages to Hackage
+  check        Check the package for common mistakes
+  sdist        Generate a source distribution file (.tar.gz).
+  report       Upload build reports to a remote server.
+  unpack       Unpacks packages for user inspection.
+  init         Interactively create a .cabal file.
+  build        Make this package ready for installation.
+  copy         Copy the files into the install locations.
+  haddock      Generate Haddock HTML documentation.
+  clean        Clean up after a build.
+  hscolour     Generate HsColour colourised code, in HTML format.
+  register     Register this package with the compiler.
+  test         Run the test suite, if any (configure with UserHooks).
+  help         Help about commands
+
+For more information about a command use:
+  cabal COMMAND --help
+
+To install Cabal packages from hackage use:
+  cabal install foo [--dry-run]
+
+Occasionally you need to update the list of available packages:
+  cabal update
+
+You can edit the cabal configuration file to set defaults:
+  /home/jdc/.cabal/config
+* QuickCheck
+    Synopsis: Automatic testing of Haskell programs
+    Latest version available: 2.1.1.1
+    Latest version installed: 2.1.0.3
+    Homepage: http://www.cse.chalmers.se/~koen
+    License:  BSD3
+
+* quickcheck-poly
+    Synopsis: Automating QuickCheck for polymorphic and overlaoded properties
+    Latest version available: 0.2.0.1
+    Latest version installed: [ Not installed ]
+    License:  BSD3
+
+* quickcheck-script
+    Synopsis: Automated test tool for QuickCheck.
+    Latest version available: 0.1.1.1
+    Latest version installed: [ Not installed ]
+    Homepage: http://www.cs.chalmers.se/~rjmh/QuickCheck/
+    License:  BSD3
+
+* test-framework-quickcheck
+    Synopsis: QuickCheck support for the test-framework package.
+    Latest version available: 0.2.6
+    Latest version installed: [ Not installed ]
+    Homepage: http://batterseapower.github.com/test-framework/
+    License:  BSD3
+
+* test-framework-quickcheck2
+    Synopsis: QuickCheck2 support for the test-framework package.
+    Latest version available: 0.2.7
+    Latest version installed: [ Not installed ]
+    Homepage: http://batterseapower.github.com/test-framework/
+    License:  BSD3
+
+Resolving dependencies...
+No packages to be installed. All the requested packages are already installed.
+If you want to reinstall anyway then use the --reinstall flag.
+Resolving dependencies...
+cabal: fromFlag NoFlag. Use fromFlagOrDefault
+cabal: exit 1
+Usage: cabal upgrade [FLAGS]
+   or: cabal upgrade [PACKAGES]
+
+Flags for upgrade:
+ -h --help                         Show this help text
+ -v --verbose[=n]                  Control verbosity (n is 0--3, default
+                                   verbosity level is 1)
+    --builddir=DIR                 The directory where Cabal puts generated
+                                   build files (default dist)
+ -g --ghc                          compile with GHC
+    --nhc98                        compile with NHC
+    --jhc                          compile with JHC
+    --lhc                          compile with LHC
+    --hugs                         compile with Hugs
+ -w --with-compiler=PATH           give the path to a particular compiler
+    --with-hc-pkg=PATH             give the path to the package tool
+    --prefix=DIR                   bake this prefix in preparation of
+                                   installation
+    --bindir=DIR                   installation directory for executables
+    --libdir=DIR                   installation directory for libraries
+    --libsubdir=DIR                subdirectory of libdir in which libs are
+                                   installed
+    --libexecdir=DIR               installation directory for program
+                                   executables
+    --datadir=DIR                  installation directory for read-only data
+    --datasubdir=DIR               subdirectory of datadir in which data files
+                                   are installed
+    --docdir=DIR                   installation directory for documentation
+    --htmldir=DIR                  installation directory for HTML
+                                   documentation
+    --haddockdir=DIR               installation directory for haddock
+                                   interfaces
+ -b --scratchdir=DIR               directory to receive the built package
+                                   (hugs-only)
+    --program-prefix=PREFIX        prefix to be applied to installed
+                                   executables
+    --program-suffix=SUFFIX        suffix to be applied to installed
+                                   executables
+    --enable-library-vanilla       Enable Vanilla libraries
+    --disable-library-vanilla      Disable Vanilla libraries
+ -p --enable-library-profiling     Enable Library profiling
+    --disable-library-profiling    Disable Library profiling
+    --enable-shared                Enable Shared library
+    --disable-shared               Disable Shared library
+    --enable-executable-profiling  Enable Executable profiling
+    --disable-executable-profiling Disable Executable profiling
+ -O --enable-optimization[=n]      Build with optimization (n is 0--2, default
+                                   is 1)
+    --disable-optimization         Build without optimization
+    --enable-library-for-ghci      Enable compile library for use with GHCi
+    --disable-library-for-ghci     Disable compile library for use with GHCi
+    --enable-split-objs            Enable split library into smaller objects to
+                                   reduce binary sizes (GHC 6.6+)
+    --disable-split-objs           Disable split library into smaller objects
+                                   to reduce binary sizes (GHC 6.6+)
+    --enable-executable-stripping  Enable strip executables upon installation
+                                   to reduce binary sizes
+    --disable-executable-stripping Disable strip executables upon installation
+                                   to reduce binary sizes
+    --configure-option=OPT         Extra option for configure
+    --user                         Enable doing a per-user installation
+    --global                       Disable doing a per-user installation
+    --package-db=PATH              Use a specific package database (to satisfy
+                                   dependencies and register in)
+ -f --flags=FLAGS                  Force values for the given flags in Cabal
+                                   conditionals in the .cabal file. E.g.,
+                                   --flags="debug -usebytestrings" forces the
+                                   flag "debug" to true and "usebytestrings" to
+                                   false.
+    --extra-include-dirs=PATH      A list of directories to search for header
+                                   files
+    --extra-lib-dirs=PATH          A list of directories to search for external
+                                   libraries
+    --constraint=DEPENDENCY        A list of additional constraints on the
+                                   dependencies.
+    --with-PROG=PATH               give the path to PROG
+    --PROG-options=OPTS            give extra options to PROG
+    --PROG-option=OPT              give an extra option to PROG (no need to
+                                   quote options containing spaces)
+    --cabal-lib-version=VERSION    Select which version of the Cabal lib to use
+                                   to build packages (useful for testing).
+    --preference=DEPENDENCY        Specify preferences (soft constraints) on
+                                   the version of a package
+    --enable-documentation         Enable building of documentation
+    --disable-documentation        Disable building of documentation
+    --doc-index-file=TEMPLATE      A central index of haddock API documentation
+                                   (template cannot use $pkgid)
+    --dry-run                      Do not install anything, only print what
+                                   would be installed.
+    --reinstall                    Install even if it means installing the same
+                                   version again.
+    --root-cmd=COMMAND             Command used to gain root privileges, when
+                                   installing with --global.
+    --symlink-bindir=DIR           Add symlinks to installed executables into
+                                   this directory.
+    --build-summary=TEMPLATE       Save build summaries to file (name template
+                                   can use $pkgid, $compiler, $os, $arch)
+    --build-log=TEMPLATE           Log all builds to file (name template can
+                                   use $pkgid, $compiler, $os, $arch)
+    --remote-build-reporting=LEVEL Generate build reports to send to a remote
+                                   server (none, anonymous or detailed).
+* QuickCheck
+    Synopsis: Automatic testing of Haskell programs
+    Latest version available: 2.1.1.1
+    Latest version installed: 2.1.0.3
+    Homepage: http://www.cse.chalmers.se/~koen
+    License:  BSD3
+
+* quickcheck-poly
+    Synopsis: Automating QuickCheck for polymorphic and overlaoded properties
+    Latest version available: 0.2.0.1
+    Latest version installed: [ Not installed ]
+    License:  BSD3
+
+* quickcheck-script
+    Synopsis: Automated test tool for QuickCheck.
+    Latest version available: 0.1.1.1
+    Latest version installed: [ Not installed ]
+    Homepage: http://www.cs.chalmers.se/~rjmh/QuickCheck/
+    License:  BSD3
+
+* test-framework-quickcheck
+    Synopsis: QuickCheck support for the test-framework package.
+    Latest version available: 0.2.6
+    Latest version installed: [ Not installed ]
+    Homepage: http://batterseapower.github.com/test-framework/
+    License:  BSD3
+
+* test-framework-quickcheck2
+    Synopsis: QuickCheck2 support for the test-framework package.
+    Latest version available: 0.2.7
+    Latest version installed: [ Not installed ]
+    Homepage: http://batterseapower.github.com/test-framework/
+    License:  BSD3
+
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:6:7:
+    Could not find module `Test.QuickCheck.Batch': It is a member of the hidden package `QuickCheck-1.2.0.0'.
+      Use -v to see a list of the files searched for.
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+This program is the command line interface to the Haskell Cabal infrastructure.
+See http://www.haskell.org/cabal/ for more information.
+
+Usage: cabal COMMAND [FLAGS]
+   or: cabal [GLOBAL FLAGS]
+
+Global flags:
+ -h --help            Show this help text
+ -V --version         Print version information
+    --numeric-version Print just the version number
+
+Commands:
+  configure    Prepare to build the package.
+  install      Installs a list of packages.
+  list         List packages matching a search string.
+  info         Display detailed information about a particular package.
+  update       Updates list of known packages
+  upgrade      Upgrades installed packages to the latest available version
+  fetch        Downloads packages for later installation or study.
+  upload       Uploads source packages to Hackage
+  check        Check the package for common mistakes
+  sdist        Generate a source distribution file (.tar.gz).
+  report       Upload build reports to a remote server.
+  unpack       Unpacks packages for user inspection.
+  init         Interactively create a .cabal file.
+  build        Make this package ready for installation.
+  copy         Copy the files into the install locations.
+  haddock      Generate Haddock HTML documentation.
+  clean        Clean up after a build.
+  hscolour     Generate HsColour colourised code, in HTML format.
+  register     Register this package with the compiler.
+  test         Run the test suite, if any (configure with UserHooks).
+  help         Help about commands
+
+For more information about a command use:
+  cabal COMMAND --help
+
+To install Cabal packages from hackage use:
+  cabal install foo [--dry-run]
+
+Occasionally you need to update the list of available packages:
+  cabal update
+
+You can edit the cabal configuration file to set defaults:
+  /home/jdc/.cabal/config
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:2:15:
+    unknown flag in  {-# OPTIONS #-} pragma: -hide-package
+
+add_test.hs:2:15:
+    unknown flag in  {-# OPTIONS #-} pragma: quickcheck-2
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+ghc -o add_test add_test.hs add.hs Unicoper.hs --make
+
+add_test.hs:2:15:
+    unknown flag in  {-# OPTIONS #-} pragma: "-hide-package
+
+add_test.hs:2:15:
+    unknown flag in  {-# OPTIONS #-} pragma: quickcheck-2"
+mk: ghc -o add_test ...  : exit status=exit(1)
+mk: exit 1
+which cabal
+/usr/bin/cabal
+man cabal
+man: exit 1
+Setup: Run the 'configure' command first.
+runghc: exit 1
+Warning: ch2.cabal: A package using section syntax should require
+"Cabal-Version: >= 1.2" or equivalent.
+Configuring ch2-0.1...
+Setup: At least the following dependencies are missing:
+quickcheck ==1.2
+runghc: exit 1
+Configuring ch2-0.1...
+Setup: At least the following dependencies are missing:
+quickcheck >=1.2 && <2.0
+runghc: exit 1
+Configuring ch2-0.1...
+Warning: No 'build-type' specified. If you do not need a custom Setup.hs or
+./configure script then use 'build-type: Simple'.
+Setup: ch2.cabal:6: Do not use tabs for indentation (use spaces instead)
+Tabs were used at (line,column): [(6,0),(7,0)]
+runghc: exit 1
+Warning: ch2.cabal: Unknown fields: build-type (line 7)
+Fields allowed in this section:
+exposed-modules, exposed, buildable, build-tools, cpp-options,
+cc-options, ld-options, pkgconfig-depends, frameworks, c-sources,
+extensions, extra-libraries, extra-lib-dirs, includes,
+install-includes, include-dirs, hs-source-dirs, other-modules,
+ghc-prof-options, ghc-shared-options, ghc-options, hugs-options,
+nhc98-options, jhc-options
+Configuring ch2-0.1...
+Warning: No 'build-type' specified. If you do not need a custom Setup.hs or
+./configure script then use 'build-type: Simple'.
+Configuring ch2-0.1...
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+prop_lt
+*** Failed! Falsifiable (after 1 test):  
+0
+0
+prop_le
++++ OK, passed 100 tests.
+prop_eq
++++ OK, passed 100 tests.
+prop_ge
++++ OK, passed 100 tests.
+prop_gt
+*** Failed! Falsifiable (after 1 test):  
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+0
+0
+3
+4
+Preprocessing library ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+Configuring ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+
+add_test.hs:5:7:
+    Could not find module `Test.HUnit':
+      It is a member of the hidden package `HUnit-1.2.2.1'.
+      Perhaps you need to add `HUnit' to the build-depends in your .cabal file.
+      Use -v to see a list of the files searched for.
+runghc: exit 1
+Setup: ch2.cabal:9: Do not use tabs for indentation (use spaces instead)
+Tabs were used at (line,column): [(9,14)]
+runghc: exit 1
+Setup: ch2.cabal:8: Parse of field 'build-depends' failed.
+runghc: exit 1
+Setup: ch2.cabal:8: Parse of field 'build-depends' failed.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+
+add_test.hs:4:7:
+    Could not find module `Add':
+      Use -v to see a list of the files searched for.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Setup: can't find source for Add in ., dist/build/autogen
+runghc: exit 1
+make: *** No rule to make target `clean'.  Stop.
+make: exit 2
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[1 of 1] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:1:0:
+    Failed to load interface for `Prelude':
+      It is a member of the hidden package `base'.
+      Perhaps you need to add `base' to the build-depends in your .cabal file.
+      It is a member of the hidden package `base-3.0.3.2'.
+      Perhaps you need to add `base' to the build-depends in your .cabal file.
+      Use -v to see a list of the files searched for.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[1 of 1] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_test/add_test-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:12:33:
+    Ambiguous type variable `a' in the constraints:
+      `Test.QuickCheck.Arbitrary a'
+        arising from a use of `run' at add_test.hs:12:33-43
+      `Num a' arising from a use of `prop_lt' at add_test.hs:12:37-43
+      `Ord a' arising from a use of `prop_lt' at add_test.hs:12:37-43
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:46:
+    Ambiguous type variable `a1' in the constraints:
+      `Test.QuickCheck.Arbitrary a1'
+        arising from a use of `run' at add_test.hs:12:46-56
+      `Num a1' arising from a use of `prop_le' at add_test.hs:12:50-56
+      `Ord a1' arising from a use of `prop_le' at add_test.hs:12:50-56
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:59:
+    Ambiguous type variable `a2' in the constraints:
+      `Test.QuickCheck.Arbitrary a2'
+        arising from a use of `run' at add_test.hs:12:59-69
+      `Num a2' arising from a use of `prop_eq' at add_test.hs:12:63-69
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:72:
+    Ambiguous type variable `a3' in the constraints:
+      `Test.QuickCheck.Arbitrary a3'
+        arising from a use of `run' at add_test.hs:12:72-82
+      `Num a3' arising from a use of `prop_ge' at add_test.hs:12:76-82
+      `Ord a3' arising from a use of `prop_ge' at add_test.hs:12:76-82
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:85:
+    Ambiguous type variable `a4' in the constraints:
+      `Test.QuickCheck.Arbitrary a4'
+        arising from a use of `run' at add_test.hs:12:85-95
+      `Num a4' arising from a use of `prop_gt' at add_test.hs:12:89-95
+      `Ord a4' arising from a use of `prop_gt' at add_test.hs:12:89-95
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:12:33:
+    Ambiguous type variable `a' in the constraints:
+      `Test.QuickCheck.Arbitrary a'
+        arising from a use of `run' at add_test.hs:12:33-43
+      `Num a' arising from a use of `prop_lt' at add_test.hs:12:37-43
+      `Ord a' arising from a use of `prop_lt' at add_test.hs:12:37-43
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:46:
+    Ambiguous type variable `a1' in the constraints:
+      `Test.QuickCheck.Arbitrary a1'
+        arising from a use of `run' at add_test.hs:12:46-56
+      `Num a1' arising from a use of `prop_le' at add_test.hs:12:50-56
+      `Ord a1' arising from a use of `prop_le' at add_test.hs:12:50-56
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:59:
+    Ambiguous type variable `a2' in the constraints:
+      `Test.QuickCheck.Arbitrary a2'
+        arising from a use of `run' at add_test.hs:12:59-69
+      `Num a2' arising from a use of `prop_eq' at add_test.hs:12:63-69
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:72:
+    Ambiguous type variable `a3' in the constraints:
+      `Test.QuickCheck.Arbitrary a3'
+        arising from a use of `run' at add_test.hs:12:72-82
+      `Num a3' arising from a use of `prop_ge' at add_test.hs:12:76-82
+      `Ord a3' arising from a use of `prop_ge' at add_test.hs:12:76-82
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:12:85:
+    Ambiguous type variable `a4' in the constraints:
+      `Test.QuickCheck.Arbitrary a4'
+        arising from a use of `run' at add_test.hs:12:85-95
+      `Num a4' arising from a use of `prop_gt' at add_test.hs:12:89-95
+      `Ord a4' arising from a use of `prop_gt' at add_test.hs:12:89-95
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:22:27:
+    Ambiguous type variable `a' in the constraints:
+      `Arbitrary a' arising from a use of `run' at add_test.hs:22:27-37
+      `Num a' arising from a use of `prop_le' at add_test.hs:22:31-37
+      `Ord a' arising from a use of `prop_le' at add_test.hs:22:31-37
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:22:40:
+    Ambiguous type variable `a1' in the constraints:
+      `Arbitrary a1' arising from a use of `run' at add_test.hs:22:40-50
+      `Num a1' arising from a use of `prop_eq' at add_test.hs:22:44-50
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:22:53:
+    Ambiguous type variable `a2' in the constraints:
+      `Arbitrary a2' arising from a use of `run' at add_test.hs:22:53-63
+      `Num a2' arising from a use of `prop_ge' at add_test.hs:22:57-63
+      `Ord a2' arising from a use of `prop_ge' at add_test.hs:22:57-63
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:22:66:
+    Ambiguous type variable `a3' in the constraints:
+      `Arbitrary a3' arising from a use of `run' at add_test.hs:22:66-76
+      `Num a3' arising from a use of `prop_gt' at add_test.hs:22:70-76
+      `Ord a3' arising from a use of `prop_gt' at add_test.hs:22:70-76
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+                   simple : #...#                            (600)
+
+    ** test 5 of simple failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of simple failed with the binding(s)
+    **   0
+    **   0
+
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+                   simple : #...#                            (600)
+
+    ** test 5 of simple failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of simple failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#                            (600)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#                            (600)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:20:0:
+    Multiple declarations of `Main.prop_lt'
+    Declared at: add_test.hs:10:0
+                 add_test.hs:20:0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#                            (600)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#                            (600)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:29:0: parse error (possibly incorrect indentation)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:28:5: Not in scope: `prop_commutative'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+               relational : 0:
+0
+0
+#0:
+0
+0
+1:
+0
+0
+2:
+-3
+-1
+3:
+-2
+2
+4:
+0
+-1
+5:
+-2
+-2
+6:
+1
+1
+7:
+-3
+3
+8:
+-1
+1
+9:
+-1
+-1
+10:
+2
+-2
+11:
+0
+5
+12:
+-2
+-1
+13:
+-7
+5
+14:
+2
+2
+15:
+4
+-2
+16:
+-1
+2
+17:
+0
+-3
+18:
+1
+-1
+19:
+-1
+-4
+20:
+1
+-1
+21:
+3
+-7
+22:
+-10
+-6
+23:
+-2
+-1
+24:
+0
+1
+25:
+0
+0
+26:
+-2
+3
+27:
+3
+-11
+28:
+-1
+-2
+29:
+7
+-9
+30:
+9
+4
+31:
+2
+-3
+32:
+4
+-3
+33:
+-2
+-5
+34:
+0
+-1
+35:
+0
+0
+36:
+8
+-8
+37:
+-3
+0
+38:
+0
+0
+39:
+-14
+-9
+40:
+-6
+5
+41:
+-3
+-3
+42:
+24
+15
+43:
+-5
+-4
+44:
+3
+5
+45:
+8
+5
+46:
+-6
+9
+47:
+-1
+0
+48:
+-2
+0
+49:
+9
+-10
+50:
+-4
+-5
+51:
+-3
+-2
+52:
+-1
+-17
+53:
+14
+-3
+54:
+7
+-8
+55:
+-1
+-3
+56:
+-7
+0
+57:
+-1
+-2
+58:
+3
+11
+59:
+2
+6
+60:
+-5
+29
+61:
+-3
+6
+62:
+12
+-8
+63:
+2
+-1
+64:
+-7
+-9
+65:
+-7
+-4
+66:
+4
+1
+67:
+-8
+-15
+68:
+-7
+1
+69:
+-7
+5
+70:
+-9
+2
+71:
+8
+11
+72:
+4
+4
+73:
+0
+1
+74:
+1
+-6
+75:
+4
+-3
+76:
+-35
+20
+77:
+0
+2
+78:
+-3
+5
+79:
+-8
+-29
+80:
+7
+9
+81:
+-3
+3
+82:
+0
+-2
+83:
+-5
+6
+84:
+8
+-7
+85:
+-31
+21
+86:
+-8
+-8
+87:
+5
+-14
+88:
+29
+-30
+89:
+13
+-13
+90:
+-13
+10
+91:
+42
+-17
+92:
+2
+-1
+93:
+23
+-23
+94:
+-20
+3
+95:
+22
+-29
+96:
+-10
+22
+97:
+-37
+-11
+98:
+3
+0
+99:
+19
+-29
+100:
+27
+23
+101:
+-8
+3
+102:
+12
+-5
+103:
+-18
+16
+104:
+-11
+8
+105:
+7
+1
+106:
+-6
+2
+107:
+-17
+-31
+108:
+19
+17
+109:
+-15
+8
+110:
+2
+-1
+111:
+33
+35
+112:
+16
+43
+113:
+0
+0
+114:
+5
+24
+115:
+-27
+7
+116:
+-57
+-13
+117:
+6
+23
+118:
+14
+-12
+119:
+19
+3
+120:
+-26
+4
+121:
+-21
+-38
+122:
+16
+-23
+123:
+-9
+11
+124:
+7
+-7
+125:
+30
+7
+126:
+-20
+16
+127:
+-30
+-28
+128:
+24
+-50
+129:
+-54
+-27
+130:
+33
+21
+131:
+23
+-44
+132:
+0
+2
+133:
+0
+0
+134:
+22
+-11
+135:
+4
+9
+136:
+18
+2
+137:
+-14
+3
+138:
+-22
+14
+139:
+13
+11
+140:
+-13
+-6
+141:
+18
+-16
+142:
+-4
+-10
+143:
+-11
+-2
+144:
+24
+24
+145:
+-41
+-30
+146:
+48
+24
+147:
+-54
+-55
+148:
+-2
+-33
+149:
+53
+-35
+150:
+-21
+27
+151:
+-57
+41
+152:
+10
+-8
+153:
+-19
+31
+154:
+-17
+28
+155:
+0
+0
+156:
+-6
+8
+157:
+12
+-8
+158:
+-33
+-29
+159:
+-30
+-16
+160:
+-12
+-53
+161:
+44
+8
+162:
+-17
+48
+163:
+12
+-18
+164:
+34
+36
+165:
+-54
+6
+166:
+38
+-19
+167:
+-13
+23
+168:
+-14
+6
+169:
+13
+12
+170:
+-11
+12
+171:
+37
+15
+172:
+27
+37
+173:
+21
+12
+174:
+-49
+-46
+175:
+-9
+7
+176:
+-12
+39
+177:
+-23
+-39
+178:
+-44
+-45
+179:
+39
+-11
+180:
+-38
+28
+181:
+50
+-53
+182:
+-19
+-2
+183:
+-1
+1
+184:
+-13
+-11
+185:
+-23
+28
+186:
+-31
+35
+187:
+2
+3
+188:
+44
+-80
+189:
+1
+40
+190:
+50
+-77
+191:
+-43
+9
+192:
+-53
+-45
+193:
+-34
+87
+194:
+-23
+9
+195:
+-40
+-11
+196:
+36
+-44
+197:
+-16
+-56
+198:
+-17
+63
+199:
+3
+-5
+.0:
+0
+0
+1:
+0
+0
+2:
+-3
+-1
+3:
+-2
+2
+4:
+0
+-1
+5:
+-2
+-2
+6:
+1
+1
+7:
+-3
+3
+8:
+-1
+1
+9:
+-1
+-1
+10:
+2
+-2
+11:
+0
+5
+12:
+-2
+-1
+13:
+-7
+5
+14:
+2
+2
+15:
+4
+-2
+16:
+-1
+2
+17:
+0
+-3
+18:
+1
+-1
+19:
+-1
+-4
+20:
+1
+-1
+21:
+3
+-7
+22:
+-10
+-6
+23:
+-2
+-1
+24:
+0
+1
+25:
+0
+0
+26:
+-2
+3
+27:
+3
+-11
+28:
+-1
+-2
+29:
+7
+-9
+30:
+9
+4
+31:
+2
+-3
+32:
+4
+-3
+33:
+-2
+-5
+34:
+0
+-1
+35:
+0
+0
+36:
+8
+-8
+37:
+-3
+0
+38:
+0
+0
+39:
+-14
+-9
+40:
+-6
+5
+41:
+-3
+-3
+42:
+24
+15
+43:
+-5
+-4
+44:
+3
+5
+45:
+8
+5
+46:
+-6
+9
+47:
+-1
+0
+48:
+-2
+0
+49:
+9
+-10
+50:
+-4
+-5
+51:
+-3
+-2
+52:
+-1
+-17
+53:
+14
+-3
+54:
+7
+-8
+55:
+-1
+-3
+56:
+-7
+0
+57:
+-1
+-2
+58:
+3
+11
+59:
+2
+6
+60:
+-5
+29
+61:
+-3
+6
+62:
+12
+-8
+63:
+2
+-1
+64:
+-7
+-9
+65:
+-7
+-4
+66:
+4
+1
+67:
+-8
+-15
+68:
+-7
+1
+69:
+-7
+5
+70:
+-9
+2
+71:
+8
+11
+72:
+4
+4
+73:
+0
+1
+74:
+1
+-6
+75:
+4
+-3
+76:
+-35
+20
+77:
+0
+2
+78:
+-3
+5
+79:
+-8
+-29
+80:
+7
+9
+81:
+-3
+3
+82:
+0
+-2
+83:
+-5
+6
+84:
+8
+-7
+85:
+-31
+21
+86:
+-8
+-8
+87:
+5
+-14
+88:
+29
+-30
+89:
+13
+-13
+90:
+-13
+10
+91:
+42
+-17
+92:
+2
+-1
+93:
+23
+-23
+94:
+-20
+3
+95:
+22
+-29
+96:
+-10
+22
+97:
+-37
+-11
+98:
+3
+0
+99:
+19
+-29
+100:
+27
+23
+101:
+-8
+3
+102:
+12
+-5
+103:
+-18
+16
+104:
+-11
+8
+105:
+7
+1
+106:
+-6
+2
+107:
+-17
+-31
+108:
+19
+17
+109:
+-15
+8
+110:
+2
+-1
+111:
+33
+35
+112:
+16
+43
+113:
+0
+0
+114:
+5
+24
+115:
+-27
+7
+116:
+-57
+-13
+117:
+6
+23
+118:
+14
+-12
+119:
+19
+3
+120:
+-26
+4
+121:
+-21
+-38
+122:
+16
+-23
+123:
+-9
+11
+124:
+7
+-7
+125:
+30
+7
+126:
+-20
+16
+127:
+-30
+-28
+128:
+24
+-50
+129:
+-54
+-27
+130:
+33
+21
+131:
+23
+-44
+132:
+0
+2
+133:
+0
+0
+134:
+22
+-11
+135:
+4
+9
+136:
+18
+2
+137:
+-14
+3
+138:
+-22
+14
+139:
+13
+11
+140:
+-13
+-6
+141:
+18
+-16
+142:
+-4
+-10
+143:
+-11
+-2
+144:
+24
+24
+145:
+-41
+-30
+146:
+48
+24
+147:
+-54
+-55
+148:
+-2
+-33
+149:
+53
+-35
+150:
+-21
+27
+151:
+-57
+41
+152:
+10
+-8
+153:
+-19
+31
+154:
+-17
+28
+155:
+0
+0
+156:
+-6
+8
+157:
+12
+-8
+158:
+-33
+-29
+159:
+-30
+-16
+160:
+-12
+-53
+161:
+44
+8
+162:
+-17
+48
+163:
+12
+-18
+164:
+34
+36
+165:
+-54
+6
+166:
+38
+-19
+167:
+-13
+23
+168:
+-14
+6
+169:
+13
+12
+170:
+-11
+12
+171:
+37
+15
+172:
+27
+37
+173:
+21
+12
+174:
+-49
+-46
+175:
+-9
+7
+176:
+-12
+39
+177:
+-23
+-39
+178:
+-44
+-45
+179:
+39
+-11
+180:
+-38
+28
+181:
+50
+-53
+182:
+-19
+-2
+183:
+-1
+1
+184:
+-13
+-11
+185:
+-23
+28
+186:
+-31
+35
+187:
+2
+3
+188:
+44
+-80
+189:
+1
+40
+190:
+50
+-77
+191:
+-43
+9
+192:
+-53
+-45
+193:
+-34
+87
+194:
+-23
+9
+195:
+-40
+-11
+196:
+36
+-44
+197:
+-16
+-56
+198:
+-17
+63
+199:
+3
+-5
+.0:
+0
+0
+1:
+0
+0
+2:
+-3
+-1
+3:
+-2
+2
+4:
+0
+-1
+5:
+-2
+-2
+6:
+1
+1
+7:
+-3
+3
+8:
+-1
+1
+9:
+-1
+-1
+10:
+2
+-2
+11:
+0
+5
+12:
+-2
+-1
+13:
+-7
+5
+14:
+2
+2
+15:
+4
+-2
+16:
+-1
+2
+17:
+0
+-3
+18:
+1
+-1
+19:
+-1
+-4
+20:
+1
+-1
+21:
+3
+-7
+22:
+-10
+-6
+23:
+-2
+-1
+24:
+0
+1
+25:
+0
+0
+26:
+-2
+3
+27:
+3
+-11
+28:
+-1
+-2
+29:
+7
+-9
+30:
+9
+4
+31:
+2
+-3
+32:
+4
+-3
+33:
+-2
+-5
+34:
+0
+-1
+35:
+0
+0
+36:
+8
+-8
+37:
+-3
+0
+38:
+0
+0
+39:
+-14
+-9
+40:
+-6
+5
+41:
+-3
+-3
+42:
+24
+15
+43:
+-5
+-4
+44:
+3
+5
+45:
+8
+5
+46:
+-6
+9
+47:
+-1
+0
+48:
+-2
+0
+49:
+9
+-10
+50:
+-4
+-5
+51:
+-3
+-2
+52:
+-1
+-17
+53:
+14
+-3
+54:
+7
+-8
+55:
+-1
+-3
+56:
+-7
+0
+57:
+-1
+-2
+58:
+3
+11
+59:
+2
+6
+60:
+-5
+29
+61:
+-3
+6
+62:
+12
+-8
+63:
+2
+-1
+64:
+-7
+-9
+65:
+-7
+-4
+66:
+4
+1
+67:
+-8
+-15
+68:
+-7
+1
+69:
+-7
+5
+70:
+-9
+2
+71:
+8
+11
+72:
+4
+4
+73:
+0
+1
+74:
+1
+-6
+75:
+4
+-3
+76:
+-35
+20
+77:
+0
+2
+78:
+-3
+5
+79:
+-8
+-29
+80:
+7
+9
+81:
+-3
+3
+82:
+0
+-2
+83:
+-5
+6
+84:
+8
+-7
+85:
+-31
+21
+86:
+-8
+-8
+87:
+5
+-14
+88:
+29
+-30
+89:
+13
+-13
+90:
+-13
+10
+91:
+42
+-17
+92:
+2
+-1
+93:
+23
+-23
+94:
+-20
+3
+95:
+22
+-29
+96:
+-10
+22
+97:
+-37
+-11
+98:
+3
+0
+99:
+19
+-29
+100:
+27
+23
+101:
+-8
+3
+102:
+12
+-5
+103:
+-18
+16
+104:
+-11
+8
+105:
+7
+1
+106:
+-6
+2
+107:
+-17
+-31
+108:
+19
+17
+109:
+-15
+8
+110:
+2
+-1
+111:
+33
+35
+112:
+16
+43
+113:
+0
+0
+114:
+5
+24
+115:
+-27
+7
+116:
+-57
+-13
+117:
+6
+23
+118:
+14
+-12
+119:
+19
+3
+120:
+-26
+4
+121:
+-21
+-38
+122:
+16
+-23
+123:
+-9
+11
+124:
+7
+-7
+125:
+30
+7
+126:
+-20
+16
+127:
+-30
+-28
+128:
+24
+-50
+129:
+-54
+-27
+130:
+33
+21
+131:
+23
+-44
+132:
+0
+2
+133:
+0
+0
+134:
+22
+-11
+135:
+4
+9
+136:
+18
+2
+137:
+-14
+3
+138:
+-22
+14
+139:
+13
+11
+140:
+-13
+-6
+141:
+18
+-16
+142:
+-4
+-10
+143:
+-11
+-2
+144:
+24
+24
+145:
+-41
+-30
+146:
+48
+24
+147:
+-54
+-55
+148:
+-2
+-33
+149:
+53
+-35
+150:
+-21
+27
+151:
+-57
+41
+152:
+10
+-8
+153:
+-19
+31
+154:
+-17
+28
+155:
+0
+0
+156:
+-6
+8
+157:
+12
+-8
+158:
+-33
+-29
+159:
+-30
+-16
+160:
+-12
+-53
+161:
+44
+8
+162:
+-17
+48
+163:
+12
+-18
+164:
+34
+36
+165:
+-54
+6
+166:
+38
+-19
+167:
+-13
+23
+168:
+-14
+6
+169:
+13
+12
+170:
+-11
+12
+171:
+37
+15
+172:
+27
+37
+173:
+21
+12
+174:
+-49
+-46
+175:
+-9
+7
+176:
+-12
+39
+177:
+-23
+-39
+178:
+-44
+-45
+179:
+39
+-11
+180:
+-38
+28
+181:
+50
+-53
+182:
+-19
+-2
+183:
+-1
+1
+184:
+-13
+-11
+185:
+-23
+28
+186:
+-31
+35
+187:
+2
+3
+188:
+44
+-80
+189:
+1
+40
+190:
+50
+-77
+191:
+-43
+9
+192:
+-53
+-45
+193:
+-34
+87
+194:
+-23
+9
+195:
+-40
+-11
+196:
+36
+-44
+197:
+-16
+-56
+198:
+-17
+63
+199:
+3
+-5
+.0:
+0
+0
+#0:
+0
+0
+1:
+0
+0
+2:
+-3
+-1
+3:
+-2
+2
+4:
+0
+-1
+5:
+-2
+-2
+6:
+1
+1
+7:
+-3
+3
+8:
+-1
+1
+9:
+-1
+-1
+10:
+2
+-2
+11:
+0
+5
+12:
+-2
+-1
+13:
+-7
+5
+14:
+2
+2
+15:
+4
+-2
+16:
+-1
+2
+17:
+0
+-3
+18:
+1
+-1
+19:
+-1
+-4
+20:
+1
+-1
+21:
+3
+-7
+22:
+-10
+-6
+23:
+-2
+-1
+24:
+0
+1
+25:
+0
+0
+26:
+-2
+3
+27:
+3
+-11
+28:
+-1
+-2
+29:
+7
+-9
+30:
+9
+4
+31:
+2
+-3
+32:
+4
+-3
+33:
+-2
+-5
+34:
+0
+-1
+35:
+0
+0
+36:
+8
+-8
+37:
+-3
+0
+38:
+0
+0
+39:
+-14
+-9
+40:
+-6
+5
+41:
+-3
+-3
+42:
+24
+15
+43:
+-5
+-4
+44:
+3
+5
+45:
+8
+5
+46:
+-6
+9
+47:
+-1
+0
+48:
+-2
+0
+49:
+9
+-10
+50:
+-4
+-5
+51:
+-3
+-2
+52:
+-1
+-17
+53:
+14
+-3
+54:
+7
+-8
+55:
+-1
+-3
+56:
+-7
+0
+57:
+-1
+-2
+58:
+3
+11
+59:
+2
+6
+60:
+-5
+29
+61:
+-3
+6
+62:
+12
+-8
+63:
+2
+-1
+64:
+-7
+-9
+65:
+-7
+-4
+66:
+4
+1
+67:
+-8
+-15
+68:
+-7
+1
+69:
+-7
+5
+70:
+-9
+2
+71:
+8
+11
+72:
+4
+4
+73:
+0
+1
+74:
+1
+-6
+75:
+4
+-3
+76:
+-35
+20
+77:
+0
+2
+78:
+-3
+5
+79:
+-8
+-29
+80:
+7
+9
+81:
+-3
+3
+82:
+0
+-2
+83:
+-5
+6
+84:
+8
+-7
+85:
+-31
+21
+86:
+-8
+-8
+87:
+5
+-14
+88:
+29
+-30
+89:
+13
+-13
+90:
+-13
+10
+91:
+42
+-17
+92:
+2
+-1
+93:
+23
+-23
+94:
+-20
+3
+95:
+22
+-29
+96:
+-10
+22
+97:
+-37
+-11
+98:
+3
+0
+99:
+19
+-29
+100:
+27
+23
+101:
+-8
+3
+102:
+12
+-5
+103:
+-18
+16
+104:
+-11
+8
+105:
+7
+1
+106:
+-6
+2
+107:
+-17
+-31
+108:
+19
+17
+109:
+-15
+8
+110:
+2
+-1
+111:
+33
+35
+112:
+16
+43
+113:
+0
+0
+114:
+5
+24
+115:
+-27
+7
+116:
+-57
+-13
+117:
+6
+23
+118:
+14
+-12
+119:
+19
+3
+120:
+-26
+4
+121:
+-21
+-38
+122:
+16
+-23
+123:
+-9
+11
+124:
+7
+-7
+125:
+30
+7
+126:
+-20
+16
+127:
+-30
+-28
+128:
+24
+-50
+129:
+-54
+-27
+130:
+33
+21
+131:
+23
+-44
+132:
+0
+2
+133:
+0
+0
+134:
+22
+-11
+135:
+4
+9
+136:
+18
+2
+137:
+-14
+3
+138:
+-22
+14
+139:
+13
+11
+140:
+-13
+-6
+141:
+18
+-16
+142:
+-4
+-10
+143:
+-11
+-2
+144:
+24
+24
+145:
+-41
+-30
+146:
+48
+24
+147:
+-54
+-55
+148:
+-2
+-33
+149:
+53
+-35
+150:
+-21
+27
+151:
+-57
+41
+152:
+10
+-8
+153:
+-19
+31
+154:
+-17
+28
+155:
+0
+0
+156:
+-6
+8
+157:
+12
+-8
+158:
+-33
+-29
+159:
+-30
+-16
+160:
+-12
+-53
+161:
+44
+8
+162:
+-17
+48
+163:
+12
+-18
+164:
+34
+36
+165:
+-54
+6
+166:
+38
+-19
+167:
+-13
+23
+168:
+-14
+6
+169:
+13
+12
+170:
+-11
+12
+171:
+37
+15
+172:
+27
+37
+173:
+21
+12
+174:
+-49
+-46
+175:
+-9
+7
+176:
+-12
+39
+177:
+-23
+-39
+178:
+-44
+-45
+179:
+39
+-11
+180:
+-38
+28
+181:
+50
+-53
+182:
+-19
+-2
+183:
+-1
+1
+184:
+-13
+-11
+185:
+-23
+28
+186:
+-31
+35
+187:
+2
+3
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+188:
+44
+-80
+189:
+1
+40
+190:
+50
+-77
+191:
+-43
+9
+192:
+-53
+-45
+193:
+-34
+87
+194:
+-23
+9
+195:
+-40
+-11
+196:
+36
+-44
+197:
+-16
+-56
+198:
+-17
+63
+199:
+3
+-5
+.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:10:8: Not in scope: `x'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:11:13: Not in scope: data constructor `Gen'
+
+add_test.hs:11:17: Not in scope: data constructor `Int'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:11:13: Not in scope: data constructor `Gen'
+
+add_test.hs:11:18: Not in scope: data constructor `Int'
+
+add_test.hs:11:22: Not in scope: `a'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:11:13: Not in scope: data constructor `Gen'
+
+add_test.hs:11:18: Not in scope: data constructor `Int'
+
+add_test.hs:11:22: Not in scope: `a'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:11:25:
+    Couldn't match expected type `Property'
+           against inferred type `Bool'
+    In the expression: x + y < add x y
+    In the definition of `prop_relational_lt':
+        prop_relational_lt x y = x + y < add x y
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:27:1:
+    Ambiguous type variable `a' in the constraints:
+      `Arbitrary a' arising from a use of `run' at add_test.hs:27:1-22
+      `Num a'
+        arising from a use of `prop_relational_gt' at add_test.hs:27:5-22
+      `Ord a'
+        arising from a use of `prop_relational_gt' at add_test.hs:27:5-22
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:27:1:
+    Ambiguous type variable `a' in the constraints:
+      `Arbitrary a' arising from a use of `run' at add_test.hs:27:1-22
+      `Num a'
+        arising from a use of `prop_relational_gt' at add_test.hs:27:5-22
+      `Ord a'
+        arising from a use of `prop_relational_gt' at add_test.hs:27:5-22
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (800)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+f          1           7         238         266  61.5217391 
+          7          71         939           0           0 /home/jdc/git/rwhaskell/ch2/guide Del Snarf Undo Redo | Look |fmt -w 72

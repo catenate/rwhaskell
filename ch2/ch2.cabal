@@ -1,0 +1,12 @@
+name: ch2
+version: 0.1
+cabal-version: >= 1.2
+build-type: Simple
+
+library
+  exposed-modules: Add
+  build-depends: base
+
+executable add_test
+  main-is: add_test.hs
+  build-depends: QuickCheck >= 1.2, QuickCheck < 2.0, HUnit >= 1.2

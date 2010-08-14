@@ -1,12 +1,47 @@
+/home/jdc/Dropbox/kanban
 /home/jdc/Dropbox/nb
+cabal --help
+cabal list quickcheck
+cabal upgrade --help
+cabal upgrade quickcheck
 mk clean
+mk add_test.run
+mk apply.run
+mk list_tuple.run
 mk types.run
+runghc Setup configure
+runghc Setup build
+dist/build/add_test/add_test
+touch apply.lhs
 |fmt -w 72
 |sed 's,`,‘,g;s,'',’,g'
+|sed 's,^,> ,g'
 |sort|uniq
+|tr '[A-Z]' '[a-z]'
 
 ghci <<EOF
-:info []
+:info $$
+EOF
+
+ghci <<EOF
+:type [[True],[False,False]]
+:type (True, "Hello")
+:type (False, 'a')
+:type ('a', False)
+:type (False, 'a', 'b')
+:type lines
+:type readFile
+EOF
+
+# p. 25 exercises
+# Bool
+# ([[Char]], Char)
+# [(Bool, [[Char]])]
+#   [] ∷ [[Char]] since all list elements must have same type
+ghci <<EOF
+:type False
+:type (["foo", "bar"], 'a')
+:type [(True, []), (False, [['a']])]
 EOF
 
 ghci <<EOF
