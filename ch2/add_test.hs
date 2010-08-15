@@ -7,35 +7,32 @@ import Test.QuickCheck
 import Test.QuickCheck.Batch
 import Unicoper
 
-prop_relational_lt ∷ Int → Int → Bool; prop_relational_lt x y = x + y < add x y
+r = run ∷ (Int → Int → Bool) → TestOptions → IO TestResult
 
-prop_relational_le x y = x + y ≤ add x y where types = x :: Int
+prop_relational_lt x y = x + y < add x y
+prop_relational_le x y = x + y ≤ add x y
+prop_relational_eq x y = x + y =? add x y
+prop_relational_ge x y = x + y ≥ add x y
+prop_relational_gt x y = x + y > add x y
 
-prop_relational_eq x y = x + y =? add x y where types = x :: Int
+prop_commutative x y = add x y =? add y x
 
-prop_relational_ge x y = x + y ≥ add x y where types = x :: Int
+prop_identitx x y =
+	x =? 0 ==> add x y =? y
+	where types = (x∷Int, y∷Int)
 
-prop_relational_gt x y = x + y > add x y where types = x :: Int
+prop_identity x y =
+	y =? 0 ==> add x y =? x
+	where types = (x∷Int, y∷Int)
 
-prop_commutative ∷ Int → Int → Bool; prop_commutative x y = add x y =? add y x
-
-allChecks = [
-	run prop_relational_lt,
-	run prop_relational_le,
-	run prop_relational_eq,
-	run prop_relational_ge,
-	run prop_relational_gt,
-	run prop_commutative
+props = [
+	r prop_relational_lt, r prop_relational_le, r prop_relational_eq, r prop_relational_ge, r prop_relational_gt,
+	r prop_commutative,
+	run prop_identitx, run prop_identity
 	]
 
-options = TestOptions {
-	no_of_tests = 200,
-	length_of_tests = 1,
-	debug_tests = False
-}
-
 main = do
-	runTests "relational" options allChecks
+	runTests "relational" defOpt props
 	runTestTT test3
 	runTestTT test4
 

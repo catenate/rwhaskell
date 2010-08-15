@@ -6,5 +6,5 @@ http://haskell.org/haskellwiki/How_to_write_a_Haskell_program
 
 git status
 git add .
-git commit -a -m 'Clean up chapter 1. Start chapter 2.'
+git commit -a -m 'Add small programs to add rows (ch2/add_row) or columns (ch2/add_col) of numbers on stdin.'
 git push origin master

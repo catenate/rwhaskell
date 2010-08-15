@@ -6,9 +6,9 @@ w Newcol Kill Putall Dump acme.dump Exit
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
 f          0           1           0           0   2.0652174 
-          1          46          74           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
-f          0           2         125         125   4.1304348 
-          2          57         125           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf Undo | Look 
+          1          46          82           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look 
+f          0           2         142         142   4.1304348 
+          2          52         142           0           0 /home/jdc/git/rwhaskell/.gitignore Del Snarf | Look 
 F          1           0         492         565   2.0652174         565 
           3          25         565           0           1 +Errors Del Snarf | Look 
 can't open /home/jdc/git/rwhaskell/qctest/ensorcel: No such file or directory
@@ -18,8 +18,8 @@ can't open /home/jdc/git/rwhaskell/ch1/guide: No such file or directory
 /home/jdc/.cabal/lib/simple-reflect-0.2/ghc-6.12.1/Debug/SimpleReflect/Expr.hi: NUL bytes elided
 can't open /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs: No such file or directory
 /home/jdc/git/rwhaskell/ch1/cpprint.ℓhs not written; file already exists
-F          1           1       71540       71540   4.1304348       71540 
-          4          58       71540           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
+F          1           1       74790       74790   4.1304348       74790 
+          4          58       74790           0           1 /home/jdc/git/rwhaskell/+Errors Del Snarf Undo Put | Look 
 # On branch master
 # Changes to be committed:
 #   (use "git reset HEAD <file>..." to unstage)
@@ -2026,5 +2026,122 @@ no changes added to commit (use "git add" and/or "git commit -a")
  create mode 100644 ch2/types.lhs
 To git@github.com:catenate/rwhaskell.git
    441746e..91ddfc6  master -> master
-f          1           5         163         242  70.9782609 
-          5          52         242           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   ch2/Unicoper.hs
+#	modified:   ch2/acme.dump
+#	modified:   ch2/guide
+#	modified:   ch2/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch2/Add.hs
+#	ch2/Setup.hs
+#	ch2/add_test.hs
+#	ch2/apply.lhs
+#	ch2/ch2.cabal
+#	ch2/dist/
+#	ch2/list_tuple.lhs
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gitignore
+#	modified:   acme.dump
+#	modified:   ch2/Unicoper.hs
+#	modified:   ch2/acme.dump
+#	modified:   ch2/guide
+#	modified:   ch2/mkfile
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch2/Add.hs
+#	ch2/Setup.hs
+#	ch2/add_test.hs
+#	ch2/apply.lhs
+#	ch2/ch2.cabal
+#	ch2/list_tuple.lhs
+no changes added to commit (use "git add" and/or "git commit -a")
+[master 812f31e] Chapter 2 examples.
+ 12 files changed, 5024 insertions(+), 13 deletions(-)
+ create mode 100644 ch2/Add.hs
+ create mode 100755 ch2/Setup.hs
+ create mode 100644 ch2/add_test.hs
+ create mode 100644 ch2/apply.lhs
+ create mode 100644 ch2/ch2.cabal
+ create mode 100644 ch2/list_tuple.lhs
+To git@github.com:catenate/rwhaskell.git
+   91ddfc6..812f31e  master -> master
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   acme.dump
+#	modified:   ch2/Add.hs
+#	modified:   ch2/acme.dump
+#	modified:   ch2/add_test.hs
+#	modified:   ch2/ch2.cabal
+#	modified:   ch2/guide
+#	modified:   guide
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ch2/add_col.hs
+#	ch2/add_col_spike.hs
+#	ch2/add_col_test.hs
+#	ch2/add_row.hs
+#	ch2/data
+no changes added to commit (use "git add" and/or "git commit -a")
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   acme.dump
+#	modified:   ch2/Add.hs
+#	modified:   ch2/acme.dump
+#	new file:   ch2/add_col.hs
+#	new file:   ch2/add_col_spike.hs
+#	new file:   ch2/add_col_test.hs
+#	new file:   ch2/add_row.hs
+#	modified:   ch2/add_test.hs
+#	modified:   ch2/ch2.cabal
+#	new file:   ch2/data
+#	modified:   ch2/guide
+#	modified:   guide
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   acme.dump
+#	modified:   ch2/Add.hs
+#	modified:   ch2/acme.dump
+#	new file:   ch2/add_col.hs
+#	new file:   ch2/add_col_spike.hs
+#	new file:   ch2/add_col_test.hs
+#	new file:   ch2/add_row.hs
+#	modified:   ch2/add_test.hs
+#	modified:   ch2/ch2.cabal
+#	new file:   ch2/data
+#	modified:   ch2/guide
+#	modified:   guide
+#
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   guide
+#
+f          1           5         142         153  74.6739130 
+          5          52         296           0           0 /home/jdc/git/rwhaskell/guide Del Snarf Undo | Look 

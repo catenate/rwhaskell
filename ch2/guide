@@ -1,23 +1,30 @@
+../scratch
 /home/jdc/Dropbox/kanban
 /home/jdc/Dropbox/nb
 cabal --help
 cabal list quickcheck
 cabal upgrade --help
 cabal upgrade quickcheck
-mk clean
+http://musicdiscovery.cdbabypodcast.com/
 mk add_test.run
 mk apply.run
+mk clean
 mk list_tuple.run
 mk types.run
-runghc Setup configure
-runghc Setup build
-dist/build/add_test/add_test
 touch apply.lhs
 |fmt -w 72
-|sed 's,`,‘,g;s,'',’,g'
 |sed 's,^,> ,g'
+|sed 's,`,‘,g;s,'',’,g'
 |sort|uniq
 |tr '[A-Z]' '[a-z]'
+
+runghc Setup configure
+runghc Setup build
+
+cat data | dist/build/add_col/add_col
+cat data | dist/build/add_row/add_row
+
+cmp <{cat data | dist/build/add_col/add_col} <{cat data | dist/build/add_row/add_row}
 
 ghci <<EOF
 :info $$
@@ -53,3 +60,9 @@ numbers?
 dc <<EOF
 16o64257p
 EOF
+
+options = TestOptions {
+	no_of_tests = 200,
+	length_of_tests = 1,
+	debug_tests = False
+}

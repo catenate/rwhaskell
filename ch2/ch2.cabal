@@ -7,6 +7,18 @@ library
   exposed-modules: Add
   build-depends: base
 
+executable add_col
+  main-is: add_col.hs
+  build-depends: QuickCheck >= 1.2, QuickCheck < 2.0, HUnit >= 1.2
+
+executable add_col_test
+  main-is: add_col_test.hs
+  build-depends: QuickCheck >= 1.2, QuickCheck < 2.0, HUnit >= 1.2
+
+executable add_row
+  main-is: add_row.hs
+  build-depends: QuickCheck >= 1.2, QuickCheck < 2.0, HUnit >= 1.2
+
 executable add_test
   main-is: add_test.hs
   build-depends: QuickCheck >= 1.2, QuickCheck < 2.0, HUnit >= 1.2

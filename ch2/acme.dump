@@ -5,22 +5,24 @@
 w Newcol Kill Putall Dump acme.dump Exit 
 c          0 New Cut Paste Snarf Sort Zerox Delcol 
 c          1 New Cut Paste Snarf Sort Zerox Delcol 
-f          0          12        1662        1662   2.0652174 
-         12          99        1662           0           0 /home/jdc/Dropbox/nb/20100813 Del Snarf Undo | Look 
-f          0           8           0           0   4.1304348 
-          8          53          85           1           0 /home/jdc/git/rwhaskell/ Del Snarf Get | Look scratch
-f          0          15           0           0   6.1956522 
-         15          53         134           1           0 /home/jdc/git/rwhaskell/qctest/ Del Snarf Get | Look 
-f          0           3           0           0   8.2608696 
-          3          50         123           1           0 /home/jdc/git/rwhaskell/ch2/ Del Snarf Get | Look 
-f          0           4          54          54  10.3260870 
-          4          67        1041           0           0 /home/jdc/git/rwhaskell/ch2/add_test.hs Del Snarf Undo Redo | Look 
-f          0          14           0          79  96.0869565 
-         14          54          79           0           0 /home/jdc/git/rwhaskell/scratch Del Snarf Undo | Look 
-f          0          16           0           0  98.1521739 
-         16          55         524           0           0 /home/jdc/git/rwhaskell/qctest/mkfile Del Snarf | Look 
-F          1           0      151308      151308   2.0652174      151308 
-          6          62      151308           0           1 /home/jdc/git/rwhaskell/ch2/+Errors Del Snarf Undo Put | Look 
+f          0           1        1536        1536   2.0652174 
+          1          93        1685           0           0 /home/jdc/Dropbox/nb/20100814 Del Snarf Undo | Look music word
+f          0          23           0           0   4.1304348 
+         23          44        2808           0           0 /home/jdc/Dropbox/nb/music Del Snarf | Look 
+f          0           3          65          65   6.1956522 
+          3          50         153           1           0 /home/jdc/git/rwhaskell/ch2/ Del Snarf Get | Look 
+f          0          28         756         756   8.2608696 
+         28          57         756           0           0 /home/jdc/git/rwhaskell/ch2/Add.hs Del Snarf Undo | Look 
+f          0          26        2671        2671  91.9565217 
+         26          71        2671           0           0 /home/jdc/git/rwhaskell/ch2/add_col_test.hs Del Snarf Undo Redo | Look 
+f          0          37         108         108  94.0217391 
+         37          61         108           0           0 /home/jdc/git/rwhaskell/ch2/add_col.hs Del Snarf Undo | Look 
+f          0          38         566         566  96.0869565 
+         38          60         566           0           0 /home/jdc/git/rwhaskell/ch2/ch2.cabal Del Snarf Undo | Look 
+f          0          39           0           0  98.1521739 
+         39          50          24           0           0 /home/jdc/git/rwhaskell/ch2/data Del Snarf | Look 
+F          1           0      234591      234591   2.0652174      234591 
+          5          62      234591           0           1 /home/jdc/git/rwhaskell/ch2/+Errors Del Snarf Undo Put | Look 
 mk: don't know how to make 'type' in /home/jdc/git/rwhaskell/ch2
 mk: exit 1
 ghc -o types types.lhs Unicoper.lhs
@@ -6172,5 +6174,1734 @@ Cases: 1  Tried: 1  Errors: 0  Failures: 1
     **   0
     **   0
 
-f          1           7         238         266  61.5217391 
-          7          71         939           0           0 /home/jdc/git/rwhaskell/ch2/guide Del Snarf Undo Redo | Look |fmt -w 72
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:25:3:
+    Couldn't match expected type `[Int]' against inferred type `Int'
+    In the first argument of `r', namely `prop_relational_lt'
+    In the expression: r prop_relational_lt
+    In the expression:
+        [r prop_relational_lt, r prop_relational_le, r prop_relational_eq,
+         r prop_relational_ge, ....]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Configuring ch2-0.1...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (400)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (400)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (400)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (400)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#.                           (400)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:26:3:
+    Couldn't match expected type `Bool'
+           against inferred type `Property'
+    In the first argument of `r', namely `prop_identitx'
+    In the expression: r prop_identitx
+    In the expression:
+        [r prop_relational_lt, r prop_relational_le, r prop_relational_eq,
+         r prop_relational_ge, ....]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:26:22:
+    Couldn't match expected type `Bool'
+           against inferred type `Property'
+    In the first argument of `r', namely `prop_identity'
+    In the expression: r prop_identity
+    In the expression:
+        [r prop_relational_lt, r prop_relational_le, r prop_relational_eq,
+         r prop_relational_ge, ....]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+
+add_test.hs:26:1:
+    Ambiguous type variable `a' in the constraints:
+      `Arbitrary a' arising from a use of `run' at add_test.hs:26:1-17
+      `Num a'
+        arising from a use of `prop_identitx' at add_test.hs:26:5-17
+    Probable fix: add a type signature that fixes these type variable(s)
+
+add_test.hs:26:20:
+    Ambiguous type variable `a1' in the constraints:
+      `Arbitrary a1' arising from a use of `run' at add_test.hs:26:20-36
+      `Num a1'
+        arising from a use of `prop_identity' at add_test.hs:26:24-36
+    Probable fix: add a type signature that fixes these type variable(s)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+
+Setup: ./ch2.cabal has been changed, please re-configure.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_col/add_col-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col/add_col-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_row/add_row-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_row/add_row-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+add columns
+add rows
+New data
+add columns
+13139: signal: sys: write on closed pipe
+cat: exit 1
+add rows
+add columns
+add rows
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:11:31:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: [Char]
+      Inferred type: [[Char]]
+    In the second argument of `(++)', namely `ls'
+    In the second argument of `(++)', namely `" + " ++ ls'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:9:29:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: [Char]
+      Inferred type: [String]
+    In the second argument of `(...)', namely `lines input'
+    In the expression: add_row ... lines input
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:9:29:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: String
+      Inferred type: [String]
+    In the second argument of `(...)', namely `lines input'
+    In the expression: add_row ... lines input
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:7:16:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: String
+      Inferred type: [String]
+    In the first argument of `interact', namely `add_rows'
+    In the expression: interact add_rows
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:12:0:
+    Duplicate type signature:
+      add_row.hs:12:0-24: add_row :: String -> String
+      add_row.hs:9:0-28: add_row :: [String] -> [String]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:7:16:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: String
+      Inferred type: [String]
+    In the first argument of `interact', namely `add_rows'
+    In the expression: interact add_rows
+
+add_row.hs:10:36:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: String
+      Inferred type: [String]
+    In the first argument of `lines', namely `input'
+    In the second argument of `map', namely `(lines input)'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:12:21:
+    Couldn't match expected type `Char' against inferred type `String'
+    In the first argument of `map', namely `add_row'
+    In the expression: map add_row (lines input)
+    In the definition of `add_rows':
+        add_rows input = map add_row (lines input)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:10:0: parse error (possibly incorrect indentation)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:9:11:
+    No instance for (Show (a -> a))
+      arising from a use of `show' at add_col.hs:9:11-37
+    Possible fix: add an instance declaration for (Show (a -> a))
+    In the first argument of `putStrLn', namely
+        `(show (map (+) [1, 2, 3, 4]))'
+    In the expression: putStrLn (show (map (+) [1, 2, 3, 4]))
+    In the expression:
+        do { putStrLn "add columns";
+             putStrLn (show (map (+) [1, 2, ....])) }
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:12:21:
+    Couldn't match expected type `Char' against inferred type `String'
+    In the first argument of `map', namely `add_row'
+    In the expression: map add_row (lines input)
+    In the definition of `add_rows':
+        add_rows input = map add_row (lines input)
+runghc: exit 1
+add columns
+[2,3,4,5]
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:12:21:
+    Couldn't match expected type `Char' against inferred type `String'
+    In the first argument of `map', namely `add_row'
+    In the expression: map add_row (lines input)
+    In the definition of `add_rows':
+        add_rows input = map add_row (lines input)
+runghc: exit 1
+add columns
+[2,3,4,5]
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+1 +  2
+3 +  4
+5 +  6
+7 +  8
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:18:31:
+    Couldn't match expected type `String' against inferred type `Char'
+    In the first argument of `read', namely `l'
+    In the first argument of `(+)', namely `read l'
+    In the second argument of `(...)', namely `read l + read ls'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:7:16: Not in scope: `add_cols'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:9:33: Not in scope: `add_row'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+3
+7
+11
+15
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:9:45:
+    Couldn't match expected type `[Char]' against inferred type `Char'
+      Expected type: [[String]]
+      Inferred type: [String]
+    In the second argument of `(...)', namely `lines input'
+    In the second argument of `(...)', namely
+        `map add_col ... lines input'
+
+add_col.hs:11:13:
+    No instance for (Show (a -> a))
+      arising from a use of `show' at add_col.hs:11:13-16
+    Possible fix: add an instance declaration for (Show (a -> a))
+    In the first argument of `(...)', namely `show'
+    In the expression: show ... map (+) ... map read ls
+    In the definition of `add_col':
+        add_col ls = show ... map (+) ... map read ls
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:11:0:
+    The type signature for `add_row' lacks an accompanying binding
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:12:43:
+    Couldn't match expected type `[Char]' against inferred type `Char'
+      Expected type: [String]
+      Inferred type: String
+    In the second argument of `map', namely `ls'
+    In the second argument of `(...)', namely `map read ls'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:12:13:
+    No instance for (Show (a -> a))
+      arising from a use of `show' at add_col.hs:12:13-16
+    Possible fix: add an instance declaration for (Show (a -> a))
+    In the first argument of `(...)', namely `show'
+    In the expression: show ... map (+) ... map read ... words ls
+    In the definition of `add_col':
+        add_col ls = show ... map (+) ... map read ... words ls
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:12:37:
+    Illegal operator `...' in type `Int ... (map read ... words ls)'
+      Use -XTypeOperators to allow operators in types
+
+add_col.hs:12:50:
+    Illegal operator `...' in type `map read ... words ls'
+      Use -XTypeOperators to allow operators in types
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:12:13:
+    No instance for (Show (Int -> Int))
+      arising from a use of `show' at add_col.hs:12:13-56
+    Possible fix: add an instance declaration for (Show (Int -> Int))
+    In the expression: show (map (+) (map read (words ls) :: [Int]))
+    In the definition of `add_col':
+        add_col ls = show (map (+) (map read (words ls) :: [Int]))
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:12:13:
+    No instance for (Show (a -> a))
+      arising from a use of `show' at add_col.hs:12:13-48
+    Possible fix: add an instance declaration for (Show (a -> a))
+    In the expression: show (map (+) (map read (words ls)))
+    In the definition of `add_col':
+        add_col ls = show (map (+) (map read (words ls)))
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:15:30:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+      Expected type: String
+      Inferred type: [String]
+    In the first argument of `words', namely `ls'
+    In the second argument of `map', namely `(words ls)'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+3
+7
+11
+15
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+3
+7
+11
+15
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+3
+7
+11
+15
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+3
+7
+11
+15
+3
+7
+11
+15
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:18:53: Not in scope: `ls'
+
+add_row.hs:21:23: Not in scope: `ls'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+
+add_row.hs:21:23: Not in scope: `ls'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+3
+7
+11
+15
+3
+7
+11
+15
+6
+12
+18
+24
+6
+12
+18
+24
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+6
+12
+18
+24
+6
+12
+18
+24
+/dev/fd/5 /dev/fd/4 differ: char 1cmp: exit 1
+
+6
+12
+18
+24
+1 2 3
+3 4 5
+5 6 7
+7 8 9
+cmp: exit 1
+/dev/fd/5 /dev/fd/4 differ: char 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:15:0:
+    The type signature for `get_ints' lacks an accompanying binding
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:16:37:
+    Couldn't match expected type `[Char]' against inferred type `Char'
+      Expected type: [[String]]
+      Inferred type: [String]
+    In the second argument of `map', namely `ls'
+    In the expression: map (read . head) ls
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:13:54: Not in scope: `s'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+6
+12
+18
+24
+6
+12
+18
+24
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+
+add_col.hs:13:47:
+    Couldn't match expected type `[Char]' against inferred type `Char'
+      Expected type: [String]
+      Inferred type: [Char]
+    In the second argument of `(...)', namely `map head ... words s'
+    In the second argument of `(...)', namely
+        `get_ints ... map head ... words s'
+runghc: exit 1
+Setup: ./ch2.cabal has been changed, please re-configure.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Setup: can't find source for add_col_test in .
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_col_test/add_col_test-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+[2 of 2] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+6
+12
+18
+24
+test Add functions for columns
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[1 of 1] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:5:0: Not in scope: `add_cols'
+
+Add.hs:5:9: Not in scope: `∷'
+
+Add.hs:5:11: Not in scope: data constructor `String'
+
+Add.hs:5:18: Not in scope: `→'
+
+Add.hs:5:20: Not in scope: data constructor `String'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, dist/build/Unicoper.o )
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:12:52:
+    Couldn't match expected type `a -> b'
+           against inferred type `[String]'
+    In the first argument of `map', namely `(column 1)'
+    In the first argument of `(...)', namely `map (column 1)'
+    In the second argument of `(...)', namely
+        `map (column 1) ... words s'
+
+Add.hs:15:0:
+    The equation(s) for `column' have two arguments,
+    but its type `[String] -> [String]' has only one
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking ls -l dist/build/add_col_test/add_col_test ...
+test Add functions for columns
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          ### Failure:
+Simple as 1 2 4
+expected: 4
+ but got: 3
+Cases: 1  Tried: 1  Errors: 0  Failures: 1
+               relational : #...#..?                         (592)
+
+    ** test 5 of relational failed with the binding(s)
+    **   0
+    **   0
+
+
+    ** test 1 of relational failed with the binding(s)
+    **   0
+    **   0
+
+--rwxr-xr-x M 0 jdc jdc 1025055 Aug 14 18:03 dist/build/add_col_test/add_col_test
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:9:11: Not in scope: `test_sum_ints'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:20:84:
+    Couldn't match expected type `Int' against inferred type `[Char]'
+    In the expression: "1"
+    In the first argument of `sum_ints', namely `["1", "3", "5", "7"]'
+    In the third argument of `assertEqual', namely
+        `(sum_ints ["1", "3", "5", "7"])'
+
+add_col_test.hs:21:85:
+    Couldn't match expected type `Int' against inferred type `[Char]'
+    In the expression: "2"
+    In the first argument of `sum_ints', namely `["2", "4", "6", "8"]'
+    In the third argument of `assertEqual', namely
+        `(sum_ints ["2", "4", "6", "8"])'
+
+add_col_test.hs:22:84:
+    Couldn't match expected type `Int' against inferred type `[Char]'
+    In the expression: "3"
+    In the first argument of `sum_ints', namely `["3", "5", "7", "9"]'
+    In the third argument of `assertEqual', namely
+        `(sum_ints ["3", "5", "7", "9"])'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:20:74: Not in scope: `strs_to_ints'
+
+add_col_test.hs:21:75: Not in scope: `strs_to_ints'
+
+add_col_test.hs:22:74: Not in scope: `strs_to_ints'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Cases: 1  Tried: 0  Errors: 0  Failures: 0                                          Cases: 1  Tried: 1  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:9:11:
+    Couldn't match expected type `Test' against inferred type `[a]'
+    In the first argument of `runTestTT', namely
+        `[test_sum_ints_1, test_sum_ints_2]'
+    In a stmt of a 'do' expression:
+        runTestTT [test_sum_ints_1, test_sum_ints_2]
+    In the expression:
+        do { runTestTT [test_sum_ints_1, test_sum_ints_2];
+             runTestTT test_sum_ints_3;
+             runTestTT test_strs_to_ints_1;
+             runTestTT test_strs_to_ints_2;
+             .... }
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:10:1: parse error (possibly incorrect indentation)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:12:1: parse error (possibly incorrect indentation)
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:8:0:
+    Couldn't match expected type `IO t'
+           against inferred type `[IO Counts]'
+    In the expression: main
+    When checking the type of the function `main'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:10:11: Not in scope: `test_strs_to_ints'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:13:1:
+    Couldn't match expected type `m a' against inferred type `Test'
+    In a stmt of a 'do' expression:
+          TestCase $ assertEqual "first column" 16 (sum_ints [1, 3, 5, 7])
+    In the expression:
+        do { TestCase
+           $ assertEqual "first column" 16 (sum_ints [1, 3, ....]);
+             TestCase $ assertEqual "second column" 20 (sum_ints [2, 4, ....]);
+             TestCase $ assertEqual "third column" 24 (sum_ints [3, 5, ....]) }
+    In the definition of `test_sum_ints':
+        test_sum_ints = do { TestCase
+                           $ assertEqual "first column" 16 (sum_ints [1, ....]);
+                             TestCase $ assertEqual "second column" 20 (sum_ints [2, ....]);
+                             TestCase $ assertEqual "third column" 24 (sum_ints [3, ....]) }
+
+add_col_test.hs:18:1:
+    Couldn't match expected type `m a' against inferred type `Test'
+    In a stmt of a 'do' expression:
+          TestCase
+        $ assertEqual
+            "first column" [1, 3, 5, 7] (strs_to_ints ["1", "3", "5", "7"])
+    In the expression:
+        do { TestCase
+           $ assertEqual
+               "first column" [1, 3, ....] (strs_to_ints ["1", "3", ....]);
+             TestCase
+           $ assertEqual
+               "second column" [2, 4, ....] (strs_to_ints ["2", "4", ....]);
+             TestCase
+           $ assertEqual
+               "third column" [3, 5, ....] (strs_to_ints ["3", "5", ....]) }
+    In the definition of `test_strs_to_ints':
+        test_strs_to_ints = do { TestCase
+                               $ assertEqual "first column" [1, ....] (strs_to_ints ["1", ....]);
+                                 TestCase
+                               $ assertEqual "second column" [2, ....] (strs_to_ints ["2", ....]);
+                                 TestCase
+                               $ assertEqual "third column" [3, ....] (strs_to_ints ["3", ....]) }
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:11:1:
+    Couldn't match expected type `m a' against inferred type `Test'
+    In a stmt of a 'do' expression:
+          TestCase $ assertEqual "first column" 16 (sum_ints [1, 3, 5, 7])
+    In the expression:
+        do { TestCase
+           $ assertEqual "first column" 16 (sum_ints [1, 3, ....]);
+             TestCase $ assertEqual "second column" 20 (sum_ints [2, 4, ....]);
+             TestCase $ assertEqual "third column" 24 (sum_ints [3, 5, ....]) }
+    In the definition of `test_sum_ints':
+        test_sum_ints = do { TestCase
+                           $ assertEqual "first column" 16 (sum_ints [1, ....]);
+                             TestCase $ assertEqual "second column" 20 (sum_ints [2, ....]);
+                             TestCase $ assertEqual "third column" 24 (sum_ints [3, ....]) }
+
+add_col_test.hs:16:1:
+    Couldn't match expected type `m a' against inferred type `Test'
+    In a stmt of a 'do' expression:
+          TestCase
+        $ assertEqual
+            "first column" [1, 3, 5, 7] (strs_to_ints ["1", "3", "5", "7"])
+    In the expression:
+        do { TestCase
+           $ assertEqual
+               "first column" [1, 3, ....] (strs_to_ints ["1", "3", ....]);
+             TestCase
+           $ assertEqual
+               "second column" [2, 4, ....] (strs_to_ints ["2", "4", ....]);
+             TestCase
+           $ assertEqual
+               "third column" [3, 5, ....] (strs_to_ints ["3", "5", ....]) }
+    In the definition of `test_strs_to_ints':
+        test_strs_to_ints = do { TestCase
+                               $ assertEqual "first column" [1, ....] (strs_to_ints ["1", ....]);
+                                 TestCase
+                               $ assertEqual "second column" [2, ....] (strs_to_ints ["2", ....]);
+                                 TestCase
+                               $ assertEqual "third column" [3, ....] (strs_to_ints ["3", ....]) }
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 6  Tried: 0  Errors: 0  Failures: 0Cases: 6  Tried: 1  Errors: 0  Failures: 0Cases: 6  Tried: 2  Errors: 0  Failures: 0Cases: 6  Tried: 3  Errors: 0  Failures: 0Cases: 6  Tried: 4  Errors: 0  Failures: 0Cases: 6  Tried: 5  Errors: 0  Failures: 0                                          Cases: 6  Tried: 6  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:32:9:
+    Couldn't match expected type `Char' against inferred type `[Char]'
+    In the expression: "1 2 3"
+    In the first argument of `words', namely
+        `["1 2 3", "3 4 5", "5 6 7", "7 8 9"]'
+    In the third argument of `assertEqual', namely
+        `(words ["1 2 3", "3 4 5", "5 6 7", "7 8 9"])'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 7  Tried: 0  Errors: 0  Failures: 0Cases: 7  Tried: 1  Errors: 0  Failures: 0Cases: 7  Tried: 2  Errors: 0  Failures: 0Cases: 7  Tried: 3  Errors: 0  Failures: 0Cases: 7  Tried: 4  Errors: 0  Failures: 0Cases: 7  Tried: 5  Errors: 0  Failures: 0Cases: 7  Tried: 6  Errors: 0  Failures: 0                                          Cases: 7  Tried: 7  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 7  Tried: 0  Errors: 0  Failures: 0Cases: 7  Tried: 1  Errors: 0  Failures: 0Cases: 7  Tried: 2  Errors: 0  Failures: 0Cases: 7  Tried: 3  Errors: 0  Failures: 0Cases: 7  Tried: 4  Errors: 0  Failures: 0                                          ### Failure in: 4
+convert second column
+expected: [1,3,5,7]
+ but got: [2,4,6,8]
+Cases: 7  Tried: 5  Errors: 0  Failures: 1                                          ### Failure in: 5
+convert third column
+expected: [1,3,5,7]
+ but got: [3,5,7,9]
+Cases: 7  Tried: 6  Errors: 0  Failures: 2                                          Cases: 7  Tried: 7  Errors: 0  Failures: 2
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 7  Tried: 0  Errors: 0  Failures: 0Cases: 7  Tried: 1  Errors: 0  Failures: 0Cases: 7  Tried: 2  Errors: 0  Failures: 0Cases: 7  Tried: 3  Errors: 0  Failures: 0Cases: 7  Tried: 4  Errors: 0  Failures: 0Cases: 7  Tried: 5  Errors: 0  Failures: 0Cases: 7  Tried: 6  Errors: 0  Failures: 0                                          Cases: 7  Tried: 7  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 7  Tried: 0  Errors: 0  Failures: 0Cases: 7  Tried: 1  Errors: 0  Failures: 0Cases: 7  Tried: 2  Errors: 0  Failures: 0Cases: 7  Tried: 3  Errors: 0  Failures: 0Cases: 7  Tried: 4  Errors: 0  Failures: 0Cases: 7  Tried: 5  Errors: 0  Failures: 0Cases: 7  Tried: 6  Errors: 0  Failures: 0                                          Cases: 7  Tried: 7  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+test_map_words = TestCase ... assertEqual "map words"
+	[["1"],["3"],["5"],["7"]]
+	(map (take 1) word_mapped)
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:0:
+    The equation(s) for `column' have two arguments,
+    but its type `[[String]] -> [String]' has only one
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:19:
+    Couldn't match expected type `a1' against inferred type `[a]'
+      `a1' is a rigid type variable bound by
+           the type signature for `column' at Add.hs:14:17
+    In the first argument of `map', namely
+        `(flatten . drop (n − 1) . take n)'
+    In the expression: map (flatten . drop (n − 1) . take n) as
+    In the definition of `column':
+        column n as = map (flatten . drop (n − 1) . take n) as
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:52:
+    Couldn't match expected type `[[a]]' against inferred type `a1'
+      `a1' is a rigid type variable bound by
+           the type signature for `column' at Add.hs:14:16
+      Expected type: [[[a]]]
+      Inferred type: [a1]
+    In the second argument of `map', namely `as'
+    In the expression: map (flatten . drop (n − 1) . take n) as
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:13:1: parse error on input `]'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 10  Tried: 0  Errors: 0  Failures: 0Cases: 10  Tried: 1  Errors: 0  Failures: 0Cases: 10  Tried: 2  Errors: 0  Failures: 0Cases: 10  Tried: 3  Errors: 0  Failures: 0Cases: 10  Tried: 4  Errors: 0  Failures: 0Cases: 10  Tried: 5  Errors: 0  Failures: 0Cases: 10  Tried: 6  Errors: 0  Failures: 0Cases: 10  Tried: 7  Errors: 0  Failures: 0Cases: 10  Tried: 8  Errors: 0  Failures: 0Cases: 10  Tried: 9  Errors: 0  Failures: 0                                           Cases: 10  Tried: 10  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 13  Tried: 0  Errors: 0  Failures: 0Cases: 13  Tried: 1  Errors: 0  Failures: 0Cases: 13  Tried: 2  Errors: 0  Failures: 0Cases: 13  Tried: 3  Errors: 0  Failures: 0Cases: 13  Tried: 4  Errors: 0  Failures: 0Cases: 13  Tried: 5  Errors: 0  Failures: 0Cases: 13  Tried: 6  Errors: 0  Failures: 0Cases: 13  Tried: 7  Errors: 0  Failures: 0Cases: 13  Tried: 8  Errors: 0  Failures: 0Cases: 13  Tried: 9  Errors: 0  Failures: 0Cases: 13  Tried: 10  Errors: 0  Failures: 0Cases: 13  Tried: 11  Errors: 0  Failures: 0Cases: 13  Tried: 12  Errors: 0  Failures: 0                                            Cases: 13  Tried: 13  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 13  Tried: 0  Errors: 0  Failures: 0Cases: 13  Tried: 1  Errors: 0  Failures: 0Cases: 13  Tried: 2  Errors: 0  Failures: 0Cases: 13  Tried: 3  Errors: 0  Failures: 0Cases: 13  Tried: 4  Errors: 0  Failures: 0Cases: 13  Tried: 5  Errors: 0  Failures: 0Cases: 13  Tried: 6  Errors: 0  Failures: 0Cases: 13  Tried: 7  Errors: 0  Failures: 0Cases: 13  Tried: 8  Errors: 0  Failures: 0Cases: 13  Tried: 9  Errors: 0  Failures: 0Cases: 13  Tried: 10  Errors: 0  Failures: 0Cases: 13  Tried: 11  Errors: 0  Failures: 0Cases: 13  Tried: 12  Errors: 0  Failures: 0                                            Cases: 13  Tried: 13  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 13  Tried: 0  Errors: 0  Failures: 0Cases: 13  Tried: 1  Errors: 0  Failures: 0Cases: 13  Tried: 2  Errors: 0  Failures: 0Cases: 13  Tried: 3  Errors: 0  Failures: 0Cases: 13  Tried: 4  Errors: 0  Failures: 0Cases: 13  Tried: 5  Errors: 0  Failures: 0Cases: 13  Tried: 6  Errors: 0  Failures: 0Cases: 13  Tried: 7  Errors: 0  Failures: 0Cases: 13  Tried: 8  Errors: 0  Failures: 0Cases: 13  Tried: 9  Errors: 0  Failures: 0Cases: 13  Tried: 10  Errors: 0  Failures: 0Cases: 13  Tried: 11  Errors: 0  Failures: 0Cases: 13  Tried: 12  Errors: 0  Failures: 0                                            Cases: 13  Tried: 13  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 14  Tried: 0  Errors: 0  Failures: 0Cases: 14  Tried: 1  Errors: 0  Failures: 0Cases: 14  Tried: 2  Errors: 0  Failures: 0Cases: 14  Tried: 3  Errors: 0  Failures: 0Cases: 14  Tried: 4  Errors: 0  Failures: 0Cases: 14  Tried: 5  Errors: 0  Failures: 0Cases: 14  Tried: 6  Errors: 0  Failures: 0Cases: 14  Tried: 7  Errors: 0  Failures: 0Cases: 14  Tried: 8  Errors: 0  Failures: 0Cases: 14  Tried: 9  Errors: 0  Failures: 0Cases: 14  Tried: 10  Errors: 0  Failures: 0Cases: 14  Tried: 11  Errors: 0  Failures: 0Cases: 14  Tried: 12  Errors: 0  Failures: 0Cases: 14  Tried: 13  Errors: 0  Failures: 0                                            ### Failure in: 13
+combo all
+expected: "16 20 24"
+ but got: "[16,20,24]"
+Cases: 14  Tried: 14  Errors: 0  Failures: 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:72:6:
+    Couldn't match expected type `Char' against inferred type `String'
+    In the first argument of `map', namely `show'
+    In the third argument of `assertEqual', namely
+        `(map
+            show
+            ([combo 1 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+              combo 2 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+              combo 3 "1 2 3\n3 4 5\n5 6 7\n7 8 9"]))'
+    In the second argument of `(...)', namely
+        `assertEqual
+           "combo all"
+           "16 20 24"
+           (map
+              show
+              ([combo 1 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+                combo 2 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+                combo 3 "1 2 3\n3 4 5\n5 6 7\n7 8 9"]))'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 14  Tried: 0  Errors: 0  Failures: 0Cases: 14  Tried: 1  Errors: 0  Failures: 0Cases: 14  Tried: 2  Errors: 0  Failures: 0Cases: 14  Tried: 3  Errors: 0  Failures: 0Cases: 14  Tried: 4  Errors: 0  Failures: 0Cases: 14  Tried: 5  Errors: 0  Failures: 0Cases: 14  Tried: 6  Errors: 0  Failures: 0Cases: 14  Tried: 7  Errors: 0  Failures: 0Cases: 14  Tried: 8  Errors: 0  Failures: 0Cases: 14  Tried: 9  Errors: 0  Failures: 0Cases: 14  Tried: 10  Errors: 0  Failures: 0Cases: 14  Tried: 11  Errors: 0  Failures: 0Cases: 14  Tried: 12  Errors: 0  Failures: 0Cases: 14  Tried: 13  Errors: 0  Failures: 0                                            Cases: 14  Tried: 14  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 14  Tried: 0  Errors: 0  Failures: 0Cases: 14  Tried: 1  Errors: 0  Failures: 0Cases: 14  Tried: 2  Errors: 0  Failures: 0Cases: 14  Tried: 3  Errors: 0  Failures: 0Cases: 14  Tried: 4  Errors: 0  Failures: 0Cases: 14  Tried: 5  Errors: 0  Failures: 0Cases: 14  Tried: 6  Errors: 0  Failures: 0Cases: 14  Tried: 7  Errors: 0  Failures: 0Cases: 14  Tried: 8  Errors: 0  Failures: 0Cases: 14  Tried: 9  Errors: 0  Failures: 0Cases: 14  Tried: 10  Errors: 0  Failures: 0Cases: 14  Tried: 11  Errors: 0  Failures: 0Cases: 14  Tried: 12  Errors: 0  Failures: 0Cases: 14  Tried: 13  Errors: 0  Failures: 0                                            Cases: 14  Tried: 14  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+
+add_col_test.hs:72:2:
+    Couldn't match expected type `[Char]' against inferred type `Char'
+      Expected type: [[Char]]
+      Inferred type: String
+    In the third argument of `assertEqual', namely
+        `(unwords
+        ... map show
+          ...
+            [combo 1 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+             combo 2 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+             combo 3 "1 2 3\n3 4 5\n5 6 7\n7 8 9"])'
+    In the second argument of `(...)', namely
+        `assertEqual
+           "combo all"
+           ["16", "20", "24"]
+           (unwords
+          ... map show
+            ...
+              [combo 1 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+               combo 2 "1 2 3\n3 4 5\n5 6 7\n7 8 9",
+               combo 3 "1 2 3\n3 4 5\n5 6 7\n7 8 9"])'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 14  Tried: 0  Errors: 0  Failures: 0Cases: 14  Tried: 1  Errors: 0  Failures: 0Cases: 14  Tried: 2  Errors: 0  Failures: 0Cases: 14  Tried: 3  Errors: 0  Failures: 0Cases: 14  Tried: 4  Errors: 0  Failures: 0Cases: 14  Tried: 5  Errors: 0  Failures: 0Cases: 14  Tried: 6  Errors: 0  Failures: 0Cases: 14  Tried: 7  Errors: 0  Failures: 0Cases: 14  Tried: 8  Errors: 0  Failures: 0Cases: 14  Tried: 9  Errors: 0  Failures: 0Cases: 14  Tried: 10  Errors: 0  Failures: 0Cases: 14  Tried: 11  Errors: 0  Failures: 0Cases: 14  Tried: 12  Errors: 0  Failures: 0Cases: 14  Tried: 13  Errors: 0  Failures: 0                                            Cases: 14  Tried: 14  Errors: 0  Failures: 0
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:16:41:
+    Couldn't match expected type `[a]' against inferred type `Int'
+    In the second argument of `(++)', namely `combo n s'
+    In the expression: combos (n − 1) s ++ combo n s
+    In the definition of `combos':
+        combos n s | n > 0 = combos (n − 1) s ++ combo n s
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:16:40:
+    Couldn't match expected type `[a]' against inferred type `Int'
+    In the second argument of `(:)', namely `combo n s'
+    In the expression: combos (n − 1) s : combo n s
+    In the definition of `combos':
+        combos n s | n > 0 = combos (n − 1) s : combo n s
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:16:21:
+    Couldn't match expected type `Int' against inferred type `[Int]'
+    In the expression: combos (n − 1) s : [combo n s]
+    In the definition of `combos':
+        combos n s | n > 0 = combos (n − 1) s : [combo n s]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:16:21:
+    Couldn't match expected type `Int' against inferred type `[Int]'
+    In the expression: (combos (n − 1) s) : [combo n s]
+    In the definition of `combos':
+        combos n s | n > 0 = (combos (n − 1) s) : [combo n s]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:17:23:
+    Couldn't match expected type `Int' against inferred type `[Int]'
+    In the expression: (combos (n − 1) s)
+    In the first argument of `(++)', namely `[(combos (n − 1) s)]'
+    In the expression: [(combos (n − 1) s)] ++ [combo n s]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:17:0:
+    Duplicate type signature:
+      Add.hs:17:0-28: combos :: Int -> String -> [Int]
+      Add.hs:14:0-19: combos :: Int -> [Int]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:10:
+    Couldn't match expected type `[Int]'
+           against inferred type `String -> Int'
+    In the expression:
+          sum_ints . strs_to_ints . column n . map words . lines
+    In the definition of `combo':
+        combo n = sum_ints . strs_to_ints . column n . map words . lines
+
+Add.hs:18:44:
+    Couldn't match expected type `String -> Int'
+           against inferred type `[Int]'
+    In the expression: combo n s
+    In the second argument of `(++)', namely `[combo n s]'
+    In the expression: (combosrunghc: exit 1
+ (n − 1) s) ++ [combo n s]
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:10:
+    Couldn't match expected type `Int'
+           against inferred type `String -> Int'
+    In the expression:
+          sum_ints . strs_to_ints . column n . map words . lines
+    In the definition of `combo':
+        combo n = sum_ints . strs_to_ints . column n . map words . lines
+
+Add.hs:18:44:
+    Couldn't match expected type `String -> Int'
+           against inferred type `Int'
+    In the expression: combo n s
+    In the second argument of `(++)', namely `[combo n s]'
+    In the expression: (combos (n − 1) s) ++ [combo n s]
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+
+Add.hs:15:61:
+    Couldn't match expected type `a -> [String]'
+           against inferred type `[String]'
+    In the second argument of `(.)', namely `lines s'
+    In the second argument of `(.)', namely `map words . lines s'
+    In the second argument of `(.)', namely
+        `column n . map words . lines s'
+runghc: exit 1
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 15  Tried: 0  Errors: 0  Failures: 0Cases: 15  Tried: 1  Errors: 0  Failures: 0Cases: 15  Tried: 2  Errors: 0  Failures: 0Cases: 15  Tried: 3  Errors: 0  Failures: 0Cases: 15  Tried: 4  Errors: 0  Failures: 0Cases: 15  Tried: 5  Errors: 0  Failures: 0Cases: 15  Tried: 6  Errors: 0  Failures: 0Cases: 15  Tried: 7  Errors: 0  Failures: 0Cases: 15  Tried: 8  Errors: 0  Failures: 0Cases: 15  Tried: 9  Errors: 0  Failures: 0Cases: 15  Tried: 10  Errors: 0  Failures: 0Cases: 15  Tried: 11  Errors: 0  Failures: 0Cases: 15  Tried: 12  Errors: 0  Failures: 0Cases: 15  Tried: 13  Errors: 0  Failures: 0Cases: 15  Tried: 14  Eradd_col_test: exit 1
+rors: 0  Failures: 0                                            ### Failure in: 14
+combo all
+expected: "16 20 24"
+ but got: "16 20 24 add_col_test: Prelude.read: no parse
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 15  Tried: 0  Errors: 0  Failures: 0Cases: 15  Tried: 1  Errors: 0  Failures: 0Cases: 15  Tried: 2  Errors: 0  Failures: 0Cases: 15  Tried: 3  Errors: 0  Failures: 0Cases: 15  Tried: 4  Errors: 0  Failures: 0Cases: 15  Tried: 5  Errors: 0  Failures: 0Cases: 15  Tried: 6  Errors: 0  Failures: 0Cases: 15  Tried: 7  Errors: 0  Failures: 0Cases: 15  Tried: 8  Errors: 0  Failures: 0Cases: 15  Tried: 9  Errors: 0  Failures: 0Cases: 15  Tried: 10  Errors: 0  Failures: 0Cases: 15  Tried: 11  Errors: 0  Failures: 0Cases: 15  Tried: 12  Errors: 0  Failures: 0Cases: 15  Tried: 13  Errors: 0  Failures: 0Cases: 15  Tried: 14  Errors: 0  Failures: 0                                            ### Failure in: 14
+combos all
+expected: "16 20 24"
+ but got: "16 20 24 add_col_test: exit 1
+add_col_test: Prelude.read: no parse
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0                                            ### Failure in: 14
+length input
+expected: 3
+ but got: 23
+Cases: 16  Tried: 15  Errors: 0  Failures: 1                                  add_col_test: exit 1
+          ### Failure in: 15
+combos all
+expected: "16 20 24"
+ but got: "16 20 24 add_col_test: Prelude.read: no parse
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0                                            ### Failure in: 14
+length input
+expected: 3
+ buadd_col_test: exit 1
+t got: 4
+Cases: 16  Tried: 15  Errors: 0  Failures: 1                                            ### Failure in: 15
+combos all
+expected: "16 20 24"
+ but got: "16 20 24 add_col_test: Prelude.read: no parse
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Triadd_col_test: exit 1
+ed: 15  Errors: 0  Failures: 0                                            ### Failure in: 15
+combos all
+expected: "16 20 24"
+ but got: "16 20 24 add_col_test: Prelude.read: no parse
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Tried: 15  Errors: 0  Failures: 0                                            Cases: 16  Tried: 16  Errors: 0  Failures: 0
+Setup: ./ch2.cabal has been changed, please re-configure.
+runghc: exit 1
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+Linking dist/build/add_test/add_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+Linking dist/build/add_col_test/add_col_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col/add_col-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Tried: 15  Errors: 0  Failures: 0                                            Cases: 16  Tried: 16  Errors: 0  Failures: 0
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Tried: 15  Errors: 0  Failures: 0                                            Cases: 16  Tried: 16  Errors: 0  Failures: 0
+25288: signal: sys: write on closed pipe
+6
+12
+18
+24
+6
+12
+18
+24
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Tried: 15  Errors: 0  Failures: 0                                            Cases: 16  Tried: 16  Errors: 0  Failures: 0
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+6
+12
+18
+24
+Cases: 16  Tried: 0  Errors: 0  Failures: 0Cases: 16  Tried: 1  Errors: 0  Failures: 0Cases: 16  Tried: 2  Errors: 0  Failures: 0Cases: 16  Tried: 3  Errors: 0  Failures: 0Cases: 16  Tried: 4  Errors: 0  Failures: 0Cases: 16  Tried: 5  Errors: 0  Failures: 0Cases: 16  Tried: 6  Errors: 0  Failures: 0Cases: 16  Tried: 7  Errors: 0  Failures: 0Cases: 16  Tried: 8  Errors: 0  Failures: 0Cases: 16  Tried: 9  Errors: 0  Failures: 0Cases: 16  Tried: 10  Errors: 0  Failures: 0Cases: 16  Tried: 11  Errors: 0  Failures: 0Cases: 16  Tried: 12  Errors: 0  Failures: 0Cases: 16  Tried: 13  Errors: 0  Failures: 0Cases: 16  Tried: 14  Errors: 0  Failures: 0Cases: 16  Tried: 15  Errors: 0  Failures: 0                                            Cases: 16  Tried: 16  Errors: 0  Failures: 0
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+Registering ch2-0.1...
+rm -rf dist
+Configuring ch2-0.1...
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, dist/build/Unicoper.o )
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_col/add_col-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col/add_col-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_col_test/add_col_test-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col_test.hs, dist/build/add_col_test/add_col_test-tmp/Main.o )
+Linking dist/build/add_col_test/add_col_test ...
+[1 of 2] Compiling Unicoper         ( Unicoper.hs, dist/build/add_row/add_row-tmp/Unicoper.o )
+[2 of 2] Compiling Main             ( add_row.hs, dist/build/add_row/add_row-tmp/Main.o )
+Linking dist/build/add_row/add_row ...
+[1 of 3] Compiling Unicoper         ( Unicoper.hs, dist/build/add_test/add_test-tmp/Unicoper.o )
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_test.hs, dist/build/add_test/add_test-tmp/Main.o )
+Linking dist/build/add_test/add_test ...
+6
+12
+18
+24
+16 20 24
+Preprocessing library ch2-0.1...
+Preprocessing executables for ch2-0.1...
+Building ch2-0.1...
+[2 of 2] Compiling Add              ( Add.hs, dist/build/Add.o )
+Registering ch2-0.1...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col/add_col-tmp/Add.o )
+[3 of 3] Compiling Main             ( add_col.hs, dist/build/add_col/add_col-tmp/Main.o )
+Linking dist/build/add_col/add_col ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_col_test/add_col_test-tmp/Add.o )
+Linking dist/build/add_col_test/add_col_test ...
+[2 of 3] Compiling Add              ( Add.hs, dist/build/add_test/add_test-tmp/Add.o )
+Linking dist/build/add_test/add_test ...
+6
+12
+18
+24
+16 20 24
+f          1           6         390         428  85.5434783 
+          6          66        1217           0           0 /home/jdc/git/rwhaskell/ch2/guide Del Snarf Undo | Look |fmt -w 72
